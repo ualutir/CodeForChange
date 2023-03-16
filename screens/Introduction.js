@@ -64,12 +64,11 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     button: {
-        backgroundColor: '#02709a',
+        backgroundColor: '#00a8ff',
         paddingVertical: 10,
         paddingHorizontal: 20,
-        marginBottom: 10,
         borderRadius: 5,
-        width: 200
+        marginTop: '10%'
     },
     buttonText: {
         fontSize: 15,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const scenarios = [
@@ -8,7 +8,7 @@ const scenarios = [
         id: '1',
         name: 'Scenario 1',
         desc: 'Pests are a common problem in agriculture, and can have devastating effects on crops. Farmers must be vigilant in monitoring their fields for signs of infestation, and take prompt action to control the spread of pests. In this scenario, a farmer notices signs of pest damage in their crop, and must decide what course of action to take. They can choose to use chemical pesticides to control the infestation, but this comes with risks to human health and the environment.',
-        backgroundColor: 'rgba(255, 255, 0, 0.3);',
+        backgroundColor: 'rgba(255, 255, 0, 0.5);',
     },
     {
         id: '2',
@@ -20,7 +20,7 @@ const scenarios = [
         id: '3',
         name: 'Scenario 3',
         desc: 'Water is a critical resource in agriculture, but it can also be a source of pollution if not managed properly. In this scenario, a farmer is faced with a water management challenge. They must decide how to prevent water pollution on their farm, while also ensuring that their crops receive enough water to grow. They can choose to apply chemical fertilizers and pesticides, which can easily runoff and pollute nearby water sources. Alternatively, they can opt for sustainable water management practices, such as rainwater harvesting.',
-        backgroundColor: 'rgba(0, 255, 255, 0.3);',
+        backgroundColor: 'rgba(0, 255, 255, 0.5);',
     },
 ];
 
@@ -43,7 +43,7 @@ const Scenario = ({ navigation }) => {
     };
 
     const handleNextPress = () => {
-        navigation.navigate('Scenario', { selectedScenario });
+        navigation.navigate('Tasks', { selectedScenario });
     };
 
     return (
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        margin: 10,
+        margin: 20,
         color: '#044774'
     },
     carouselItem: {
@@ -90,10 +90,12 @@ const styles = StyleSheet.create({
         padding: 20,
         marginHorizontal: 0,
         height: '85%',
+        borderColor: '#fff',
+        borderWidth: 1,
     },
     selectedItem: {
-        borderColor: '#000',
-        borderWidth: 2,
+        borderColor: '#00c8c2',
+        borderWidth: 3,
     },
     scenarioImage: {
         width: '100%',
@@ -112,10 +114,11 @@ const styles = StyleSheet.create({
         paddingTop: 10
     },
     nextButton: {
-        marginTop: -20,
-        backgroundColor: '#019305',
-        padding: 10,
+        backgroundColor: '#00a8ff',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
         borderRadius: 5,
+        marginTop: '-15%',
     },
     nextButtonText: {
         color: '#fff',

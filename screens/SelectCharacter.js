@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     },
     selectedItem: {
         borderColor: '#00c8c2',
-        borderWidth: 2,
+        borderWidth: 3,
     },
     characterImage: {
         width: '100%',
@@ -115,10 +115,11 @@ const styles = StyleSheet.create({
         paddingTop: 10
     },
     nextButton: {
-        marginTop: -20,
-        backgroundColor: '#019305',
-        padding: 10,
+        backgroundColor: '#00a8ff',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
         borderRadius: 5,
+        marginTop: '-15%',
     },
     nextButtonText: {
         color: '#fff',
