@@ -7,7 +7,7 @@ const Home = ({ navigation }) => {
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/home_background.png')}>
+                source={require('../assets/background_vertical.png')}>
                 <View style={styles.overlay}>
                     <Text style={styles.heading}>Welcome</Text>
                     <Text style={styles.subHeading}>Please select a language</Text>
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom:'20%',
         padding: 20,
     },
     heading: {

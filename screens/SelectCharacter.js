@@ -7,20 +7,20 @@ const characters = [
     {
         id: '1',
         name: 'Ethel',
-        desc: 'A rural worker who cultivates crops and raises animals for a living, often relying on traditional methods and practices.',
-        image: require('../assets/character-1.png'),
+        desc: '20 years old female mother of 3 month baby student.',
+        image: require('../assets/Ethel.png'),
     },
     {
         id: '2',
         name: 'Benjie',
-        desc: 'An educator who provides instruction to children and adults in rural communities, often working with limited resources.',
-        image: require('../assets/character-2.png'),
+        desc: '16-years old male off-school.',
+        image: require('../assets/Benjie.png'),
     },
     {
         id: '3',
         name: 'Gelo',
-        desc: 'A professional who provides medical services and support to individuals and communities in rural areas.',
-        image: require('../assets/character-3.png'),
+        desc: '24 years old male call center agent single.',
+        image: require('../assets/Gelo.png'),
     },
 ];
 
@@ -50,7 +50,7 @@ const SelectCharacter = ({ navigation }) => {
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/home_background.png')}>
+            source={require('../assets/background_vertical.png')}>
             <View style={styles.container}>
                 <Text style={styles.title}>Select Character</Text>
                 <Carousel
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         justifyContent: 'top',
         backgroundColor: 'rgba(255, 255, 255, 1)',
         borderRadius: 10,
-        padding: 20,
+        padding: 10,
         marginHorizontal: 0,
         height: '85%',
     },

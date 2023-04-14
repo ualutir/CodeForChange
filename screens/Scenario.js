@@ -1,26 +1,38 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const scenarios = [
     {
         id: '1',
         name: 'Scenario 1',
-        desc: 'Pests are a common problem in agriculture, and can have devastating effects on crops. Farmers must be vigilant in monitoring their fields for signs of infestation, and take prompt action to control the spread of pests. In this scenario, a farmer notices signs of pest damage in their crop, and must decide what course of action to take. They can choose to use chemical pesticides to control the infestation, but this comes with risks to human health and the environment.',
+        desc: 'Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?',
         backgroundColor: 'rgba(255, 255, 0, 0.5);',
     },
     {
         id: '2',
         name: 'Scenario 2',
-        desc: 'Healthy soil is essential for successful agriculture, but many factors can impact soil health, such as erosion, nutrient depletion, and pollution. In this scenario, a farmer notices that their soil is becoming depleted, and must take action to restore its health. They can choose to apply chemical fertilizers to provide the necessary nutrients, but this can harm the soil microbiome and reduce soil fertility in the long run.',
+        desc: 'Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?',
         backgroundColor: 'rgba(225, 225, 255, 0.5);',
     },
     {
         id: '3',
         name: 'Scenario 3',
-        desc: 'Water is a critical resource in agriculture, but it can also be a source of pollution if not managed properly. In this scenario, a farmer is faced with a water management challenge. They must decide how to prevent water pollution on their farm, while also ensuring that their crops receive enough water to grow. They can choose to apply chemical fertilizers and pesticides, which can easily runoff and pollute nearby water sources. Alternatively, they can opt for sustainable water management practices, such as rainwater harvesting.',
+        desc: 'Benjie learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?',
         backgroundColor: 'rgba(0, 255, 255, 0.5);',
+    },
+    {
+        id: '4',
+        name: 'Scenario 4',
+        desc: 'One important practice that is being taught in the Youth Organization, on top of handling food waste, is the Efficient and Effective Waste Segregation. Benjie, Gelo and Ethel, living in the same community, has witnessed this best practice in the households - segregating waste that has positive impact, environmentally and economically. To help Benjie, Gelo and Ethel appreciate more on the relationship of volume and time needed to collect in order to achieve earning.',
+        backgroundColor: 'rgba(0, 255, 150, 0.5);',
+    },
+    {
+        id: '5',
+        name: 'Scenario 5',
+        desc: 'Benjie’s new role in the youth organization, is their Program Information Officer. Benjie is very active in communicating the best practices from their youth organization to inspire other youth organizations in nearby communities. Benjie is creating a presentation for other youth to appreciate the BSF project. Which earning is more exciting to highlight?',
+        backgroundColor: 'rgba(0, 100, 200, 0.5);',
     },
 ];
 
@@ -49,8 +61,9 @@ const Scenario = ({ navigation }) => {
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/home_background.png')}>
+            source={require('../assets/background_vertical.png')}>
             <View style={styles.container}>
+                <Image style={styles.tinyLogo} source={require('../assets/Ethel_Profile.png')}/>
                 <Text style={styles.title}>Select Scenario</Text>
                 <Carousel
                     data={scenarios}
@@ -63,7 +76,7 @@ const Scenario = ({ navigation }) => {
                     <Text style={styles.nextButtonText}>Next</Text>
                 </TouchableOpacity>
             </View>
-        </ImageBackground >
+        </ImageBackground>
     );
 };
 
@@ -75,7 +88,7 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '20%',
+        paddingTop: '15%',
     },
     title: {
         fontSize: 18,
@@ -118,7 +131,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        marginTop: '-15%',
+        marginTop: '-20%',
     },
     nextButtonText: {
         color: '#fff',
@@ -131,6 +144,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         resizeMode: 'cover',
+    },
+    tinyLogo: {
+        width: 70,
+        height: 70,
+        marginLeft: '70%',
+        borderRadius: 35,
     },
 });
 
