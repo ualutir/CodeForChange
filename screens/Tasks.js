@@ -16,7 +16,7 @@ const Tasks = ({ navigation }) => {
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/home_background.png')}>
+            source={require('../assets/background_vertical.png')}>
             <View style={styles.container}>
                 <Text style={styles.heading}>Task</Text>
                 <Text style={styles.description}>Select the best option:</Text>

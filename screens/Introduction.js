@@ -3,12 +3,12 @@ import { PropTypes } from 'prop-types';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 
 const Introduction = ({ navigation }) => {
-    const intro = "Agriculture is the practice of cultivating crops, raising livestock, and producing food, fiber, and other products to sustain human life. It is a fundamental part of human civilization and has been practiced for thousands of years, with advances in technology and scientific knowledge transforming the way we grow and produce our food. Agriculture plays a vital role in the economy, providing employment and income for millions of people around the world. With a rapidly growing global population, sustainable agriculture practices are essential to meet the increasing demand for food and reduce the impact on the environment."
+    const intro = "In this game, you will have to assist the characters in each scenario to unravel the learning on Waste Management particularly in handling food waste thru Black Soldier Fly Technology. Included in the scenario are options you need to undergo to appreciate the importance and impact of doing the BSF Technology. Read carefully the scenarios and the options provided to learn more. At the end of the game, you will be given a badge as Captain BiGE!"
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/home_background.png')}>
+                source={require('../assets/background_vertical.png')}>
                 <View style={styles.overlay}>
                     <Text style={styles.heading}>Introduction</Text>
                     <Text style={styles.intro}>{intro}</Text>
