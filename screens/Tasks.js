@@ -1,43 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import Carousel from 'react-native-snap-carousel';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { DataContext } from '../api/DataContext';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image } from 'react-native';
 
-const Tasks = ({ navigation }) => {
-    const [selectedOption, setSelectedOption] = useState(null);
+const Tasks = ({ navigation, route }) => {
+    const tasks = route.params.tasks;
+    const avatar = route.params.avatar;
+    const taskId = route.params.taskId || 0;
+
+    const [selectedTask, setSelectedTask] = useState(tasks[taskId - 1]);
+    const [selectedOption, setSelectedOption] = useState(1);
+
+    useEffect(() => {
+        setSelectedTask(tasks[taskId - 1]);
+    }, [taskId])
 
     const handleOptionSelect = (option) => {
         setSelectedOption(option);
     };
 
     const handleNext = () => {
-        navigation.navigate('Feedback');
+        navigation.navigate('Feedback', { tasks, avatar, 'taskDone': selectedTask });
+    };
+
+    const renderItem = ({ item, index }) => {
+        return (
+            <TouchableOpacity
+                onPress={() => handleOptionSelect(item)}
+                style={[
+                    { ...styles.carouselItem },
+                    selectedOption.id === item.id && styles.selectedOption,
+                ]}
+            >
+                <Text style={styles.optionHeader2}>{item.title}</Text>
+                <Text style={styles.optionText}>{item.desc}</Text>
+            </TouchableOpacity>
+        );
     };
 
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/background_vertical.png')}>
+            source={require('../assets/home_background.gif')}>
             <View style={styles.container}>
-                <Text style={styles.heading}>Task</Text>
-                <Text style={styles.description}>Select the best option:</Text>
-                <TouchableOpacity
-                    style={[styles.option, selectedOption === 'option1' && styles.selectedOption]}
-                    onPress={() => handleOptionSelect('option1')}>
-                    <Text style={styles.optionHeader}>Option 1</Text>
-                    <Text style={styles.optionText}>Pests are a common problem in agriculture, and can have devastating effects on crops. Farmers must be vigilant in monitoring their fields for signs of infestation</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={[styles.option, selectedOption === 'option2' && styles.selectedOption]}
-                    onPress={() => handleOptionSelect('option2')}>
-                    <Text style={styles.optionHeader}>Option 2</Text>
-                    <Text style={styles.optionText}>Healthy soil is essential for successful agriculture, but many factors can impact soil health, such as erosion, nutrient depletion, and pollution.</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={[styles.option, selectedOption === 'option3' && styles.selectedOption]}
-                    onPress={() => handleOptionSelect('option3')}>
-                    <Text style={styles.optionHeader}>Option 3</Text>
-                    <Text style={styles.optionText}>Water is a critical resource in agriculture, but it can also be a source of pollution if not managed properly. In this scenario, a farmer is faced with a water management challenge. </Text>
-                </TouchableOpacity>
+                <Image style={styles.tinyLogo} source={avatar} />
+                <Text style={styles.heading}>{`Task ${selectedTask.id}`}</Text>
+
+                <View style={styles.overlay}>
+                    <Text style={styles.description}>{selectedTask.desc}</Text>
+                </View>
+                <Text style={styles.instruction}>Select the best option below and click Next.</Text>
+                <Carousel
+                    data={selectedTask.options}
+                    renderItem={renderItem}
+                    sliderWidth={390}
+                    itemWidth={300}
+                    loop={true}
+                />
                 <TouchableOpacity style={styles.button} onPress={handleNext}>
                     <Text style={styles.buttonText}>Next</Text>
                 </TouchableOpacity>
@@ -55,26 +75,23 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '40%',
+        paddingTop: '15%',
     },
     heading: {
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 10,
+        color: '#729c00',
     },
     description: {
-        fontSize: 16,
-        marginBottom: 20,
-    },
-    option: {
-        backgroundColor: 'rgba(255, 255, 255, 0.8)',
-        borderWidth: 1,
-        borderColor: '#ccc',
-        paddingVertical: 10,
-        paddingHorizontal: 20,
-        borderRadius: 5,
+        fontSize: 15,
         marginBottom: 10,
-        width: '90%'
+    },
+    instruction: {
+        fontSize: 15,
+        marginBottom: 20,
+        color: '#0071C5',
+        fontWeight: 'bold',
     },
     selectedOption: {
         backgroundColor: 'rgba(100, 225, 255, 0.5)',
@@ -83,7 +100,11 @@ const styles = StyleSheet.create({
     optionHeader: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#333',
+        color: '#729c00',
+    },
+    optionHeader2: {
+        fontSize: 16,
+        fontWeight: 'bold',
     },
     optionText: {
         fontSize: 15,
@@ -96,7 +117,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        marginTop: 20,
+        marginTop: -150
     },
     buttonText: {
         fontSize: 18,
@@ -108,6 +129,32 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         resizeMode: 'cover',
+    },
+    tinyLogo: {
+        width: 70,
+        height: 70,
+        marginLeft: '70%',
+        borderRadius: 35,
+    },
+    carouselItem: {
+        alignItems: 'center',
+        justifyContent: 'top',
+        borderRadius: 10,
+        padding: 20,
+        marginTop: 20,
+        marginHorizontal: 0,
+        height: '57%',
+        width: '98%',
+        borderColor: '#fff',
+        borderWidth: 1,
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        borderColor: '#00a8ff',
+    },
+    overlay: {
+        margin: 20,
+        padding: 20,
+        backgroundColor: 'rgba(200, 255, 255, 0.5)',
+        borderRadius: 10,
     },
 });
 

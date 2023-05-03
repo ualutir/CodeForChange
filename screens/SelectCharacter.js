@@ -1,42 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
+import { DataContext } from '../api/DataContext';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
-const characters = [
+const charImages = [
     {
-        id: '1',
-        name: 'Ethel',
-        desc: '20 years old female mother of 3 month baby student.',
-        image: require('../assets/Ethel.png'),
+        "image": require("../assets/character-1.gif"),
+        "avatar": require("../assets/avt-1.png")
     },
     {
-        id: '2',
-        name: 'Benjie',
-        desc: '16-years old male off-school.',
-        image: require('../assets/Benjie.png'),
+        "image": require("../assets/character-2.gif"),
+        "avatar": require("../assets/avt-2.png")
     },
     {
-        id: '3',
-        name: 'Gelo',
-        desc: '24 years old male call center agent single.',
-        image: require('../assets/Gelo.png'),
-    },
+        "image": require("../assets/character-3.gif"),
+        "avatar": require("../assets/avt-3.png")
+    }
 ];
 
-const SelectCharacter = ({ navigation }) => {
+
+const SelectCharacter = ({ navigation, route }) => {
+    const context = useContext(DataContext);
+    const characters = context.state.characters;
+
     const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
+    const [selectedAvatar, setSelectedAvatar] = useState(charImages[0].avatar);
+
+    const handleCharacterSelect = (char) => {
+        setSelectedCharacter(char);
+        setSelectedAvatar(charImages[parseInt(char.id) - 1].avatar)
+    }
 
     const renderItem = ({ item, index }) => {
         return (
             <TouchableOpacity
-                onPress={() => setSelectedCharacter(item)}
+                onPress={() => handleCharacterSelect(item)}
                 style={[
                     styles.carouselItem,
                     selectedCharacter.id === item.id && styles.selectedItem,
                 ]}
             >
-                <Image source={item.image} style={styles.characterImage} />
+                <Image source={charImages[parseInt(item.id) - 1].image} style={styles.characterImage} />
                 <Text style={styles.characterName}>{item.name}</Text>
                 <Text style={styles.characterDesc}>{item.desc}</Text>
             </TouchableOpacity>
@@ -44,19 +49,19 @@ const SelectCharacter = ({ navigation }) => {
     };
 
     const handleNextPress = () => {
-        navigation.navigate('Scenario', { selectedCharacter });
+        navigation.navigate('Scenario', { selectedCharacter, avatar: selectedAvatar });
     };
 
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/background_vertical.png')}>
+            source={require('../assets/home_background.gif')}>
             <View style={styles.container}>
                 <Text style={styles.title}>Select Character</Text>
                 <Carousel
                     data={characters}
                     renderItem={renderItem}
-                    sliderWidth={300}
+                    sliderWidth={350}
                     itemWidth={200}
                     loop={true}
                     style={styles.carousel}
@@ -80,10 +85,10 @@ const styles = StyleSheet.create({
         paddingTop: '20%',
     },
     title: {
-        fontSize: 18,
+        fontSize: 22,
         fontWeight: 'bold',
-        margin: 10,
-        color: '#044774'
+        margin: 20,
+        color: '#729c00',
     },
     carouselItem: {
         alignItems: 'center',

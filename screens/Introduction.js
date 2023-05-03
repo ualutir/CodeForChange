@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { PropTypes } from 'prop-types';
+import { DataContext } from '../api/DataContext';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 
 const Introduction = ({ navigation }) => {
-    const intro = "In this game, you will have to assist the characters in each scenario to unravel the learning on Waste Management particularly in handling food waste thru Black Soldier Fly Technology. Included in the scenario are options you need to undergo to appreciate the importance and impact of doing the BSF Technology. Read carefully the scenarios and the options provided to learn more. At the end of the game, you will be given a badge as Captain BiGE!"
+    const context = useContext(DataContext);
+    const intro = context.state.introduction;
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/background_vertical.png')}>
+                source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
                     <Text style={styles.heading}>Introduction</Text>
                     <Text style={styles.intro}>{intro}</Text>

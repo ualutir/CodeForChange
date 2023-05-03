@@ -6,28 +6,30 @@ import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
     const context = useContext(DataContext);
-    const scenarios = context.state.scenarios;
+    const tasks = route.params.tasks;
     const avatar = route.params.avatar;
-
-    const [selectedScenario, setSelectedScenario] = useState(scenarios[0]);
 
     const renderItem = ({ item, index }) => {
         return (
             <TouchableOpacity
-                onPress={() => setSelectedScenario(item)}
                 style={[
-                    { ...styles.carouselItem, backgroundColor: item.backgroundColor },
-                    selectedScenario.id === item.id && styles.selectedItem,
+                    { ...styles.carouselItem }
                 ]}
             >
-                <Text style={styles.scenarioName}>{item.name}</Text>
+                <Text style={styles.scenarioName}>{`Task ${item.id}`}</Text>
                 <Text style={styles.scenarioDesc}>{item.desc}</Text>
+                <Text style={styles.ansName}>Your Answer</Text>
+                <Text style={styles.ansDesc}>{item.options[0].desc}</Text>
             </TouchableOpacity>
         );
     };
 
+    const handleScenarioPress = () => {
+        navigation.navigate('Scenario', { avatar });
+    };
+
     const handleNextPress = () => {
-        navigation.navigate('Tasks', { tasks: selectedScenario.tasks, avatar, taskId: 1 });
+        navigation.navigate('Home');
     };
 
     return (
@@ -36,16 +38,23 @@ const Scenario = ({ navigation, route }) => {
             source={require('../assets/home_background.gif')}>
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
-                <Text style={styles.title}>Select Scenario</Text>
+                <Text style={styles.title}>Summary</Text>
                 <Carousel
-                    data={scenarios}
+                    data={tasks}
                     renderItem={renderItem}
                     sliderWidth={390}
                     itemWidth={300}
                     loop={true}
                 />
-                <TouchableOpacity style={styles.nextButton} onPress={handleNextPress}>
-                    <Text style={styles.nextButtonText}>Next</Text>
+                <TouchableOpacity
+                    style={{ ...styles.button, marginTop: -130 }}
+                    onPress={handleScenarioPress}>
+                    <Text style={styles.buttonText}>Try Another Scenario</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={handleNextPress}>
+                    <Text style={styles.buttonText}>Exit</Text>
                 </TouchableOpacity>
             </View>
         </ImageBackground>
@@ -74,10 +83,11 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         padding: 20,
         marginHorizontal: 0,
-        height: '75%',
+        height: '77%',
         width: '98%',
         borderColor: '#fff',
         borderWidth: 1,
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
     },
     selectedItem: {
         borderColor: '#00c8c2',
@@ -99,16 +109,31 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         paddingTop: 10
     },
-    nextButton: {
+    ansName: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#006400',
+        paddingTop: 20,
+    },
+    ansDesc: {
+        fontSize: 15,
+        fontWeight: 'normal',
+        textAlign: 'left',
+        paddingTop: 10,
+        color: '#006400',
+    },
+    button: {
         backgroundColor: '#00a8ff',
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        marginTop: '-20%',
+        marginTop: 10,
+        width: 200
     },
-    nextButtonText: {
+    buttonText: {
+        fontSize: 15,
         color: '#fff',
-        fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center',
     },
@@ -124,6 +149,12 @@ const styles = StyleSheet.create({
         marginLeft: '70%',
         borderRadius: 35,
     },
+    inyLogo: {
+        width: 70,
+        height: 70,
+        marginLeft: '70%',
+        borderRadius: 35,
+    }
 });
 
 export default Scenario;

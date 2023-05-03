@@ -1,0 +1,252 @@
+{
+    "homepage": {
+        "text": "In this game, you will have to assist the characters in each scenario to unravel the learning on waste management, particularly in handling food waste through Black Soldier Fly technology.  Included in the scenario are options you need to undergo to appreciate the importance and impact of doing the BSF technology. Read carefully the scenarios and options provided to learn more. At the end of the game, you will be given a badge as Captain BiGE!"
+    },
+    "players": [
+        {
+            "id": "1",
+            "name": "Ethel",
+            "desc": "A 20 year old female, a student and a mother of a 3 month old.",
+            "image": "../assets/character-1.gif",
+            "avatar": "../assets/avt-1.gif"
+        },
+        {
+            "id": "2",
+            "name": "Benjie",
+            "desc": "A 16 year old male, who dropped out of school.",
+            "image": "../assets/character-2.gif",
+            "avatar": "../assets/avt-2.gif"
+        },
+        {
+            "id": "3",
+            "name": "Gelo",
+            "desc": "A 24 year old male, single, and a call center agent.",
+            "image": "../assets/character-3.gif",
+            "avatar": "../assets/avt-3.gif"
+        }
+    ],
+    "scenarios": [
+        {
+            "id": "1",
+            "name": "Scenario 1",
+            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+            "backgroundColor": "rgba(0, 255, 150, 0.2)",
+            "tasks": [
+                {
+                    "id": "1",
+                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Reduce food waste",
+                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Proper treatment of food waste",
+                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Doing composting for the Food Waste",
+                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Treating food waste with black soldier fly",
+                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "desc": "Benjie learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Do BSF first at home",
+                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Join the youth organization and be a value-added member",
+                            "desc": "Being a member of the youth organization empowers Benjie to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues. Big volume = big income",
+                            "feedback": "Great"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Scenario 2",
+            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+            "backgroundColor": "rgba(50, 255, 0, 0.2)",
+            "tasks": [
+                {
+                    "id": "1",
+                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Reduce food waste",
+                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Proper treatment of food waste",
+                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Doing composting for the Food Waste",
+                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Treating food waste with black soldier fly",
+                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "desc": "Benjie learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Do BSF first at home",
+                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Join the youth organization and be a value-added member",
+                            "desc": "Being a member of the youth organization empowers Benjie to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues. Big volume = big income",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "desc": "One important practice that is being taught in the Youth Organization, on top of handling food waste, is the Efficient and Effective Waste Segregation. Benjie, Gelo and Ethel, living in the same community, has witnessed this best practice in the households - segregating waste that has positive impact, environmentally and economically. To help Benjie, Gelo and Ethel appreciate more on the relationship of volume and time needed to collect in order to achieve earning.",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Potential earning from solid waste segregation assuming 100 kilos of each segregated waste",
+                            "desc": "Plastics: PHP 200 / 2.0 per kilo, Tin Can: PHP 100 / 1.0 per kilo, Boxes: PHP 150 / 1.5 per kilo. The only challenge is the time spent in the collection period. It will take approximately 2 months to reach to 100 kilos. It is not easy but remember, this earning from waste segregation is additional income.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Potential income from food waste",
+                            "desc": "100 kilos of food waste of can be consumed by at least 10 kilos of BSF larvae. Reaching 100 kilos of food waste will only take 15 days for 20 households. You may also charge a collection fee of PHP 50 per 15 days from each household.",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "desc": "Benjie's new role in the youth organization, is their Program Information Officer. Benjie is very active in communicating the best practices from their youth organization to inspire other youth organizations in nearby communities. Benjie is creating a presentation for other youth to appreciate the BSF project. Which earning is more exciting to highlight?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Potential earning of BSF as feeds",
+                            "desc": "BSF larvae as feeds: 10 kilos of BSF larvae can be sold as feeds. They are high in protein, excellent for livestock health. The price is usually around PHP 150 per kilo.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Potential earning of BSF residues",
+                            "desc": "Compost: 10 kilos of compost can be sold at PHP 120 per kilo, every 15 days. Liquid residue as fertilizer: 5 litres can be sold at PHP 150 per litre.",
+                            "feedback": "Great"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Scenario 3",
+            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+            "backgroundColor": "rgba(255, 255, 0, 0.2)",
+            "tasks": [
+                {
+                    "id": "1",
+                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Reduce food waste",
+                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Proper treatment of food waste",
+                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Doing composting for the Food Waste",
+                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Treating food waste with black soldier fly",
+                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
+                            "feedback": "Great"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "desc": "Benjie learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?",
+                    "options": [
+                        {
+                            "id": "1",
+                            "title": "Do BSF first at home",
+                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
+                            "feedback": "Great choice!!"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Join the youth organization and be a value-added member",
+                            "desc": "Being a member of the youth organization empowers Benjie to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues.",
+                            "feedback": "Great"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

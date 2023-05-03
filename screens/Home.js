@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { PropTypes } from 'prop-types';
+import { DataContext, loadData } from '../api/DataContext';
+import { LANGUAGES } from '../util/Constants';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation, route }) => {
+    context = useContext(DataContext);
+    const [language, setLanguage] = useState('');
+
+    useEffect(() => {
+        if (language) {
+            loadData(language, context.dispatch);
+            navigation.navigate('Introduction');
+        }
+    }, [language]);
+
+    handleLanguageSelect = (language) => {
+        context.dispatch({ type: 'SET_LANGUAGE', data: language });
+        setLanguage(language);
+    }
+
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/background_vertical.png')}>
+                source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
                     <Text style={styles.heading}>Welcome</Text>
                     <Text style={styles.subHeading}>Please select a language</Text>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('Introduction')}>
+                        onPress={() => handleLanguageSelect(LANGUAGES.EN)}>
                         <Text style={styles.buttonText}>English</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('Introduction')}>
+                        onPress={() => handleLanguageSelect(LANGUAGES.ID)}>
                         <Text style={styles.buttonText}>Bahasa Indonesia</Text>
                     </TouchableOpacity>
                 </View>
@@ -47,7 +64,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom:'20%',
+        marginBottom: '20%',
         padding: 20,
     },
     heading: {

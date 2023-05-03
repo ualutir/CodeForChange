@@ -1,26 +1,52 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image } from 'react-native';
 
-const Feedback = ({ navigation }) => {
-    const intro = "Agriculture is the practice of cultivating crops, raising livestock, and producing food, fiber, and other products to sustain human life. It is a fundamental part of human civilization and has been practiced for thousands of years, with advances in technology and scientific knowledge transforming the way we grow and produce our food. Agriculture plays a vital role in the economy, providing employment and income for millions of people around the world. With a rapidly growing global population, sustainable agriculture practices are essential to meet the increasing demand for food and reduce the impact on the environment."
+const Feedback = ({ navigation, route }) => {
+    const tasks = route.params.tasks;
+    const preTask = route.params.taskDone;
+    const avatar = route.params.avatar;
+    const nextTaskId = parseInt(preTask.id) < tasks.length ? parseInt(preTask.id) + 1 : 0;
+
+    const handleNextTaskClick = () => {
+        navigation.navigate('Tasks', { tasks: tasks, avatar, taskId: nextTaskId });
+    }
+
+    const handleSummaryClick = () => {
+        navigation.navigate('Summary', { tasks, avatar });
+    }
+
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/home_background.png')}>
-                <View style={styles.overlay}>
+                source={require('../assets/home_background.gif')}>
+                < View style={styles.overlay} >
+                    <Image style={styles.tinyLogo} source={avatar} />
                     <Text style={styles.heading}>Feedback</Text>
-                    <Text style={styles.description}>You have selected the best option!</Text>
                     <Text style={styles.feedback}>Water is a critical resource in agriculture, but it can also be a source of pollution if not managed properly. In this scenario, a farmer is faced with a water management challenge. They must decide how to prevent water pollution on their farm, while also ensuring that their crops receive enough water to grow. They can choose to apply chemical fertilizers and pesticides, which can easily runoff and pollute nearby water sources. Alternatively, they can opt for sustainable water management practices, such as rainwater harvesting.</Text>
+                    {
+                        nextTaskId == 0 ?
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={handleSummaryClick}>
+                                <Text style={styles.buttonText}>Summary</Text>
+                            </TouchableOpacity> :
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={handleNextTaskClick}>
+                                <Text style={styles.buttonText}>Next Task</Text>
+                            </TouchableOpacity>
+                    }
+
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => navigation.navigate('Scenario')}>
-                        <Text style={styles.buttonText}>Play Again</Text>
+                        <Text style={styles.buttonText}>Exit</Text>
                     </TouchableOpacity>
                 </View>
-            </ImageBackground>
-        </View>
+            </ImageBackground >
+        </View >
     );
 };
 
@@ -67,7 +93,8 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        marginTop: '10%'
+        marginTop: '10%',
+        width: 150
     },
     buttonText: {
         fontSize: 15,
@@ -75,6 +102,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
     },
+    tinyLogo: {
+        width: 70,
+        height: 70,
+        marginLeft: '70%',
+        borderRadius: 35,
+    }
 });
 
 
