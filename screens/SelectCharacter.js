@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { DataContext, PLAYER_IMAGES } from '../api/DataContext';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
+import { Audio } from 'expo-av';
 
 const SelectCharacter = ({ navigation, route }) => {
     const context = useContext(DataContext);
@@ -10,10 +11,16 @@ const SelectCharacter = ({ navigation, route }) => {
 
     const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
 
+    async function handleSelectCharacter(item){
+        const { sound } = await Audio.Sound.createAsync( require('../assets/selection.wav') );
+        await sound.playAsync();
+        setSelectedCharacter(item);
+    }
+
     const renderItem = ({ item, index }) => {
         return (
             <TouchableOpacity
-                onPress={() => setSelectedCharacter(item)}
+                onPress={() => handleSelectCharacter(item)}
                 style={[
                     styles.carouselItem,
                     selectedCharacter.id === item.id && styles.selectedItem,
