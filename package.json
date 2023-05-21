@@ -14,6 +14,7 @@
     "deprecated-react-native-prop-types": "^4.1.0",
     "expo": "~48.0.5",
     "expo-asset": "~8.9.1",
+    "expo-av": "^13.2.1",
     "expo-status-bar": "~1.4.4",
     "expo-updates": "~0.16.3",
     "install": "^0.13.0",
