@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
         marginVertical: 120,
         marginHorizontal: 50,
         alignItems: 'center',
-        justifyContent: 'top',
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         borderRadius: 10,
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'normal',
         color: '#105b9c',
-        textAlign: 'left',
+        textAlign: 'justify',
         marginBottom: 20,
     },
     button: {

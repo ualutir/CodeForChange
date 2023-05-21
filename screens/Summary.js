@@ -1,13 +1,14 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, Alert } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
     const context = useContext(DataContext);
-    const tasks = route.params.tasks;
-    const avatar = route.params.avatar;
+    const scenario = context.state.scenario;
+    const scenarioImage = context.state.scenarioImage;
+    const avatar = context.state.avatar;
 
     const renderItem = ({ item, index }) => {
         return (
@@ -19,13 +20,13 @@ const Scenario = ({ navigation, route }) => {
                 <Text style={styles.scenarioName}>{`Task ${item.id}`}</Text>
                 <Text style={styles.scenarioDesc}>{item.desc}</Text>
                 <Text style={styles.ansName}>Your Answer</Text>
-                <Text style={styles.ansDesc}>{item.options[0].desc}</Text>
+                <Text style={styles.ansDesc}>{item.options[context.state.options[scenario.id][item.id] - 1].desc}</Text>
             </TouchableOpacity>
         );
     };
 
     const handleScenarioPress = () => {
-        navigation.navigate('Scenario', { avatar });
+        navigation.navigate('Scenario');
     };
 
     const handleNextPress = () => {
@@ -35,12 +36,12 @@ const Scenario = ({ navigation, route }) => {
     return (
         <ImageBackground
             style={styles.image}
-            source={require('../assets/home_background.gif')}>
+            source={scenarioImage}>
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
                 <Text style={styles.title}>Summary</Text>
                 <Carousel
-                    data={tasks}
+                    data={scenario.tasks}
                     renderItem={renderItem}
                     sliderWidth={390}
                     itemWidth={300}
@@ -79,7 +80,6 @@ const styles = StyleSheet.create({
     },
     carouselItem: {
         alignItems: 'center',
-        justifyContent: 'top',
         borderRadius: 10,
         padding: 20,
         marginHorizontal: 0,

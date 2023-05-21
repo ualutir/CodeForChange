@@ -1,30 +1,34 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
+import { DataContext } from '../api/DataContext';
 import { PropTypes } from 'prop-types';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image } from 'react-native';
 
 const Feedback = ({ navigation, route }) => {
-    const tasks = route.params.tasks;
-    const preTask = route.params.taskDone;
-    const avatar = route.params.avatar;
-    const nextTaskId = parseInt(preTask.id) < tasks.length ? parseInt(preTask.id) + 1 : 0;
+    const context = useContext(DataContext);
+    const scenario = context.state.scenario;
+    const scenarioImage = context.state.scenarioImage;
+    const task = context.state.task;
+    const avatar = context.state.avatar;
+    const nextTaskId = parseInt(task.id) < scenario.tasks.length ? parseInt(task.id) + 1 : 0;
 
     const handleNextTaskClick = () => {
-        navigation.navigate('Tasks', { tasks: tasks, avatar, taskId: nextTaskId });
+        context.dispatch({ type: 'SET_TASK', data: scenario.tasks[nextTaskId - 1] });
+        navigation.navigate('Task', { });
     }
 
     const handleSummaryClick = () => {
-        navigation.navigate('Summary', { tasks, avatar });
+        navigation.navigate('Summary', {  });
     }
 
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/home_background.gif')}>
+                source={scenarioImage}>
                 < View style={styles.overlay} >
                     <Image style={styles.tinyLogo} source={avatar} />
                     <Text style={styles.heading}>Feedback</Text>
-                    <Text style={styles.feedback}>Water is a critical resource in agriculture, but it can also be a source of pollution if not managed properly. In this scenario, a farmer is faced with a water management challenge. They must decide how to prevent water pollution on their farm, while also ensuring that their crops receive enough water to grow. They can choose to apply chemical fertilizers and pesticides, which can easily runoff and pollute nearby water sources. Alternatively, they can opt for sustainable water management practices, such as rainwater harvesting.</Text>
+                    <Text style={styles.feedback}>{context.state.option && context.state.option.feedback}</Text>
                     {
                         nextTaskId == 0 ?
                             <TouchableOpacity
@@ -38,12 +42,6 @@ const Feedback = ({ navigation, route }) => {
                                 <Text style={styles.buttonText}>Next Task</Text>
                             </TouchableOpacity>
                     }
-
-                    <TouchableOpacity
-                        style={styles.button}
-                        onPress={() => navigation.navigate('Scenario')}>
-                        <Text style={styles.buttonText}>Exit</Text>
-                    </TouchableOpacity>
                 </View>
             </ImageBackground >
         </View >
@@ -71,7 +69,6 @@ const styles = StyleSheet.create({
         marginVertical: 120,
         marginHorizontal: 50,
         alignItems: 'center',
-        justifyContent: 'top',
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         borderRadius: 10,
@@ -81,12 +78,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
     },
-    description: {
-        fontSize: 16,
-        marginBottom: 10,
-    },
     feedback: {
         fontSize: 16,
+        textAlign: 'justify'
     },
     button: {
         backgroundColor: '#00a8ff',

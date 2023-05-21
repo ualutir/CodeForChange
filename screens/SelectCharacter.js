@@ -1,47 +1,25 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { DataContext } from '../api/DataContext';
+import { DataContext, PLAYER_IMAGES } from '../api/DataContext';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
-
-const charImages = [
-    {
-        "image": require("../assets/character-1.gif"),
-        "avatar": require("../assets/avt-1.png")
-    },
-    {
-        "image": require("../assets/character-2.gif"),
-        "avatar": require("../assets/avt-2.png")
-    },
-    {
-        "image": require("../assets/character-3.gif"),
-        "avatar": require("../assets/avt-3.png")
-    }
-];
-
 
 const SelectCharacter = ({ navigation, route }) => {
     const context = useContext(DataContext);
     const characters = context.state.characters;
 
     const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
-    const [selectedAvatar, setSelectedAvatar] = useState(charImages[0].avatar);
-
-    const handleCharacterSelect = (char) => {
-        setSelectedCharacter(char);
-        setSelectedAvatar(charImages[parseInt(char.id) - 1].avatar)
-    }
 
     const renderItem = ({ item, index }) => {
         return (
             <TouchableOpacity
-                onPress={() => handleCharacterSelect(item)}
+                onPress={() => setSelectedCharacter(item)}
                 style={[
                     styles.carouselItem,
                     selectedCharacter.id === item.id && styles.selectedItem,
                 ]}
             >
-                <Image source={charImages[parseInt(item.id) - 1].image} style={styles.characterImage} />
+                <Image source={PLAYER_IMAGES[item.name]} style={styles.characterImage} />
                 <Text style={styles.characterName}>{item.name}</Text>
                 <Text style={styles.characterDesc}>{item.desc}</Text>
             </TouchableOpacity>
@@ -49,7 +27,8 @@ const SelectCharacter = ({ navigation, route }) => {
     };
 
     const handleNextPress = () => {
-        navigation.navigate('Scenario', { selectedCharacter, avatar: selectedAvatar });
+        context.dispatch({ type: 'SET_CHARACTER', data: selectedCharacter.name });
+        navigation.navigate('Scenario');
     };
 
     return (
@@ -62,7 +41,7 @@ const SelectCharacter = ({ navigation, route }) => {
                     data={characters}
                     renderItem={renderItem}
                     sliderWidth={350}
-                    itemWidth={200}
+                    itemWidth={250}
                     loop={true}
                     style={styles.carousel}
                 />
@@ -92,7 +71,6 @@ const styles = StyleSheet.create({
     },
     carouselItem: {
         alignItems: 'center',
-        justifyContent: 'top',
         backgroundColor: 'rgba(255, 255, 255, 1)',
         borderRadius: 10,
         padding: 10,
@@ -105,7 +83,7 @@ const styles = StyleSheet.create({
     },
     characterImage: {
         width: '100%',
-        height: '70%',
+        height: '60%',
         marginBottom: 10,
     },
     characterName: {
@@ -116,7 +94,7 @@ const styles = StyleSheet.create({
     characterDesc: {
         fontSize: 15,
         fontWeight: 'normal',
-        textAlign: 'left',
+        textAlign: 'justify',
         paddingTop: 10
     },
     nextButton: {

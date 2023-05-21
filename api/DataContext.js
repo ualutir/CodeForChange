@@ -1,13 +1,54 @@
 import React, { createContext, useReducer } from 'react';
 import { LANGUAGES } from '../util/Constants';
 
+const scenarioImages = {
+    'Scenario-1': require("../assets/scenario-1.gif"),
+    'Scenario-2': require("../assets/scenario-2.gif"),
+    'Scenario-3': require("../assets/scenario-3.gif"),
+    'Scenario-4': require("../assets/scenario-4.gif"),
+    'Scenario-5': require("../assets/scenario-5.gif"),
+}
+
+const PLAYER_IMAGES = {
+    'Benjie': require("../assets/Benjie.gif"),
+    'Gelo': require("../assets/Gelo.gif"),
+    'Ethel': require("../assets/Ethel.gif"),
+    'Budi': require("../assets/Budi.gif"),
+    'Kiko': require("../assets/Kiko.gif"),
+    'Asep': require("../assets/Asep.gif"),
+    'Rini': require("../assets/Rini.gif"),
+    'Lina': require("../assets/Lina.gif"),
+    'Dewi': require("../assets/Dewi.gif"),
+    'Abdul': require("../assets/Abdul.gif")
+}
+
+const PLAYER_PROFILES = {
+    'Benjie': require("../assets/Benjie.png"),
+    'Gelo': require("../assets/Gelo.png"),
+    'Ethel': require("../assets/Ethel.png"),
+    'Budi': require("../assets/Budi.png"),
+    'Kiko': require("../assets/Kiko.png"),
+    'Asep': require("../assets/Asep.png"),
+    'Rini': require("../assets/Rini.png"),
+    'Lina': require("../assets/Lina.png"),
+    'Dewi': require("../assets/Dewi.png"),
+    'Abdul': require("../assets/Abdul.png")
+}
+
 const DataContext = createContext();
 
 const initialState = {
     language: LANGUAGES.EN,
     introduction: '',
     characters: [],
-    scenarios: []
+    scenarios: [],
+    character: null,
+    avatar: null,
+    scenario: null,
+    scenarioImage: null,
+    task: null,
+    option: null,
+    options: {}
 };
 
 const setData = (state, data) => {
@@ -28,6 +69,7 @@ const loadData = (language, dispatch) => {
 }
 
 const reducer = (state, action) => {
+    let options = null;
     switch (action.type) {
         case 'SET_LANGUAGE':
             return { ...state, language: action.data };
@@ -39,10 +81,28 @@ const reducer = (state, action) => {
             return { ...state, scenarios: action.data };
         case 'SET_DATA':
             return setData(state, action.data);
+        case 'SET_CHARACTER':
+            return { ...state, character: action.data, avatar: PLAYER_PROFILES[action.data] };
+        case 'SET_SCENARIO':
+            let scenario = action.data;
+            options = Object.assign({}, state.options);
+            options[scenario.id] = {};
+            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options };
+        case 'SET_TASK':
+            let task = action.data;
+            options = Object.assign({}, state.options);
+            options[state.scenario.id][task.id] = { };
+            return { ...state, task: task, option: null, options: options };
+        case 'SET_OPTION':
+            let option = action.data;
+            options = Object.assign({}, state.options);
+            options[state.scenario.id][state.task.id] = option.id;
+            return { ...state, option: option, options: options }
         default:
             return state;
     }
 };
+
 
 const useData = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -68,4 +128,6 @@ const DataProvider = ({ children }) => {
     );
 };
 
-export { DataContext, DataProvider, loadData };
+
+
+export { DataContext, DataProvider, loadData, scenarioImages, PLAYER_IMAGES };

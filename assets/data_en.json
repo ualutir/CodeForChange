@@ -5,230 +5,550 @@
     "players": [
         {
             "id": "1",
-            "name": "Ethel",
-            "desc": "A 20 year old female, a student and a mother of a 3 month old.",
-            "image": "../assets/character-1.gif",
-            "avatar": "../assets/avt-1.gif"
+            "name": "Benjie",
+            "desc": "Benjie is 16-years old. He lives in a big village near a small town. He dropped out of school due to financial difficulties faced by his family. Despite this setback, Joko is determined to help his family. He is interested in finding ways to improve the environment."
         },
         {
             "id": "2",
-            "name": "Benjie",
-            "desc": "A 16 year old male, who dropped out of school.",
-            "image": "../assets/character-2.gif",
-            "avatar": "../assets/avt-2.gif"
+            "name": "Gelo",
+            "desc": "Gelo is 24-years old. He is from a rural village but moved to the city to work as a call center agent to pursue his dream of becoming financially independent. Gelo is also a nature lover and spends his weekends exploring the nearby forests and beaches. He is keen to learn more about sustainable living and is considering starting a smal business in the future."
         },
         {
             "id": "3",
-            "name": "Gelo",
-            "desc": "A 24 year old male, single, and a call center agent.",
-            "image": "../assets/character-3.gif",
-            "avatar": "../assets/avt-3.gif"
+            "name": "Ethel",
+            "desc": "Ethel is 20-years old from a small village. She is a single mother to a 3-month old baby and is currently studying at a local university. Indah is passionate about finding ways to provide for her child while also contributing to her community."
+        },
+        {
+            "id": "4",
+            "name": "Budi",
+            "desc": "Budi is a 18-year-old boy. He is an aspiring entrepreneur and wants to start a business that provides sustainable solutions to his community's environmental problems. Budi is interested in creating eco-friendly products and services that can help reduce waste and pollution."
+        },
+        {
+            "id": "5",
+            "name": "Kiko",
+            "desc": "Kiko is a 20-year-old student. He is studying to become a teacher and hopes to one day return to his village to teach the children in his community. Kiko is also an avid hiker and often goes on treks in the nearby mountains."
+        },
+        {
+            "id": "6",
+            "name": "Asep",
+            "desc": "Asep is a 19-year-old farmer. He comes from a family of farmers and has been helping with farm work since he was young. Asep is interested in learning and connecting with other youth."
+        },
+        {
+            "id": "7",
+            "name": "Rini",
+            "desc": "Rini is a 19-year-old and a mother of two young boys. She enjoys dancing and performing traditional dances. She is proud of her heritage and helps her family with their small farm, where they grow rice and vegetables."
+        },
+        {
+            "id": "8",
+            "name": "Lina",
+            "desc": "Lina is a 15-year-old girl who loves to read and write. She is part of a youth writing club in her community, and dreams of becoming a journalist so she can share stories about her culture and community with others."
+        },
+        {
+            "id": "9",
+            "name": "Dewi",
+            "desc": "Dewi is a 17-year-old girl who is passionate about protecting the environment. She volunteers with a local organization that cleans up beaches and educates others about the importance of reducing plastic waste."
+        },
+        {
+            "id": "10",
+            "name": "Abdul",
+            "desc": "Abdul is 19-year-old. He is a skilled fisherman and has been fishing with his family since he was young. Abdul and his friends are active in his community about promoting sustainable fishery. He is also a father of a 5 year old girl. He dreams of providing her with a good education, as he himself was not able to go to college due to financial constraints."
         }
     ],
     "scenarios": [
         {
-            "id": "1",
-            "name": "Scenario 1",
-            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-            "backgroundColor": "rgba(0, 255, 150, 0.2)",
-            "tasks": [
+          "id": 1,
+          "name": "Scenario 1",
+          "desc": "Did you know that on average, we produce 300 grams of food waste per day? That's 9,300 tons of food waste accumulated annually by the population, contributing to environmental degradation. In this game, you'll learn how to minimize the harm caused by food waste on our planet. Join us and let's make a positive impact while also exploring the world of sustainable income generation. Let's play!",
+          "backgroundColor": "rgba(0, 255, 150, 0.2)",
+          "backgroundImage": "../assets/scenario-1.gif",
+          "tasks": [
+            {
+              "id": 1,
+              "desc": "Learning from YouTube about food waste management, you have decided to dispose or treat food wastes in your household in the way that is clean and does not produce bad smell. Which activity would you choose to be environmental friendly and earn additional income?",
+              "options": [
                 {
-                    "id": "1",
-                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Reduce food waste",
-                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Proper treatment of food waste",
-                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 1,
+                  "title": "Doing composting for the Food Waste",
+                  "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
+                  "feedback": "Doing composting for food waste is a great way to both mitigate environment degradation and earn additional income. By turning food waste into good garden soil, you are keeping waste out of landfills and creating a valuable product that can be sold. Keep up the good work!"
                 },
                 {
-                    "id": "2",
-                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Doing composting for the Food Waste",
-                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Treating food waste with black soldier fly",
-                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
-                            "feedback": "Great"
-                        }
-                    ]
-                },
-                {
-                    "id": "3",
-                    "desc": "[user] learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help [user] decide on how to proceed?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Do BSF first at home",
-                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Join the youth organization and be a value-added member",
-                            "desc": "Being a member of the youth organization empowers [user] to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues. Big volume = big income",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 2,
+                  "title": "Treating food waste with black soldier fly",
+                  "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
+                  "feedback": "Treating food waste with black soldier fly is a  method that can help mitigate environment degradation while also earning additional income. Black soldier fly consume food waste and convert it to compost faster than traditional composting methods. Additionally, the residues can be sold as garden soil and the black soldier fly can be sold as feeds. This is a great way to reduce waste and generate income at the same time."
                 }
-            ]
+              ]
+            },
+            {
+              "id": 2,
+              "desc": "You and your friends want to implement efficient and effective waste segregation in their community. you learned that segregating waste can positively impact the environment and generate additional income. What will be your best options?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Collecting segregated solid waste for potential earning",
+                  "desc": "By segregating waste such as plastics, tin cans, and boxes, Benjie, Gelo, and Ethel can potentially earn additional income. \n\nPlastics \u2013 PHP 200 / 2.0 per kilo\nTin Can \u2013 PHP 100 / 1.0 per kilo\nBoxes \u2013 PHP 150 / 1.5 per kilo\nThe challenge is the time spent in the collection period, which will take approximately 2 months to reach 100 kilos. However, this additional income from waste segregation can be a great help to their households.\n",
+                  "feedback": "By segregating waste, you can your friends can potentially earn additional income from selling it to recyclers. However, it may take time to collect a substantial amount of waste. Nevertheless, this is a great way to contribute to environmental sustainability and earn extra income for their households."
+                },
+                {
+                  "id": 2,
+                  "title": "Generating income from food waste",
+                  "desc": "You and your friends can also generate income from food waste by feeding it to black soldier fly larvae. For instance, 100 kilos of food waste can be consumed by at least 10 kilos of BSF larvae. Reaching 100 kilos of food waste will only take 15 days for 20 households. They can also charge a collection fee of PHP 50 per 15 days from each household. This not only generates additional income but also helps in the efficient handling of food waste in their community.",
+                  "feedback": "Feeding food waste to black soldier fly larvae is a great way to convert waste into a valuable resource, which can be sold as feeds and compost. This is a more efficient and time-saving way to generate additional income compared to waste segregation. Additionally, charging a collection fee from households can further increase their income."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "desc": "You've recently learned more and more about the efficient handling of food waste using black soldier fly technology. Your family has been raising free-range chicken and backyard catfish at home to help cover daily household expenses. You're also considering joining a youth organization to receive training on the technical procedures of doing Black Soldier Fly (BSF). Can you decide on the best course of action?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Do BSF first at home",
+                  "desc": "By doing BSF at home, you can immediately address the food waste generated at the household level. Additionally, fresh or dried BSF can be used as feeds for your free-range chicken and catfish, generating savings from your usual expenses brought about by buying commercial feeds.\nIn addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
+                  "feedback": "By doing BSF at home, you can immediately address the food waste generated at your household level. Not only can you mitigate food waste, but you can also generate savings from your usual expenses brought about by buying commercial feeds for your free-range chicken and catfish. And by using fresh or dried BSF as feeds for your animals, you can provide them with a healthier and more natural diet."
+                },
+                {
+                  "id": 2,
+                  "title": "Join the youth organization and be a value-added member",
+                  "desc": "Being a member of the youth organization allows you to learn together, sharing experiences and best practices.\nEach member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues.\nBig volume = big income",
+                  "feedback": "By joining the youth organization and being a value-added member, you can learn more from your peers, share experiences, and best practices. As each member contributes to the volume of the input, the forecast of output, which is the volume of BSF and its residues, can increase. This can result in a bigger income for the organization and its members. However, it may take longer to start generating income than doing BSF at home, but it can also provide you with more opportunities for learning and socializing with other youth in your community."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "desc": "You're passionate about addressing food waste in your community and want to use black soldier fly technology to start a sustainable business. There's a lot of food waste being thrown away from the cafeteria, fresh market, and restaurants. You want to explore how to turn this waste into profit while also promoting environmental sustainability.",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Selling Larvae and Fertilizer",
+                  "desc": "You can start by breeding black soldier fly larvae using food waste collected from the community. Once you have a good supply of larvae, you can sell them to local poultry farms as a high-protein feed supplement. In addition, the by-products of the larvae breeding process can be used to make organic fertilizer, which can be sold to local farmers. ",
+                  "feedback": "Selling larvae and fertilizer is a great way to turn food waste into profit while promoting sustainability. However, it requires an initial investment and may take some time to establish a stable supply of larvae and fertilizer. Consider whether you have the resources and commitment needed to pursue this option."
+                },
+                {
+                  "id": 2,
+                  "title": "Promoting BSF Growth in the Community",
+                  "desc": "You can promote BSF growth in the community by encouraging people to collect food waste and sell it to local farmers, who can use it to feed their BSF. The farmers can then sell the larvae and fertilizer produced by their BSF to local markets. You can act as a middleman by buying the larvae and fertilizer from the farmers and selling them to customers. ",
+                  "feedback": "Promoting BSF Growth in the Community is a great way to involve the community in reducing food waste and promoting sustainability. However, it requires building relationships with both the community and the farmers, and may take some time to establish a stable supply chain. Consider whether you have the social skills and commitment needed to pursue this option."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "desc": "You are creating a presentation to showcase the BSF project to other youth organizations in nearby communities. You want to highlight the potential earnings of BSF. Which earning option would be more exciting to present?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Selling BSF larvae as feeds",
+                  "desc": "10 kilos of BSF larvae can be sold as feeds for livestock, as they are high in protein and excellent for their health. The price per kilo is usually around PHP 150, which can provide a significant income stream.",
+                  "feedback": "Selling BSF larvae as feeds can be an exciting earning opportunity to highlight, as it can provide a significant income stream. The high protein content of BSF larvae makes them a valuable source of feed for livestock, and their popularity in the market can ensure consistent demand."
+                },
+                {
+                  "id": 2,
+                  "title": "Selling BSF residues ",
+                  "desc": "The compost produced from BSF residues can be sold at PHP 120 per kilo, and 10 kilos can be produced every 15 days. Additionally, the liquid residue from BSF can be sold as fertilizer at PHP 150 per liter. This can provide a consistent and reliable income stream.",
+                  "feedback": "Selling BSF residues can also be an exciting earning opportunity to present. The compost produced from BSF residues can be sold at a competitive price, and the liquid residue can also provide an additional income stream. The reliability and consistency of this income stream can make it an attractive option for those interested in sustainable farming practices."
+                }
+              ]
+            }
+          ]
         },
         {
-            "id": "2",
-            "name": "Scenario 2",
-            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-            "backgroundColor": "rgba(50, 255, 0, 0.2)",
-            "tasks": [
+          "id": 2,
+          "name": "Scenario 2",
+          "desc": "Welcome to Sustainable Market! Now you will learn about sustainable business models and how they can help businesses operate in an environmentally and socially responsible manner. You will design and manage your own market, making decisions that affect the market's environmental impact, profits, and overall sustainability. You will gain a deeper understanding of how businesses can prioritize sustainability while still achieving financial success. Let's get started!",
+          "backgroundColor": "rgba(0, 255, 150, 0.2)",
+          "backgroundImage": "/assets/scenario-2.gif",
+          "tasks": [
+            {
+              "id": 1,
+              "desc": "As the owner of Sustainable Market, you have the option to offer customers a choice between conventional and organic produce. Which option is more sustainable and profitable for your market?",
+              "options": [
                 {
-                    "id": "1",
-                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Reduce food waste",
-                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Proper treatment of food waste",
-                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 1,
+                  "title": "Conventional Produce",
+                  "desc": "Offer conventional produce, which is cheaper to source and can be sold at a lower price point, attracting more customers and increasing profits.",
+                  "feedback": "While offering conventional produce may increase profits in the short term, it has a higher environmental impact due to the use of pesticides and fertilizers, and the higher carbon footprint associated with transportation. Additionally, customers who prioritize sustainability may not be interested in purchasing conventional produce, leading to a loss of potential customers and a negative impact on your market's reputation as a sustainable business."
                 },
                 {
-                    "id": "2",
-                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Doing composting for the Food Waste",
-                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Treating food waste with black soldier fly",
-                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
-                            "feedback": "Great"
-                        }
-                    ]
-                },
-                {
-                    "id": "3",
-                    "desc": "[user] learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Do BSF first at home",
-                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Join the youth organization and be a value-added member",
-                            "desc": "Being a member of the youth organization empowers [user] to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues. Big volume = big income",
-                            "feedback": "Great"
-                        }
-                    ]
-                },
-                {
-                    "id": "4",
-                    "desc": "One important practice that is being taught in the Youth Organization, on top of handling food waste, is the Efficient and Effective Waste Segregation. [user], Gelo and Ethel, living in the same community, has witnessed this best practice in the households - segregating waste that has positive impact, environmentally and economically. To help [user], Gelo and Ethel appreciate more on the relationship of volume and time needed to collect in order to achieve earning.",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Potential earning from solid waste segregation assuming 100 kilos of each segregated waste",
-                            "desc": "Plastics: PHP 200 / 2.0 per kilo, Tin Can: PHP 100 / 1.0 per kilo, Boxes: PHP 150 / 1.5 per kilo. The only challenge is the time spent in the collection period. It will take approximately 2 months to reach to 100 kilos. It is not easy but remember, this earning from waste segregation is additional income.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Potential income from food waste",
-                            "desc": "100 kilos of food waste of can be consumed by at least 10 kilos of BSF larvae. Reaching 100 kilos of food waste will only take 15 days for 20 households. You may also charge a collection fee of PHP 50 per 15 days from each household.",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 2,
+                  "title": "Organic Produce",
+                  "desc": "Offer organic produce, which is more expensive to source but has a lower environmental impact, appeals to customers who prioritize sustainability, and has a higher profit margin due to its premium pricing.",
+                  "feedback": "Offering organic produce may have a higher upfront cost, but it aligns with the values of customers who prioritize sustainability and is better for the environment. In addition, organic produce has a higher profit margin due to its premium pricing, which can offset the higher sourcing costs. By offering organic produce, your market can set itself apart as a leader in sustainability, attracting more customers and building a positive reputation as a sustainable business."
                 }
-            ]
+              ]
+            },
+            {
+              "id": 2,
+              "desc": "You are considering offering a discount for customers who bring their own reusable bags. Which option is more sustainable and profitable for the market?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Offer a discount",
+                  "desc": "Offer a discount for customers who bring their own reusable bags, which may reduce profits in the short term but can lead to increased customer loyalty and a positive impact on the environment.",
+                  "feedback": "Offering a discount for reusable bags can encourage customers to make sustainable choices and build a positive reputation for your market as a sustainable business. While there may be upfront costs associated with the discount, the long-term benefits in terms of customer loyalty and positive environmental impact can lead to increased profits."
+                },
+                {
+                  "id": 2,
+                  "title": "Do not offer a discount",
+                  "desc": "Do not offer a discount for customers who bring their own bags, as it may not have a significant impact on the market's sustainability or profits.",
+                  "feedback": "While not offering a discount for reusable bags may not have a negative impact on your market, it also does not incentivize customers to make sustainable choices. By offering a discount for reusable bags, you can encourage customers to bring their own bags, reduce waste, and improve your market's reputation as a sustainable business."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "desc": "You have been buying products from faraway suppliers for a while now because their prices are cheaper. However, you're starting to realize that the environmental and social costs associated with transportation and production may not be sustainable. Which option is better for your market?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Keep buying products from far away suppliers.",
+                  "desc": "Keep buying products from far away suppliers who have cheaper prices. You are running a business not a charity.",
+                  "feedback": "Buying products from far away suppliers means they have to travel a long distance to reach your market. This makes more pollution and contributes to climate change. Choosing local suppliers who use sustainable practices can reduce pollution and support small businesses. This can also help you get more customers who care about the environment."
+                },
+                {
+                  "id": 2,
+                  "title": "Buy products from local suppliers",
+                  "desc": "Buy products from local suppliers who use sustainable practices, even if it costs a little bit more.",
+                  "feedback": "Choosing local suppliers who use sustainable practices is a good way to show your customers that your market cares about the environment. Even if it costs a little bit more, it can help you get more customers and make more money in the long run. Buying from local suppliers also helps support small businesses in your area. Furthermore, sustainable practices can lead to higher quality and more innovative products, which can be a competitive advantage in your market."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "desc": "What's the best way to power your market?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Switch to renewable energy",
+                  "desc": "Switch to renewable energy sources like solar power that cost more upfront but are better for the environment in the long term.",
+                  "feedback": "Switching to renewable energy sources like solar power can lower your market's carbon footprint, save you money on energy costs in the long run, and attract more customers who value sustainable business practices."
+                },
+                {
+                  "id": 2,
+                  "title": "Don't switch to renewable energy",
+                  "desc": "Keep using conventional grid electricity that is cheaper and already installed in your market.",
+                  "feedback": "Using conventional grid electricity can contribute to the carbon footprint and damage your market's reputation as a sustainable business. Additionally, it may not be cheap in the long term as electricity prices may increase."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "desc": "You want to reduce waste from your market. What's the best way to package the products in your market?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Plastic packaging",
+                  "desc": "Use plastic bags and packaging because they are cheaper and more durable.",
+                  "feedback": "Plastic bags are harmful to the environment and take hundreds of years to decompose. They can cause pollution and harm wildlife. Additionally, they can damage your market's reputation as a sustainable business."
+                },
+                {
+                  "id": 2,
+                  "title": "Reusable or compostable packaging",
+                  "desc": "Use reusable bags or compostable packaging made from materials like plant-based plastics, even though they may be more expensive upfront.",
+                  "feedback": " Using reusable bags made of sustainable materials like cotton  or compostable packaging made from materials like plant-based plastics can significantly reduce the amount of waste your market produces, promote sustainability, and help you stand out as a green business. Although they may be more expensive upfront, they can save you money in the long run by reducing waste management costs and attracting more customers who value sustainable business practices."
+                }
+              ]
+            }
+          ]
         },
         {
-            "id": "3",
-            "name": "Scenario 3",
-            "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons. This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-            "backgroundColor": "rgba(255, 255, 0, 0.2)",
-            "tasks": [
+          "id": 3,
+          "name": "Scenario 3",
+          "desc": "You are starting a business to make products out of recycled materials. You will collect and sort recyclable materials, design and prototype your products, market and sell them to customers, create a circular supply chain, and scale up your business while ensuring it remains sustainable. Are you ready to make a positive impact on the environment? Let's get started!",
+          "backgroundColor": "rgba(0, 255, 150, 0.2)",
+          "backgroundImage": "/assets/scenario-3.gif",
+          "tasks": [
+            {
+              "id": 1,
+              "desc": "Your business is trying to create a new product out of recycled materials. You've gathered some materials that you can use, but they don't look very appealing. What should you do?",
+              "options": [
                 {
-                    "id": "1",
-                    "desc": "Food is listed as basic need of every living thing. Gelo consumes food  3 times a day, at an average of 855 grams per day. He produces 300 grams of food waste per day. Annually, Gelo and the rest of the population accumulates food waste up to 9,300 tons.This food waste contributes to environment degradation. What will Gelo do to minimize Mother Earths degradation due to food waste?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Reduce food waste",
-                            "desc": "There are various ways to reduce food waste: Making inventory and prevent overbuying, Creating meal plan, Save and eat leftovers safely",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Proper treatment of food waste",
-                            "desc": "Some ways to properly treat food waste: Composting, Using leftovers and food waste creatively",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 1,
+                  "title": "Function only",
+                  "desc": "Use recycled materials to create a product that is functional. It does not need to look good because it's made from waste anyway.",
+                  "feedback": "While using recycled materials is commendable, creating a product that is not aesthetically pleasing may turn off potential customers who prioritize design. Consider finding creative ways to make the recycled materials more attractive, such as by adding colors or patterns."
                 },
                 {
-                    "id": "2",
-                    "desc": "Learning from school about food waste management, Ethel decides to dispose or treat food wastes in their household. Especially, she wants to give her son clean air and good environment. Since she is a young mom, she wanted also to earn income while doing school so she can support her child. Help Ethel pick an activity that can both mitigate environment degradation and earning additional income?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Doing composting for the Food Waste",
-                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Treating food waste with black soldier fly",
-                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
-                            "feedback": "Great"
-                        }
-                    ]
-                },
-                {
-                    "id": "3",
-                    "desc": "[user] learned from their community about efficient handling of food waste using black soldier fly. Since he is currently off-school, he manages to raise free-range chicken and backyard catfish at home in order to help his family to cover daily household expenses, he decides to join the Youth Organization and be trained with technical procedures of doing Black Soldier Fly (BSF).  Can you help Benjie decide on how to proceed?",
-                    "options": [
-                        {
-                            "id": "1",
-                            "title": "Do BSF first at home",
-                            "desc": "Doing BSF at home, can immediately address the food waste generated at household level. In addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
-                            "feedback": "Great choice!!"
-                        },
-                        {
-                            "id": "2",
-                            "title": "Join the youth organization and be a value-added member",
-                            "desc": "Being a member of the youth organization empowers [user] to learn more from learning together, sharing experiences and best practices. Each member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues.",
-                            "feedback": "Great"
-                        }
-                    ]
+                  "id": 2,
+                  "title": "Looking good is important",
+                  "desc": "Use recycled materials to create a product that is both functional and aesthetically pleasing.",
+                  "feedback": "Using recycled materials to create a product that is both functional and aesthetically pleasing (looking good) helps to demonstrate to potential customers that recycled materials can be used to create products that are just as good as those made from virgin materials."
                 }
-            ]
+              ]
+            },
+            {
+              "id": 2,
+              "desc": "Your business has created a new product out of recycled materials. You want to start selling it to customers. How should you market it?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Highlight affordability",
+                  "desc": "Market the recycled products as being cheap and affordable.",
+                  "feedback": "While affordability is an important selling point, marketing the recycled products as being cheap may undermine their value and lead customers to perceive them as low-quality. Consider emphasizing the sustainability benefits and durability of the product instead."
+                },
+                {
+                  "id": 2,
+                  "title": "Highlight sustainability",
+                  "desc": "Market the recycled products as being high-quality and sustainable.",
+                  "feedback": "Great choice! Marketing the recycled products as being high-quality and sustainable positions them as premium products that are better for the environment."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "desc": "Your business is sourcing materials for your product. You have the option to buy recycled materials locally or innovative materials from a supplier abroad. What should you do?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Buy abroad",
+                  "desc": "Buy high-tech and cheaper recycled materials from a supplier abroad.",
+                  "feedback": "While new materials from a supplier abroad may be cheaper, it is important to consider the environmental impact of importing materials. Shipping materials across long distances contributes to greenhouse gas emissions and increases the carbon footprint of your business. Consider the long-term benefits of supporting local economies and reducing transportation emissions by purchasing locally sourced recycled materials."
+                },
+                {
+                  "id": 2,
+                  "title": "Buy local",
+                  "desc": "Buy used materials from nearby to support the local economy and help the environment.",
+                  "feedback": "Buying used materials nearby supports the local economy and helps the environment. It may be more expensive, but it's better for the environment and the local community in the long run."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "desc": "Are you considering the end-of-life management of your product? What do you do with your product when it's no longer useful or usable?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Yes for end of life management",
+                  "desc": "Spend time to plan how to recycle, reuse, or repurpose your product when it's no longer useful.",
+                  "feedback": "Planning how to recycle, reuse, or repurpose your product when it's no longer useful helps minimize waste and make the world a better place. It may be more work, but it's worth it to help the environment."
+                },
+                {
+                  "id": 2,
+                  "title": "Throw away expired products",
+                  "desc": "Make sure to throw away the products when they pass the expired date.",
+                  "feedback": "What happens to your product after it's no longer useful is important for the environment. By making sure your product can be recycled, reused, or repurposed, you can help minimize waste and make the world a better place."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "desc": "Your business is growing, and you're starting to think about how you can have an even bigger impact on the environment. Do you want to work with other businesses or organizations to help the environment?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Work together",
+                  "desc": "Work with other businesses or organizations to create new ideas and opportunities to help the environment.",
+                  "feedback": "Working with other businesses or organizations can help create new ideas and opportunities to help the environment. It may take more work, but it's worth it to make a bigger impact. By collaborating, you can share resources and knowledge to create something even better for the environment."
+                },
+                {
+                  "id": 2,
+                  "title": "Going solo",
+                  "desc": "Work by yourself and don't involve anyone else who are not interested in environmental issues.",
+                  "feedback": "While it's great to be independent, working with other businesses or organizations can help create new ideas and opportunities to help the environment. By working alone, you may miss out on important opportunities."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Scenario 4",
+          "desc": "You have just successfully opened a small homestay. You will have to hire employees and manage your business operations. You will need to create a sustainable workplace that prioritizes the well-being of your employees and contributes to the community. Your decisions will impact the social benefits of your business . You want to prioritize the triple bottom line and aim to create businesses that benefit people, the planet, and profit.",
+          "backgroundColor": "rgba(0, 255, 150, 0.2)",
+          "backgroundImage": "/assets/scenario-4.gif",
+          "tasks": [
+            {
+              "id": 1,
+              "desc": "You have two candidates for a front desk position. One has extensive experience but requires a high salary, while the other has less experience but is willing to work for a lower salary. Which candidate would you hire?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Hire the highflyers",
+                  "desc": "Hire highly qualified and experienced candidate who wants a high salary",
+                  "feedback": "Hiring the experienced candidate who wants a high salary might be good for the business, but it can be too expensive for your business because you are just starting. Choosing the less experienced candidate who is willing to work for less can be better for you for now."
+                },
+                {
+                  "id": 2,
+                  "title": "Growing with your employee",
+                  "desc": "Hire the less experienced candidate who is willing to work for less and learn with you.",
+                  "feedback": " Choosing the less experienced candidate who is willing to work for less can be better for you for now. Hiring the experienced candidate who wants a high salary might be good for the business, but it can be too expensive for your business because you are just starting."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "desc": "You want to make a break room for your employees. Which option is better?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Spend money to buy",
+                  "desc": "Buying new furniture and appliances",
+                  "feedback": "Buying new furniture and appliances can be expensive and not good for the environment. Reusing and fixing old furniture and appliances is better for the environment."
+                },
+                {
+                  "id": 2,
+                  "title": "Spend time in fixing ",
+                  "desc": "Reusing and fixing old furniture and appliances for the break room.",
+                  "feedback": "By reusing and fixing old furniture and appliances, you can save money and help the environment."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "desc": "One of your employees comes to you and tells you that they need time off to take care of a sick family member. You have to decide whether to let them take time off or make them come to work. What should you do?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "People first",
+                  "desc": "Allow the employee to take time off and offer support.",
+                  "feedback": "By saying yes and offering support, you can make the workplace happier and better for everyone."
+                },
+                {
+                  "id": 2,
+                  "title": "Profit first",
+                  "desc": "Say no and make them come to work. You need to make the best use of your money.",
+                  "feedback": "Saying no can make the employee unhappy and make the workplace a bad place to work. Saying yes and offering support can make the workplace happier and better for everyone."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "desc": "Your company has been asked to participate in a charity event to support a cause that is important to your community. You want to show your support, but you're not sure how to do it. Which option is better for the environment and your business?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Volunteer",
+                  "desc": "Organize a volunteer day where employees can participate in the event.",
+                  "feedback": "By organizing a volunteer day, you can make a real difference in your community and create a positive workplace culture."
+                },
+                {
+                  "id": 2,
+                  "title": "Donation.",
+                  "desc": "Donate a large sum of money to the charity. Your employees won't want to volunteer. ",
+                  "feedback": "Donating a large sum of money can be a quick way to show support, but it may not have a lasting impact on your community. Organizing a volunteer day can be better for the environment and your business because it shows your commitment to the cause and encourages teamwork among your employees."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "desc": "You have the opportunity to expand your business by opening a new location in a different city. Which option is better for the environment and your business?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Build new",
+                  "desc": "Build a new location from scratch so that you get exactly what you want.",
+                  "feedback": "Building a new location from scratch can be expensive and have a negative impact on the environment. Renovating an existing building to make it more eco-friendly can be a better option because it reduces waste and energy usage."
+                },
+                {
+                  "id": 2,
+                  "title": "Renovate",
+                  "desc": "Renovate an existing building to make it more eco-friendly.",
+                  "feedback": "By renovating an existing building to make it more eco-friendly, you can reduce waste and energy usage, which can have a positive impact on the environment and potentially save money in the long-term."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Scenario 5",
+          "desc": "You have decided to start a small furniture business. Your products are selling like hotcakes and you need to keep up with the demand. However, you also want your small company to meet the sustainability standards. What do you do? Let's learn about the importance of sustainable supply chain management and how to make the right choices for your business, the environment, and society. Are you ready to make some tough decisions and create a sustainable supply chain? Let's get started!",
+          "backgroundColor": "rgba(0, 255, 150, 0.2)",
+          "backgroundImage": "/assets/scenario-5.gif",
+          "tasks": [
+            {
+              "id": 1,
+              "desc": "Your current supplier offers the lowest prices, but they have a history of violating environmental regulations. You've found another supplier who follows sustainable practices, but their prices are higher. Which option is better for the environment and your business?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Switch",
+                  "desc": "Switch to the sustainable supplier, even though their prices are higher.",
+                  "feedback": "By switching to the sustainable supplier, you're showing your commitment to sustainability and ethical business practices. Even though their prices are higher, it's worth it for the positive impact on the environment and society."
+                },
+                {
+                  "id": 2,
+                  "title": "Stick",
+                  "desc": "Stick with your current supplier and save money.",
+                  "feedback": "By sticking with your current supplier, you may save money in the short-term but risk harming the environment and your reputation in the long-term. By switching to the sustainable supplier, you're investing in a more eco-friendly supply chain and potentially attracting customers who value sustainable practices."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "desc": "You need to choose a supplier for an important material that your product needs. One supplier gets the material from a nearby community, giving people jobs and money, but their way of making it creates a lot of pollution. The other supplier gets the material from a different place where there are no clear social benefits, but they make it with less pollution. Which choice is best for the environment and society?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Prioritize nearby community",
+                  "desc": "Choose the supplier from the nearby community even though they make a lot of pollution",
+                  "feedback": "It's important to help nearby communities, but we also need to take care of the environment. A supplier who makes a lot of pollution can harm the planet and cause problems for people in the long run. We should think of ways to make less pollution, like using different methods or investing in programs to help."
+                },
+                {
+                  "id": 2,
+                  "title": "Prioritize less pollution",
+                  "desc": "Choose the supplier with less pollution even though they don't help a community",
+                  "feedback": "Making less pollution is a good thing, but we also need to think about people. Working with a supplier who helps a community can be good for society, like giving people jobs and money. We can work with the supplier to find ways to make less pollution, like using different sources of energy or investing in programs to help."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "desc": "You have two suppliers for a key material, one of which uses a lot of water in their production process while the other uses significantly less. However, the supplier using less water is located further away and requires longer transportation times. Which option is the most sustainable choice?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Prioritize less water use",
+                  "desc": "Choose the supplier using less water, even if it means longer transportation times.",
+                  "feedback": "Choosing a supplier that uses less water is important for sustainability, but it's important to also consider the carbon emissions from transportation. You can work with the supplier to find ways to reduce transportation emissions, such as optimizing delivery routes or using more efficient transportation methods."
+                },
+                {
+                  "id": 2,
+                  "title": "Prioritize less emission",
+                  "desc": "Choose the supplier using more water to minimize transportation emissions.",
+                  "feedback": "While choosing a supplier that minimizes transportation emissions is important, it's also important to consider the impact of excessive water usage on the environment. You can work with the supplier to find ways to reduce water usage, such as implementing more efficient production methods or investing in technologies that reduce water usage."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "desc": "As a sustainable business owner, you want to reduce the environmental impact of your supply chain. You have the option to source materials from a local supplier that uses eco-friendly packaging but charges a higher price. What should you do?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Expensive",
+                  "desc": "Choose the local supplier and raise prices to compensate for the increased cost.",
+                  "feedback": "By choosing the local supplier, you are supporting your local community and reducing the carbon emissions associated with shipping materials from overseas. To offset the higher cost, you can raise your prices slightly to maintain your profits while still offering eco-friendly products."
+                },
+                {
+                  "id": 2,
+                  "title": "Cheap",
+                  "desc": "Choose a cheaper supplier with less eco-friendly packaging to keep costs low.",
+                  "feedback": "While it may seem tempting to choose the cheaper supplier to keep costs low, it's important to consider the environmental impact of less eco-friendly packaging. By choosing the local supplier with eco-friendly packaging, you can reduce the carbon emissions associated with transportation and support your local community. You can also offset the higher cost by finding ways to reduce other expenses or by adjusting your marketing strategies to attract customers who value sustainability."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "desc": "You went to a seminar about \"circular economy\" and got inspired to do more reduce and reuse in your business. What actions can you take to adopt a circular economy model?",
+              "options": [
+                {
+                  "id": 1,
+                  "title": "Reduce Material Use",
+                  "desc": "Implement a system to reuse and refurbish materials, such as reusing metal scraps in your production processes or refurbishing old products for resale.",
+                  "feedback": "Implementing a system to reuse and refurbish materials, such as reusing metal scraps in your production processes or refurbishing old products for resale, is a key action to take when adopting a circular economy model."
+                },
+                {
+                  "id": 2,
+                  "title": "Reduce Cost",
+                  "desc": "Purchase new, cheap materials  to reduce cost. If more waste is created you can always recycle the waste materials.",
+                  "feedback": "Adopting a circular economy model involves reducing waste and reusing materials. Purchasing new, cheap materials  may reduce costs in the short term, but it can lead to creating more waste and harm the environment in the long run. It's important to prioritize the sustainability of your business practices."
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
 }

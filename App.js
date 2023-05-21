@@ -7,7 +7,7 @@ import Home from './screens/Home';
 import Introduction from './screens/Introduction';
 import SelectCharacter from './screens/SelectCharacter';
 import Scenario from './screens/Scenario';
-import Tasks from './screens/Tasks';
+import Task from './screens/Task';
 import Feedback from './screens/Feedback';
 import Summary from './screens/Summary';
 
@@ -52,14 +52,14 @@ export default function App() {
                         component={Scenario}
                     />
                     <Stack.Screen
-                        name="Tasks"
+                        name="Task"
                         options={{
                             title: '',
                             headerBackImage: () => <Image style={{ marginLeft: 10, width: 24, height: 24 }} source={require('./assets/arrow_back.png')} />,
                             headerTransparent: true,
                             headerBackTitle: ' ',
                         }}
-                        component={Tasks}
+                        component={Task}
                     />
                     <Stack.Screen
                         name="Feedback"

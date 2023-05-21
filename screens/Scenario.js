@@ -7,9 +7,9 @@ import Carousel from 'react-native-snap-carousel';
 const Scenario = ({ navigation, route }) => {
     const context = useContext(DataContext);
     const scenarios = context.state.scenarios;
-    const avatar = route.params.avatar;
+    const avatar = context.state.avatar;
 
-    const [selectedScenario, setSelectedScenario] = useState(scenarios[0]);
+    const [selectedScenario, setSelectedScenario] = useState(context.state.scenario || scenarios[0]);
 
     const renderItem = ({ item, index }) => {
         return (
@@ -27,7 +27,8 @@ const Scenario = ({ navigation, route }) => {
     };
 
     const handleNextPress = () => {
-        navigation.navigate('Tasks', { tasks: selectedScenario.tasks, avatar, taskId: 1 });
+        context.dispatch({ type: 'SET_SCENARIO', data: selectedScenario });
+        navigation.navigate('Task');
     };
 
     return (
@@ -70,7 +71,6 @@ const styles = StyleSheet.create({
     },
     carouselItem: {
         alignItems: 'center',
-        justifyContent: 'top',
         borderRadius: 10,
         padding: 20,
         marginHorizontal: 0,
@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     scenarioDesc: {
         fontSize: 15,
         fontWeight: 'normal',
-        textAlign: 'left',
-        paddingTop: 10
+        textAlign: 'justify',
+        paddingTop: 10,
     },
     nextButton: {
         backgroundColor: '#00a8ff',
