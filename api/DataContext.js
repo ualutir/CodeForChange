@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import { LANGUAGES } from '../util/Constants';
+import { fetchGoogleSheetEnglishPlayer } from './Api';
 
 const scenarioImages = {
     'Scenario-1': require("../assets/scenario-1.gif"),
@@ -68,6 +69,17 @@ const loadData = (language, dispatch) => {
     dispatch({ type: 'SET_DATA', data: data });
 }
 
+const loadEnglishPlayer = async (dispatch) => {
+    try {
+        const response = await fetchGoogleSheetEnglishPlayer()
+        const json = await response.json()
+        console.log(json)
+        // dispatch({ type: 'SET_DATA', data: data });
+    } catch {
+        console.error(error);
+    }
+}
+
 const reducer = (state, action) => {
     let options = null;
     switch (action.type) {
@@ -130,4 +142,4 @@ const DataProvider = ({ children }) => {
 
 
 
-export { DataContext, DataProvider, loadData, scenarioImages, PLAYER_IMAGES };
+export { DataContext, DataProvider, loadData, loadEnglishPlayer, scenarioImages, PLAYER_IMAGES };
