@@ -1,6 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import { LANGUAGES } from '../util/Constants';
-import { fetchGoogleSheetEnglishPlayer } from './Api';
+import { fetchGoogleSheetData } from './Api';
+import { DATA_TYPE } from '../util/Constants';
 
 const scenarioImages = {
     'Scenario-1': require("../assets/scenario-1.gif"),
@@ -71,7 +72,29 @@ const loadData = (language, dispatch) => {
 
 const loadEnglishPlayer = async (dispatch) => {
     try {
-        const response = await fetchGoogleSheetEnglishPlayer()
+        const response = await fetchGoogleSheetData(DATA_TYPE.PLAYER)
+        const json = await response.json()
+        console.log(json)
+        // dispatch({ type: 'SET_DATA', data: data });
+    } catch {
+        console.error(error);
+    }
+}
+
+const loadEnglishScenario = async (dispatch) => {
+    try {
+        const response = await fetchGoogleSheetData(DATA_TYPE.SCENARIO)
+        const json = await response.json()
+        console.log(json)
+        // dispatch({ type: 'SET_DATA', data: data });
+    } catch {
+        console.error(error);
+    }
+}
+
+const loadEnglishIntro = async (dispatch) => {
+    try {
+        const response = await fetchGoogleSheetData(DATA_TYPE.HOME)
         const json = await response.json()
         console.log(json)
         // dispatch({ type: 'SET_DATA', data: data });
@@ -142,4 +165,13 @@ const DataProvider = ({ children }) => {
 
 
 
-export { DataContext, DataProvider, loadData, loadEnglishPlayer, scenarioImages, PLAYER_IMAGES };
+export {
+    DataContext,
+    DataProvider,
+    loadData,
+    scenarioImages,
+    PLAYER_IMAGES,
+    loadEnglishPlayer,
+    loadEnglishScenario,
+    loadEnglishIntro,
+};

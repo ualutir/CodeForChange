@@ -38,7 +38,7 @@ export const getGoogleSheetUrl = (dataType) => {
         case DATA_TYPE.PLAYER:
             ({ API_KEY, SHEET_ID, SHEET_NAME } = _GOOGLE_SHEET_ENV_PLAYER[platform])
             break
-        case DATA_TYPE.SCENARIO:
+        case DATA_TYPE.SCENARIO:  // TO-DO: separate scenario, task, option into 3 different APIs and Google Sheets
             ({ API_KEY, SHEET_ID, SHEET_NAME } = _GOOGLE_SHEET_ENV_SCENARIO[platform])
             break
     }

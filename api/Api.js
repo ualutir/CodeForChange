@@ -1,8 +1,7 @@
 import { getGoogleSheetUrl } from './GoogleSheetConfig'
-import { DATA_TYPE } from '../util/Constants'
 
 
-export const fetchGoogleSheetEnglishPlayer = () => {
-    const url = getGoogleSheetUrl(DATA_TYPE.PLAYER)
+export const fetchGoogleSheetData = (dataType) => {
+    const url = getGoogleSheetUrl(dataType)
     return fetch(url)
 };
