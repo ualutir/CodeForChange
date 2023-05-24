@@ -70,14 +70,15 @@ const loadData = (language, dispatch) => {
 }
 
 const loadGoogleSheetData = (language, dispatch) => {
-    let data = {}
     if (language == LANGUAGES.EN) {
-        data = loadEnglishGoogleSheetData()
-        console.log(data)
+        loadEnglishGoogleSheetData()
+        .then(data =>
+            console.log(`loadGoogleSheetData: ${JSON.stringify(data)}`)
+            // dispatch({ type: 'SET_DATA', data: data });
+        )
     } else if (language == LANGUAGES.ID) {
         console.log("Not Implemented")
     }
-    // dispatch({ type: 'SET_DATA', data: data });
 }
 
 const reducer = (state, action) => {

@@ -1,7 +1,4 @@
-import { getGoogleSheetUrl } from './GoogleSheet'
-
-
-export const fetchGoogleSheetData = (dataType) => {
-    const url = getGoogleSheetUrl(dataType)
+export const fetchData = (url) => {
+    console.log(`Fetching data from ${url}`);
     return fetch(url)
 }
