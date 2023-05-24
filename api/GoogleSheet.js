@@ -84,6 +84,7 @@ export const loadPlayerData = async (language) => {
 export const loadScenarioData = async (language) => {
     return loadGoogleSheetJSON(DATA_TYPE.SCENARIO)
     .then((data) => {
+        // @todo implement language column in google doc scenario tab 
         let parsedData = googleSheetJSONParser(data)
         parsedScenarioIds = []
         scenarios = []
