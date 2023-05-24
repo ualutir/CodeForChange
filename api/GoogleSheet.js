@@ -85,32 +85,52 @@ export const loadScenarioData = async (language) => {
     return loadGoogleSheetJSON(DATA_TYPE.SCENARIO)
     .then((data) => {
         let parsedData = googleSheetJSONParser(data)
-        // Parse and replace the array below
-        let scenarioData = [
-            {
-                "id": 1,
-                "name": "Scenario 1",
-                "tasks": [
-                  {
-                    "id": 1,
-                    "desc": "Learning ncome?",
-                    "options": [
-                      {
-                        "id": 1,
-                      },
-                      {
-                        "id": 2,
-                        "title": "Treating food waste with black soldier fly",
-                      }
-                    ]
-                  },
-                  {
-                    "id": 2
-                  },
-                ]
+        parsedScenarioIds = []
+        scenarios = []
+        for (let i = 0; i < parsedData.length; i++) {
+            let row = parsedData[i]
+            if (!parsedScenarioIds.includes(row.id)) {
+                // If no scenario, add the scenario for the first time
+                parsedScenarioIds.push(row.id)
+                let scenarioObj = ({
+                    id: row.id, 
+                    name: row.name, 
+                    desc: row.desc,
+                    backgroundColor: "rgba(0,255,150,0.2)",
+                    backgroundImage: `../assets/scenario-${row.id}.gif`,
+                    tasks: []
+                })
+                scenarios.push(scenarioObj)
             }
-        ]
-        let scenarioObj = {"scenarios": scenarioData}
+            // Add task for the corresponding scenario
+            let scenarioIndex = parsedScenarioIds.indexOf(row.id)
+            let optionObj = ({
+                id: row.option_id,
+                title: row.option_title,
+                desc: row.option_desc,
+                feedback: row.option_feedback
+            })
+            pushOption = false
+            for (let j = 0; j < scenarios[scenarioIndex].tasks.length; j++) {
+                // If the task exists, only option is added
+                if (scenarios[scenarioIndex].tasks[j].id == row.task_id) {
+                    scenarios[scenarioIndex].tasks[j].options.push(optionObj)
+                    pushOption = true
+                    break
+                }
+            }
+            if (!pushOption) {
+                // If the task does not exist, add the task with the option
+                let taskObj = ({
+                    id: row.task_id,
+                    desc: row.task_desc,
+                    options: [optionObj]
+                })
+                scenarios[scenarioIndex].tasks.push(taskObj)
+            }
+        }
+
+        let scenarioObj = {"scenarios": scenarios}
         return scenarioObj
     })
 }
