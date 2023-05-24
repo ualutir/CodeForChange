@@ -7,7 +7,7 @@ const _GOOGLE_SHEET_ENV_HOME = {
         SHEET_ID: '1zFrrNlJtbfoHAKp4JTptXna_BiB4ZTMBWnu__LCCMrI',
         SHEET_NAME: 'Home',
     },
-};
+}
 
 const _GOOGLE_SHEET_ENV_PLAYER = {
     development: {
@@ -15,7 +15,7 @@ const _GOOGLE_SHEET_ENV_PLAYER = {
         SHEET_ID: '1zFrrNlJtbfoHAKp4JTptXna_BiB4ZTMBWnu__LCCMrI',
         SHEET_NAME: 'Player',
     },
-};
+}
 
 const _GOOGLE_SHEET_ENV_SCENARIO = {
     development: {
@@ -23,14 +23,14 @@ const _GOOGLE_SHEET_ENV_SCENARIO = {
         SHEET_ID: '1zFrrNlJtbfoHAKp4JTptXna_BiB4ZTMBWnu__LCCMrI',
         SHEET_NAME: 'Scenario',
     },
-};
+}
 
 
 export const getGoogleSheetUrl = (dataType) => {
     // TO-DO: Add logic here to get the current platform (e.g. development, staging, production, etc)
     const platform = 'development'
 
-    var API_KEY, SHEET_ID, SHEET_NAME;
+    var API_KEY, SHEET_ID, SHEET_NAME
     switch (dataType) {
         case DATA_TYPE.HOME:
             ({ API_KEY, SHEET_ID, SHEET_NAME } = _GOOGLE_SHEET_ENV_HOME[platform])
@@ -44,4 +44,43 @@ export const getGoogleSheetUrl = (dataType) => {
     }
 
     return `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_NAME}?valueRenderOption=FORMATTED_VALUE&key=${API_KEY}`
-};
+}
+
+export const loadEnglishGoogleSheetData = () => {
+    introData = loadIntroData()
+    playerData = loadGoogleSheetJSON(DATA_TYPE.PLAYER)
+    scenarioData = loadGoogleSheetJSON(DATA_TYPE.SCENARIO)
+    mergeData = mergeGoogleSheetData(introData, playerData, scenarioData)
+    return {'test':'122'}
+}
+
+export const loadIntroData = () => {
+    introData = loadGoogleSheetJSON(DATA_TYPE.HOME)
+    console.log(introData)
+    // Parse
+}
+
+export const loadPlayerData = () => {
+    playerData = loadGoogleSheetJSON(DATA_TYPE.PLAYER)
+    // Parse
+}
+
+export const loadScenarioData = () => {
+    scenarioData = loadGoogleSheetJSON(DATA_TYPE.SCENARIO)
+    // Parse
+}
+
+export const loadGoogleSheetJSON = async (dataType) => {
+    try {
+        const response = await fetchGoogleSheetData(dataType)
+        const json = await response.json()
+        console.log(googleSheetJSONParser(json))
+        return googleSheetJSONParser(json)
+    } catch {
+        console.error(error)
+    }
+}
+
+export const mergeGoogleSheetData = (introData, playerData, scenarioData) => {
+    return { ...introData, ...playerData, ...scenarioData }
+}

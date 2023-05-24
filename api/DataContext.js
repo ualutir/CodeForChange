@@ -1,7 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import { LANGUAGES } from '../util/Constants';
-import { fetchGoogleSheetData } from './Api';
-import { DATA_TYPE } from '../util/Constants';
+import { loadEnglishGoogleSheetData } from './GoogleSheet';
 
 const scenarioImages = {
     'Scenario-1': require("../assets/scenario-1.gif"),
@@ -70,37 +69,15 @@ const loadData = (language, dispatch) => {
     dispatch({ type: 'SET_DATA', data: data });
 }
 
-const loadEnglishPlayer = async (dispatch) => {
-    try {
-        const response = await fetchGoogleSheetData(DATA_TYPE.PLAYER)
-        const json = await response.json()
-        console.log(json)
-        // dispatch({ type: 'SET_DATA', data: data });
-    } catch {
-        console.error(error);
+const loadGoogleSheetData = (language, dispatch) => {
+    let data = {}
+    if (language == LANGUAGES.EN) {
+        data = loadEnglishGoogleSheetData()
+        console.log(data)
+    } else if (language == LANGUAGES.ID) {
+        console.log("Not Implemented")
     }
-}
-
-const loadEnglishScenario = async (dispatch) => {
-    try {
-        const response = await fetchGoogleSheetData(DATA_TYPE.SCENARIO)
-        const json = await response.json()
-        console.log(json)
-        // dispatch({ type: 'SET_DATA', data: data });
-    } catch {
-        console.error(error);
-    }
-}
-
-const loadEnglishIntro = async (dispatch) => {
-    try {
-        const response = await fetchGoogleSheetData(DATA_TYPE.HOME)
-        const json = await response.json()
-        console.log(json)
-        // dispatch({ type: 'SET_DATA', data: data });
-    } catch {
-        console.error(error);
-    }
+    // dispatch({ type: 'SET_DATA', data: data });
 }
 
 const reducer = (state, action) => {
@@ -169,9 +146,7 @@ export {
     DataContext,
     DataProvider,
     loadData,
+    loadGoogleSheetData,
     scenarioImages,
     PLAYER_IMAGES,
-    loadEnglishPlayer,
-    loadEnglishScenario,
-    loadEnglishIntro,
 };
