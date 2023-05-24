@@ -1,4 +1,4 @@
-import { DATA_TYPE } from '../util/Constants'
+import { DATA_TYPE, LANGUAGES } from '../util/Constants'
 import { googleSheetJSONParser } from '../util/Helper'
 import { fetchData } from './Api'
 
@@ -49,45 +49,39 @@ export const getGoogleSheetUrl = (dataType) => {
 }
 
 export const loadEnglishGoogleSheetData = async () => {
-    let introData = await loadIntroData()
-    let playerData = await loadPlayerData()
-    let scenarioData = await loadScenarioData()
+    let introData = await loadIntroData(LANGUAGES.EN)
+    let playerData = await loadPlayerData(LANGUAGES.EN)
+    let scenarioData = await loadScenarioData(LANGUAGES.EN)
     let mergeData = mergeGoogleSheetData(introData, playerData, scenarioData)
     return mergeData
 }
 
-export const loadIntroData = async () => {
+export const loadIntroData = async (language) => {
     return loadGoogleSheetJSON(DATA_TYPE.HOME)
     .then((data) => {
         let parsedData = googleSheetJSONParser(data)
-        let introData = parsedData.filter(player => player.language == "English")
+        let introDataByLanguage = parsedData.filter(intro => intro.language == language)
         // Use the first intro text in Excel for selected language
-        let introText = introData.length > 0 ? introData[0].text : "Welcome to Change for Green!" 
+        let introText = introDataByLanguage.length > 0 ? introDataByLanguage[0].text : "Welcome to Change for Green!" 
         let introObj = {"homepage": {"text": introText}}
         return introObj
     })
 }
 
-export const loadPlayerData = async () => {
+export const loadPlayerData = async (language) => {
     return loadGoogleSheetJSON(DATA_TYPE.PLAYER)
     .then((data) => {
         let parsedData = googleSheetJSONParser(data)
-        // Parse and replace the array below
-        let playerData = [
-            {
-                "id": "1",
-                "test": "testPlayer"
-            },
-            {
-                "id": "2"
-            }
-        ]
-        let playerObj = {"players": playerData}
+        let playerDataByLanguage = parsedData.filter(player => player.language == language)
+        let filteredPlayerData = playerDataByLanguage.map(player => (
+            {id: player.id, name: player.name, desc:player.desc}
+        ))
+        let playerObj = {"players": filteredPlayerData}
         return playerObj
     })
 }
 
-export const loadScenarioData = async () => {
+export const loadScenarioData = async (language) => {
     return loadGoogleSheetJSON(DATA_TYPE.SCENARIO)
     .then((data) => {
         let parsedData = googleSheetJSONParser(data)
