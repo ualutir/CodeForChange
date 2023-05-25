@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { PropTypes } from 'prop-types';
+
 import { DataContext } from '../api/DataContext';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 
 const Introduction = ({ navigation }) => {
     const context = useContext(DataContext);
@@ -13,7 +13,12 @@ const Introduction = ({ navigation }) => {
                 source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
                     <Text style={styles.heading}>Introduction</Text>
-                    <Text style={styles.intro}>{intro}</Text>
+                    <ScrollView
+                        nestedScrollEnabled={true}
+                        contentContainerStyle={styles.scrollContainer}
+                    >
+                        <Text style={styles.intro}>{intro}</Text>
+                    </ScrollView>
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => navigation.navigate('Character')}>
@@ -25,9 +30,7 @@ const Introduction = ({ navigation }) => {
     );
 };
 
-Introduction.propTypes = {
-    navigation: PropTypes.object.isRequired,
-};
+
 
 const styles = StyleSheet.create({
     container: {
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
     },
     overlay: {
         flex: 1,
-        marginVertical: 120,
+        marginVertical: 80,
         marginHorizontal: 50,
         alignItems: 'center',
         padding: 20,
@@ -58,10 +61,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     intro: {
-        fontSize: 16,
+        fontSize: 15,
         fontWeight: 'normal',
         color: '#105b9c',
-        textAlign: 'justify',
+        textAlign: 'center',
         marginBottom: 20,
     },
     button: {
@@ -69,13 +72,15 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        marginTop: '10%'
     },
     buttonText: {
         fontSize: 15,
         color: '#fff',
         fontWeight: 'bold',
         textAlign: 'center',
+    },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
     },
 });
 

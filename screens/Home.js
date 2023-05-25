@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { PropTypes } from 'prop-types';
+
 import { DataContext, loadData } from '../api/DataContext';
 import { LANGUAGES } from '../util/Constants';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
@@ -44,9 +44,6 @@ const Home = ({ navigation, route }) => {
     );
 };
 
-Home.propTypes = {
-    navigation: PropTypes.object.isRequired,
-};
 
 const styles = StyleSheet.create({
     container: {

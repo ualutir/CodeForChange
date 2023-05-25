@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, Alert } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
@@ -12,16 +12,20 @@ const Scenario = ({ navigation, route }) => {
 
     const renderItem = ({ item, index }) => {
         return (
-            <TouchableOpacity
+            <View
                 style={[
                     { ...styles.carouselItem }
-                ]}
-            >
-                <Text style={styles.scenarioName}>{`Task ${item.id}`}</Text>
-                <Text style={styles.scenarioDesc}>{item.desc}</Text>
-                <Text style={styles.ansName}>Your Answer</Text>
-                <Text style={styles.ansDesc}>{item.options[context.state.options[scenario.id][item.id] - 1].desc}</Text>
-            </TouchableOpacity>
+                ]}>
+                <ScrollView
+                    nestedScrollEnabled={true}
+                    contentContainerStyle={styles.scrollContainer}
+                >
+                    <Text style={styles.scenarioName}>{`Task ${item.id}`}</Text>
+                    <Text style={styles.scenarioDesc}>{item.desc}</Text>
+                    <Text style={styles.ansName}>Your Answer</Text>
+                    <Text style={styles.ansDesc}>{item.options[context.state.options[scenario.id][item.id] - 1].desc}</Text>
+                </ScrollView>
+            </View >
         );
     };
 
@@ -36,7 +40,9 @@ const Scenario = ({ navigation, route }) => {
     return (
         <ImageBackground
             style={styles.image}
-            source={scenarioImage}>
+            source={scenarioImage}
+            imageStyle={{ opacity: 0.6 }}
+        >
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
                 <Text style={styles.title}>Summary</Text>
@@ -48,7 +54,7 @@ const Scenario = ({ navigation, route }) => {
                     loop={true}
                 />
                 <TouchableOpacity
-                    style={{ ...styles.button, marginTop: -130 }}
+                    style={{ ...styles.button, marginTop: -100 }}
                     onPress={handleScenarioPress}>
                     <Text style={styles.buttonText}>Try Another Scenario</Text>
                 </TouchableOpacity>
@@ -70,7 +76,7 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '15%',
+        paddingTop: 40,
     },
     title: {
         fontSize: 22,
@@ -78,16 +84,19 @@ const styles = StyleSheet.create({
         margin: 20,
         color: '#729c00',
     },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
+    },
     carouselItem: {
         alignItems: 'center',
         borderRadius: 10,
-        padding: 20,
+        padding: 10,
         marginHorizontal: 0,
-        height: '77%',
+        height: '75%',
         width: '98%',
         borderColor: '#fff',
         borderWidth: 1,
-        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
     },
     selectedItem: {
         borderColor: '#00c8c2',
@@ -106,7 +115,7 @@ const styles = StyleSheet.create({
     scenarioDesc: {
         fontSize: 15,
         fontWeight: 'normal',
-        textAlign: 'left',
+        textAlign: 'center',
         paddingTop: 10
     },
     ansName: {
@@ -119,7 +128,7 @@ const styles = StyleSheet.create({
     ansDesc: {
         fontSize: 15,
         fontWeight: 'normal',
-        textAlign: 'left',
+        textAlign: 'center',
         paddingTop: 10,
         color: '#006400',
     },
@@ -144,14 +153,8 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     tinyLogo: {
-        width: 70,
-        height: 70,
-        marginLeft: '70%',
-        borderRadius: 35,
-    },
-    inyLogo: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         marginLeft: '70%',
         borderRadius: 35,
     }

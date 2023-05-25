@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { DataContext } from '../api/DataContext';
 import Carousel from 'react-native-snap-carousel';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
 
 const Tasks = ({ navigation, route }) => {
     const context = useContext(DataContext);
@@ -17,25 +17,35 @@ const Tasks = ({ navigation, route }) => {
         navigation.navigate('Feedback');
     };
 
+    const handleSnapToItem = (index) => {
+        setSelectedOption(task.options[index]);
+    };
+
     const renderItem = ({ item, index }) => {
         return (
-            <TouchableOpacity
-                onPress={() => setSelectedOption(item)}
+            <View
                 style={[
                     { ...styles.carouselItem },
                     selectedOption.id === item.id && styles.selectedOption,
                 ]}
             >
                 <Text style={styles.optionHeader2}>{item.title}</Text>
-                <Text style={styles.optionText}>{item.desc}</Text>
-            </TouchableOpacity>
+                <ScrollView
+                    nestedScrollEnabled={true}
+                    contentContainerStyle={styles.scrollContainer}
+                >
+                    <Text style={styles.optionText}>{item.desc}</Text>
+                </ScrollView>
+            </View>
         );
     };
 
     return (
         <ImageBackground
             style={styles.image}
-            source={scenarioImage}>
+            source={scenarioImage}
+            imageStyle={{ opacity: 0.6 }}
+        >
             <View style={styles.container}>
                 <View style={styles.header}>
                     <Text style={styles.heading}>{`Task ${task.id}`}</Text>
@@ -43,15 +53,21 @@ const Tasks = ({ navigation, route }) => {
                 </View>
 
                 <View style={styles.overlay}>
-                    <Text style={styles.description}>{task.desc}</Text>
-                    <Text style={styles.instruction}>Select the best option below and click Next.</Text>
+                    <ScrollView
+                        nestedScrollEnabled={true}
+                        contentContainerStyle={styles.scrollContainer}
+                    >
+                        <Text style={styles.description}>{task.desc}</Text>
+                        <Text style={styles.instruction}>Select the best option below and proceed Next.</Text>
+                    </ScrollView>
                 </View>
                 <Carousel
                     data={task.options}
                     renderItem={renderItem}
                     sliderWidth={390}
                     itemWidth={300}
-                    loop={true}
+                    loop={false}
+                    onSnapToItem={handleSnapToItem}
                 />
                 <TouchableOpacity style={styles.button} onPress={handleNext}>
                     <Text style={styles.buttonText}>Next</Text>
@@ -75,6 +91,7 @@ const styles = StyleSheet.create({
     header: {
         display: 'flex',
         flexDirection: 'row',
+        paddingLeft: 20,
     },
     heading: {
         fontSize: 24,
@@ -94,7 +111,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     selectedOption: {
-        backgroundColor: 'rgba(100, 225, 255, 0.5)',
+        backgroundColor: 'rgba(100, 225, 255, 0.9)',
         borderColor: '#00a8ff',
     },
     optionHeader: {
@@ -107,7 +124,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     optionText: {
-        fontSize: 15,
+        fontSize: 14,
         fontWeight: 'normal',
         color: '#333',
         paddingTop: 10,
@@ -132,8 +149,8 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     tinyLogo: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         marginLeft: '50%',
         borderRadius: 35,
     },
@@ -143,7 +160,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginTop: 10,
         marginHorizontal: 0,
-        height: '68%',
+        height: '55%',
         width: '98%',
         borderColor: '#fff',
         borderWidth: 1,
@@ -155,6 +172,10 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
         borderRadius: 10,
+        height: 250
+    },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
     },
 });
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../api/DataContext';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
 
 const Feedback = ({ navigation, route }) => {
     const context = useContext(DataContext);
@@ -13,22 +13,29 @@ const Feedback = ({ navigation, route }) => {
 
     const handleNextTaskClick = () => {
         context.dispatch({ type: 'SET_TASK', data: scenario.tasks[nextTaskId - 1] });
-        navigation.navigate('Task', { });
+        navigation.navigate('Task', {});
     }
 
     const handleSummaryClick = () => {
-        navigation.navigate('Summary', {  });
+        navigation.navigate('Summary', {});
     }
 
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={scenarioImage}>
+                source={scenarioImage}
+                imageStyle={{ opacity: 0.6 }}
+            >
                 < View style={styles.overlay} >
                     <Image style={styles.tinyLogo} source={avatar} />
                     <Text style={styles.heading}>Feedback</Text>
-                    <Text style={styles.feedback}>{context.state.option && context.state.option.feedback}</Text>
+                    <ScrollView
+                        nestedScrollEnabled={true}
+                        contentContainerStyle={styles.scrollContainer}
+                    >
+                        <Text style={styles.feedback}>{context.state.option && context.state.option.feedback}</Text>
+                    </ScrollView>
                     {
                         nextTaskId == 0 ?
                             <TouchableOpacity
@@ -66,12 +73,15 @@ const styles = StyleSheet.create({
     },
     overlay: {
         flex: 1,
-        marginVertical: 120,
+        marginVertical: 80,
         marginHorizontal: 50,
         alignItems: 'center',
         padding: 20,
-        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
         borderRadius: 10,
+    },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
     },
     heading: {
         fontSize: 24,
@@ -79,8 +89,8 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     feedback: {
-        fontSize: 16,
-        textAlign: 'justify'
+        fontSize: 15,
+        textAlign: 'center'
     },
     button: {
         backgroundColor: '#00a8ff',
@@ -97,8 +107,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     tinyLogo: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         marginLeft: '70%',
         borderRadius: 35,
     }

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
@@ -13,17 +13,25 @@ const Scenario = ({ navigation, route }) => {
 
     const renderItem = ({ item, index }) => {
         return (
-            <TouchableOpacity
-                onPress={() => setSelectedScenario(item)}
+            <View
                 style={[
                     { ...styles.carouselItem, backgroundColor: item.backgroundColor },
                     selectedScenario.id === item.id && styles.selectedItem,
                 ]}
             >
                 <Text style={styles.scenarioName}>{item.name}</Text>
-                <Text style={styles.scenarioDesc}>{item.desc}</Text>
-            </TouchableOpacity>
+                <ScrollView
+                    nestedScrollEnabled={true}
+                    contentContainerStyle={styles.scrollContainer}
+                >
+                    <Text style={styles.scenarioDesc}>{item.desc}</Text>
+                </ScrollView>
+            </View>
         );
+    };
+
+    const handleSnapToItem = (index) => {
+        setSelectedScenario(scenarios[index]);
     };
 
     const handleNextPress = () => {
@@ -44,6 +52,7 @@ const Scenario = ({ navigation, route }) => {
                     sliderWidth={390}
                     itemWidth={300}
                     loop={true}
+                    onSnapToItem={handleSnapToItem}
                 />
                 <TouchableOpacity style={styles.nextButton} onPress={handleNextPress}>
                     <Text style={styles.nextButtonText}>Next</Text>
@@ -69,19 +78,22 @@ const styles = StyleSheet.create({
         margin: 20,
         color: '#729c00',
     },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
+    },
     carouselItem: {
         alignItems: 'center',
         borderRadius: 10,
-        padding: 20,
+        padding: 10,
         marginHorizontal: 0,
         height: '75%',
-        width: '98%',
+        width: '100%',
         borderColor: '#fff',
         borderWidth: 1,
     },
     selectedItem: {
-        borderColor: '#00c8c2',
-        borderWidth: 3,
+        borderColor: '#00a8ff',
+        backgroundColor: 'rgba(100, 225, 255, 0.8)',
     },
     scenarioImage: {
         width: '100%',
@@ -96,7 +108,7 @@ const styles = StyleSheet.create({
     scenarioDesc: {
         fontSize: 15,
         fontWeight: 'normal',
-        textAlign: 'justify',
+        textAlign: 'center',
         paddingTop: 10,
     },
     nextButton: {
@@ -119,8 +131,8 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     tinyLogo: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         marginLeft: '70%',
         borderRadius: 35,
     },

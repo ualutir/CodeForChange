@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import PropTypes from 'prop-types';
+
 import { DataContext, PLAYER_IMAGES } from '../api/DataContext';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import { Audio } from 'expo-av';
 
@@ -10,17 +10,12 @@ const SelectCharacter = ({ navigation, route }) => {
     const characters = context.state.characters;
 
     const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
-
-    async function handleSelectCharacter(item){
-        const { sound } = await Audio.Sound.createAsync( require('../assets/selection.wav') );
-        await sound.playAsync();
-        setSelectedCharacter(item);
-    }
+    const [isScrolling, setIsScrolling] = useState(false);
 
     const renderItem = ({ item, index }) => {
         return (
-            <TouchableOpacity
-                onPress={() => handleSelectCharacter(item)}
+            <View
+                disabled={isScrolling}
                 style={[
                     styles.carouselItem,
                     selectedCharacter.id === item.id && styles.selectedItem,
@@ -28,9 +23,20 @@ const SelectCharacter = ({ navigation, route }) => {
             >
                 <Image source={PLAYER_IMAGES[item.name]} style={styles.characterImage} />
                 <Text style={styles.characterName}>{item.name}</Text>
-                <Text style={styles.characterDesc}>{item.desc}</Text>
-            </TouchableOpacity>
+                <ScrollView
+                    nestedScrollEnabled={true}
+                    contentContainerStyle={styles.scrollContainer}
+                >
+                    <Text style={styles.characterDesc}>{item.desc}</Text>
+                </ScrollView>
+            </View>
         );
+    };
+
+    const handleSnapToItem = async (index) => {
+        const { sound } = await Audio.Sound.createAsync(require('../assets/selection.wav'));
+        await sound.playAsync();
+        setSelectedCharacter(characters[index]);
     };
 
     const handleNextPress = () => {
@@ -47,10 +53,11 @@ const SelectCharacter = ({ navigation, route }) => {
                 <Carousel
                     data={characters}
                     renderItem={renderItem}
-                    sliderWidth={350}
-                    itemWidth={250}
+                    sliderWidth={390}
+                    itemWidth={300}
                     loop={true}
                     style={styles.carousel}
+                    onSnapToItem={handleSnapToItem}
                 />
                 <TouchableOpacity style={styles.nextButton} onPress={handleNextPress}>
                     <Text style={styles.nextButtonText}>Next</Text>
@@ -60,15 +67,13 @@ const SelectCharacter = ({ navigation, route }) => {
     );
 };
 
-SelectCharacter.propTypes = {
-    navigation: PropTypes.object.isRequired,
-};
+
 
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '20%',
+        paddingTop: '10%',
     },
     title: {
         fontSize: 22,
@@ -88,10 +93,13 @@ const styles = StyleSheet.create({
         borderColor: '#00c8c2',
         borderWidth: 3,
     },
+    scrollContainer: {
+        paddingHorizontal: 15, // Adjust the padding as needed
+    },
     characterImage: {
-        width: '100%',
-        height: '60%',
-        marginBottom: 10,
+        width: '70%',
+        height: '55%',
+        marginTop: 0,
     },
     characterName: {
         fontSize: 18,
@@ -99,9 +107,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     characterDesc: {
-        fontSize: 15,
+        fontSize: 14,
         fontWeight: 'normal',
-        textAlign: 'justify',
+        textAlign: 'center',
         paddingTop: 10
     },
     nextButton: {

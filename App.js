@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { DataProvider } from './api/DataContext';
@@ -10,6 +10,9 @@ import Scenario from './screens/Scenario';
 import Task from './screens/Task';
 import Feedback from './screens/Feedback';
 import Summary from './screens/Summary';
+
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
 
 const Stack = createStackNavigator();
 
