@@ -17,7 +17,7 @@ const Feedback = ({ navigation, route }) => {
     }
 
     const handleSummaryClick = () => {
-        navigation.navigate('Summary', {});
+        navigation.navigate('Congratulation', {});
     }
 
     return (

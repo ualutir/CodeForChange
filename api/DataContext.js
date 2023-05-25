@@ -46,6 +46,7 @@ const initialState = {
     avatar: null,
     scenario: null,
     scenarioImage: null,
+    congratulationMessage: null,
     task: null,
     option: null,
     options: {}
@@ -87,11 +88,11 @@ const reducer = (state, action) => {
             let scenario = action.data;
             options = Object.assign({}, state.options);
             options[scenario.id] = {};
-            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options };
+            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options, congratulationMessage: scenario.congratulationMessage };
         case 'SET_TASK':
             let task = action.data;
             options = Object.assign({}, state.options);
-            options[state.scenario.id][task.id] = { };
+            options[state.scenario.id][task.id] = {};
             return { ...state, task: task, option: null, options: options };
         case 'SET_OPTION':
             let option = action.data;

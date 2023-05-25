@@ -10,6 +10,7 @@ import Scenario from './screens/Scenario';
 import Task from './screens/Task';
 import Feedback from './screens/Feedback';
 import Summary from './screens/Summary';
+import Congratulation from './screens/Congratulation';
 
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs();//Ignore all log notifications
@@ -83,6 +84,16 @@ export default function App() {
                             headerBackTitle: ' ',
                         }}
                         component={Summary}
+                    />
+                    <Stack.Screen
+                        name="Congratulation"
+                        options={{
+                            title: '',
+                            headerBackImage: () => <Image style={{ marginLeft: 10, width: 24, height: 24 }} source={require('./assets/arrow_back.png')} />,
+                            headerTransparent: true,
+                            headerBackTitle: ' ',
+                        }}
+                        component={Congratulation}
                     />
                 </Stack.Navigator>
             </NavigationContainer>

@@ -3,25 +3,24 @@ import React, { useContext } from 'react';
 import { DataContext } from '../api/DataContext';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 
-const Introduction = ({ navigation }) => {
+const Congratulation = ({ navigation }) => {
     const context = useContext(DataContext);
-    const intro = context.state.introduction;
+    const congratulationMessage = context.state.congratulationMessage;
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/home_background.gif')}>
+                source={require('../assets/Congratulations.gif')}>
                 <View style={styles.overlay}>
-                    <Text style={styles.heading}>Introduction</Text>
                     <ScrollView
                         nestedScrollEnabled={true}
                         contentContainerStyle={styles.scrollContainer}
                     >
-                        <Text style={styles.intro}>{intro}</Text>
+                        <Text style={styles.intro}>{congratulationMessage}</Text>
                     </ScrollView>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('Character')}>
+                        onPress={() => navigation.navigate('Summary')}>
                         <Text style={styles.buttonText}>Continue</Text>
                     </TouchableOpacity>
                 </View>
@@ -45,13 +44,13 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     overlay: {
-
-        marginVertical: '30%',
+        marginVertical: '70%',
         marginHorizontal: 50,
         alignItems: 'center',
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         borderRadius: 10,
+        height: '30%'
     },
     heading: {
         fontSize: 25,
@@ -84,4 +83,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Introduction;
+export default Congratulation;

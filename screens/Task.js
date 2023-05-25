@@ -1,16 +1,24 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { DataContext } from '../api/DataContext';
 import Carousel from 'react-native-snap-carousel';
 import { PropTypes } from 'prop-types';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
 
 const Tasks = ({ navigation, route }) => {
+    const isFocused = useIsFocused();
     const context = useContext(DataContext);
     const scenarioImage = context.state.scenarioImage;
     const task = context.state.task;
     const avatar = context.state.avatar;
 
     const [selectedOption, setSelectedOption] = useState(task.options[0]);
+
+    useEffect(() => {
+        if (isFocused) {
+            setSelectedOption(task.options[0])
+        }
+    }, [isFocused]);
 
     const handleNext = () => {
         context.dispatch({ type: 'SET_OPTION', data: selectedOption });
@@ -46,7 +54,7 @@ const Tasks = ({ navigation, route }) => {
             source={scenarioImage}
             imageStyle={{ opacity: 0.6 }}
         >
-            <View style={styles.container}>
+            <View style={styles.container} key={isFocused.toString()}>
                 <View style={styles.header}>
                     <Text style={styles.heading}>{`Task ${task.id}`}</Text>
                     <Image style={styles.tinyLogo} source={avatar} />

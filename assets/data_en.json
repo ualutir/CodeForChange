@@ -61,6 +61,7 @@
             "desc": "Did you know that on average, we produce 300 grams of food waste per day? That's 9,300 tons of food waste accumulated annually by the population, contributing to environmental degradation. In this game, you'll learn how to minimize the harm caused by food waste on our planet. Join us and let's make a positive impact while also exploring the world of sustainable income generation. Let's play!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "../assets/scenario-1.gif",
+            "congratulationMessage": "Congratulations! You're making a difference in the world with your green entrepreneurship skills. Keep up the good work and keep playing Change for Green!",
             "tasks": [
                 {
                     "id": 1,
@@ -160,6 +161,7 @@
             "desc": "Welcome to Sustainable Market! Now you will learn about sustainable business models and how they can help businesses operate in an environmentally and socially responsible manner. You will design and manage your own market, making decisions that affect the market's environmental impact, profits, and overall sustainability. You will gain a deeper understanding of how businesses can prioritize sustainability while still achieving financial success. Let's get started!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-2.gif",
+            "congratulationMessage": "Great job! Sustainable business practices can be profitable. Keep exploring new ways to make positive change and help the environment.",
             "tasks": [
                 {
                     "id": 1,
@@ -259,6 +261,7 @@
             "desc": "You are starting a business to make products out of recycled materials. You will collect and sort recyclable materials, design and prototype your products, market and sell them to customers, create a circular supply chain, and scale up your business while ensuring it remains sustainable. Are you ready to make a positive impact on the environment? Let's get started!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-3.gif",
+            "congratulationMessage": "You've successfully shown that green entrepreneurship can create a brighter future for everyone. Continue to use your skills to inspire and lead the way in making a difference.",
             "tasks": [
                 {
                     "id": 1,
@@ -358,6 +361,7 @@
             "desc": "You have just successfully opened a small homestay. You will have to hire employees and manage your business operations. You will need to create a sustainable workplace that prioritizes the well-being of your employees and contributes to the community. Your decisions will impact the social benefits of your business . You want to prioritize the triple bottom line and aim to create businesses that benefit people, the planet, and profit.",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-4.gif",
+            "congratulationMessage": "Thanks for playing Change for Green! You've not only created a successful business, but also contributed to a cleaner and healthier environment. Keep up the good work!",
             "tasks": [
                 {
                     "id": 1,
@@ -457,6 +461,7 @@
             "desc": "You have decided to start a small furniture business. Your products are selling like hotcakes and you need to keep up with the demand. However, you also want your small company to meet the sustainability standards. What do you do? Let's learn about the importance of sustainable supply chain management and how to make the right choices for your business, the environment, and society. Are you ready to make some tough decisions and create a sustainable supply chain? Let's get started!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-5.gif",
+            "congratulationMessage": "Your hard work and dedication to green entrepreneurship has paid off! Keep using your skills to make a positive impact on the world and inspire others to follow your lead.",
             "tasks": [
                 {
                     "id": 1,
