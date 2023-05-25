@@ -3,8 +3,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { DataContext, loadData } from '../api/DataContext';
 import { LANGUAGES } from '../util/Constants';
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
 
 const Home = ({ navigation, route }) => {
+    const isFocused = useIsFocused();
     context = useContext(DataContext);
     const [language, setLanguage] = useState('');
 
@@ -14,6 +16,10 @@ const Home = ({ navigation, route }) => {
             navigation.navigate('Introduction');
         }
     }, [language]);
+
+    useEffect(() => {
+        setLanguage('')
+    }, [isFocused]);
 
     handleLanguageSelect = (language) => {
         context.dispatch({ type: 'SET_LANGUAGE', data: language });
