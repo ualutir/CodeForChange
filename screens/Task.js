@@ -2,10 +2,11 @@ import React, { useState, useContext, useEffect } from 'react';
 import { DataContext } from '../api/DataContext';
 import Carousel from 'react-native-snap-carousel';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
 import { useIsFocused } from '@react-navigation/native';
 
 const Tasks = ({ navigation, route }) => {
+    const { width, height } = Dimensions.get('window');
     const isFocused = useIsFocused();
     const context = useContext(DataContext);
     const scenarioImage = context.state.scenarioImage;
@@ -72,9 +73,9 @@ const Tasks = ({ navigation, route }) => {
                 <Carousel
                     data={task.options}
                     renderItem={renderItem}
-                    sliderWidth={390}
-                    itemWidth={300}
-                    loop={false}
+                    sliderWidth={width}
+                    itemWidth={width - (width / 100 * 30)}
+                    loop={true}
                     onSnapToItem={handleSnapToItem}
                 />
                 <TouchableOpacity style={styles.button} onPress={handleNext}>

@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react';
 
 import { DataContext, PLAYER_IMAGES } from '../api/DataContext';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground, ScrollView, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import { Audio } from 'expo-av';
 
 const SelectCharacter = ({ navigation, route }) => {
+    const { width, height } = Dimensions.get('window');
     const context = useContext(DataContext);
     const characters = context.state.characters;
 
@@ -53,8 +54,8 @@ const SelectCharacter = ({ navigation, route }) => {
                 <Carousel
                     data={characters}
                     renderItem={renderItem}
-                    sliderWidth={390}
-                    itemWidth={300}
+                    sliderWidth={width}
+                    itemWidth={width - (width / 100 * 30)}
                     loop={true}
                     style={styles.carousel}
                     onSnapToItem={handleSnapToItem}

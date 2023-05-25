@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
+    const { width, height } = Dimensions.get('window');
     const context = useContext(DataContext);
     const scenario = context.state.scenario;
     const scenarioImage = context.state.scenarioImage;
@@ -49,8 +50,8 @@ const Scenario = ({ navigation, route }) => {
                 <Carousel
                     data={scenario.tasks}
                     renderItem={renderItem}
-                    sliderWidth={390}
-                    itemWidth={300}
+                    sliderWidth={width}
+                    itemWidth={width - (width / 100 * 30)}
                     loop={true}
                 />
                 <TouchableOpacity
