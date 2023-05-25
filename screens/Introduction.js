@@ -1,29 +1,36 @@
 import React, { useContext } from 'react';
-
 import { DataContext } from '../api/DataContext';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Pressable, ImageBackground, ScrollView } from 'react-native';
+import { playNextSound } from '../api/Api';
 
 const Introduction = ({ navigation }) => {
     const context = useContext(DataContext);
     const intro = context.state.introduction;
+
+    async function handleNextClick() {
+        await playNextSound()
+        navigation.navigate('Character');
+    }
+
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
                 source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
-                    <Text style={styles.heading}>Introduction</Text>
+                    <Text style={styles.heading}>{context.state.captions.Introduction}</Text>
                     <ScrollView
                         nestedScrollEnabled={true}
                         contentContainerStyle={styles.scrollContainer}
                     >
                         <Text style={styles.intro}>{intro}</Text>
                     </ScrollView>
-                    <TouchableOpacity
+                    <Pressable
                         style={styles.button}
-                        onPress={() => navigation.navigate('Character')}>
-                        <Text style={styles.buttonText}>Continue</Text>
-                    </TouchableOpacity>
+                        android_disableSound={true}
+                        onPress={() => handleNextClick()}>
+                        <Text style={styles.buttonText}>{context.state.captions.Continue}</Text>
+                    </Pressable>
                 </View>
             </ImageBackground>
         </View>

@@ -11,3 +11,5 @@ Code for Change
 -Once the application builds successfully, you will see a QR code in the terminal 
 -If you are testing the app using your phone, install the Expo from the appStore then scan the QR code
 -For emulators, install xCode(only supports in mac machines) and android studio in your machine. Then press "i" for ios and "a" for android focusing the VS Code terminal
+- selection.mp3 and next.mp3 from from "Sound Effect by UNIVERSFIELD from Pixabay"
+- sound from 

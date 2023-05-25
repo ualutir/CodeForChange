@@ -2,8 +2,9 @@ import React, { useState, useContext, useEffect } from 'react';
 import { DataContext } from '../api/DataContext';
 import Carousel from 'react-native-snap-carousel';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Pressable, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
 import { useIsFocused } from '@react-navigation/native';
+import { playAnswerSound, playNextSound } from '../api/Api';
 
 const Tasks = ({ navigation, route }) => {
     const { width, height } = Dimensions.get('window');
@@ -21,12 +22,14 @@ const Tasks = ({ navigation, route }) => {
         }
     }, [isFocused]);
 
-    const handleNext = () => {
+    async function handleNext(item){
+        await playNextSound();
         context.dispatch({ type: 'SET_OPTION', data: selectedOption });
         navigation.navigate('Feedback');
-    };
+    }
 
-    const handleSnapToItem = (index) => {
+    async function handleSnapToItem(index){
+        await playAnswerSound();
         setSelectedOption(task.options[index]);
     };
 
@@ -57,7 +60,7 @@ const Tasks = ({ navigation, route }) => {
         >
             <View style={styles.container} key={isFocused.toString()}>
                 <View style={styles.header}>
-                    <Text style={styles.heading}>{`Task ${task.id}`}</Text>
+                    <Text style={styles.heading}>{`${context.state.captions.Task} ${task.id}`}</Text>
                     <Image style={styles.tinyLogo} source={avatar} />
                 </View>
 
@@ -67,7 +70,7 @@ const Tasks = ({ navigation, route }) => {
                         contentContainerStyle={styles.scrollContainer}
                     >
                         <Text style={styles.description}>{task.desc}</Text>
-                        <Text style={styles.instruction}>Select the best option below and proceed Next.</Text>
+                        <Text style={styles.instruction}>{context.state.captions.Option}</Text>
                     </ScrollView>
                 </View>
                 <Carousel
@@ -78,9 +81,9 @@ const Tasks = ({ navigation, route }) => {
                     loop={true}
                     onSnapToItem={handleSnapToItem}
                 />
-                <TouchableOpacity style={styles.button} onPress={handleNext}>
-                    <Text style={styles.buttonText}>Next</Text>
-                </TouchableOpacity>
+                <Pressable style={styles.button} android_disableSound={true} onPress={handleNext}>
+                    <Text style={styles.buttonText}>{context.state.captions.Next}</Text>
+                </Pressable>
             </View>
         </ImageBackground>
     );

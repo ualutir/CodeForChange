@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
+import { playAnswerSound, playNextSound } from '../api/Api';
 
 const Scenario = ({ navigation, route }) => {
     const { width, height } = Dimensions.get('window');
@@ -31,14 +32,16 @@ const Scenario = ({ navigation, route }) => {
         );
     };
 
-    const handleSnapToItem = (index) => {
+    async function handleSnapToItem(index){
+        await playAnswerSound();
         setSelectedScenario(scenarios[index]);
     };
 
-    const handleNextPress = () => {
+    async function handleNextPress(){
         context.dispatch({ type: 'SET_SCENARIO', data: selectedScenario });
+        await playNextSound();
         navigation.navigate('Task');
-    };
+    }
 
     return (
         <ImageBackground
@@ -46,7 +49,7 @@ const Scenario = ({ navigation, route }) => {
             source={require('../assets/home_background.gif')}>
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
-                <Text style={styles.title}>Select Scenario</Text>
+                <Text style={styles.title}>{context.state.captions.Scenario}</Text>
                 <Carousel
                     data={scenarios}
                     renderItem={renderItem}
@@ -55,9 +58,9 @@ const Scenario = ({ navigation, route }) => {
                     loop={true}
                     onSnapToItem={handleSnapToItem}
                 />
-                <TouchableOpacity style={styles.nextButton} onPress={handleNextPress}>
-                    <Text style={styles.nextButtonText}>Next</Text>
-                </TouchableOpacity>
+                <Pressable style={styles.nextButton} android_disableSound={true} onPress={handleNextPress}>
+                    <Text style={styles.nextButtonText}>{context.state.captions.Next}</Text>
+                </Pressable>
             </View>
         </ImageBackground>
     );
