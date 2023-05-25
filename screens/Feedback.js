@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../api/DataContext';
 import { PropTypes } from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Pressable, ImageBackground, Image, ScrollView } from 'react-native';
+import { playClapsSound, playNextSound } from '../api/Api';
 
 const Feedback = ({ navigation, route }) => {
     const context = useContext(DataContext);
@@ -11,13 +12,15 @@ const Feedback = ({ navigation, route }) => {
     const avatar = context.state.avatar;
     const nextTaskId = parseInt(task.id) < scenario.tasks.length ? parseInt(task.id) + 1 : 0;
 
-    const handleNextTaskClick = () => {
+    async function handleNextTaskClick() {
+        await playNextSound()
         context.dispatch({ type: 'SET_TASK', data: scenario.tasks[nextTaskId - 1] });
         navigation.navigate('Task', {});
     }
 
-    const handleSummaryClick = () => {
+    async function handleSummaryClick() {
         navigation.navigate('Congratulation', {});
+        await playClapsSound();
     }
 
     return (
@@ -29,7 +32,7 @@ const Feedback = ({ navigation, route }) => {
             >
                 < View style={styles.overlay} >
                     <Image style={styles.tinyLogo} source={avatar} />
-                    <Text style={styles.heading}>Feedback</Text>
+                    <Text style={styles.heading}>{context.state.captions.Feedback}</Text>
                     <ScrollView
                         nestedScrollEnabled={true}
                         contentContainerStyle={styles.scrollContainer}
@@ -38,16 +41,18 @@ const Feedback = ({ navigation, route }) => {
                     </ScrollView>
                     {
                         nextTaskId == 0 ?
-                            <TouchableOpacity
+                            <Pressable
                                 style={styles.button}
+                                android_disableSound={true}
                                 onPress={handleSummaryClick}>
-                                <Text style={styles.buttonText}>Summary</Text>
-                            </TouchableOpacity> :
-                            <TouchableOpacity
+                                <Text style={styles.buttonText}>{context.state.captions.Summary}</Text>
+                            </Pressable> :
+                            <Pressable
                                 style={styles.button}
+                                android_disableSound={true}
                                 onPress={handleNextTaskClick}>
-                                <Text style={styles.buttonText}>Next Task</Text>
-                            </TouchableOpacity>
+                                <Text style={styles.buttonText}>{context.state.captions.NextTask}</Text>
+                            </Pressable>
                     }
                 </View>
             </ImageBackground >

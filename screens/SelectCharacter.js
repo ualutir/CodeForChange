@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
 
 import { DataContext, PLAYER_IMAGES } from '../api/DataContext';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground, ScrollView, Dimensions } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable, ImageBackground, ScrollView, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
-import { Audio } from 'expo-av';
+import { playSelectionSound, playNextSound } from '../api/Api';
 
 const SelectCharacter = ({ navigation, route }) => {
     const { width, height } = Dimensions.get('window');
@@ -12,6 +12,11 @@ const SelectCharacter = ({ navigation, route }) => {
 
     const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
     const [isScrolling, setIsScrolling] = useState(false);
+
+    async function handleSelectCharacter(item){
+        await playSelectionSound();
+        setSelectedCharacter(item);
+    }
 
     const renderItem = ({ item, index }) => {
         return (
@@ -35,13 +40,13 @@ const SelectCharacter = ({ navigation, route }) => {
     };
 
     const handleSnapToItem = async (index) => {
-        const { sound } = await Audio.Sound.createAsync(require('../assets/selection.wav'));
-        await sound.playAsync();
+        await playSelectionSound();
         setSelectedCharacter(characters[index]);
     };
 
-    const handleNextPress = () => {
+    async function handleNextPress(){
         context.dispatch({ type: 'SET_CHARACTER', data: selectedCharacter.name });
+        await playNextSound();
         navigation.navigate('Scenario');
     };
 
@@ -50,7 +55,7 @@ const SelectCharacter = ({ navigation, route }) => {
             style={styles.image}
             source={require('../assets/home_background.gif')}>
             <View style={styles.container}>
-                <Text style={styles.title}>Select Character</Text>
+                <Text style={styles.title}>{context.state.captions.Character}</Text>
                 <Carousel
                     data={characters}
                     renderItem={renderItem}
@@ -60,9 +65,9 @@ const SelectCharacter = ({ navigation, route }) => {
                     style={styles.carousel}
                     onSnapToItem={handleSnapToItem}
                 />
-                <TouchableOpacity style={styles.nextButton} onPress={handleNextPress}>
-                    <Text style={styles.nextButtonText}>Next</Text>
-                </TouchableOpacity>
+                <Pressable style={styles.nextButton} android_disableSound={true} onPress={handleNextPress}>
+                    <Text style={styles.nextButtonText}>{context.state.captions.Next}</Text>
+                </Pressable>
             </View>
         </ImageBackground >
     );

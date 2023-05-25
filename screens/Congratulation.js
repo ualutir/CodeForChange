@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 
 import { DataContext } from '../api/DataContext';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Pressable, ImageBackground, ScrollView } from 'react-native';
 
 const Congratulation = ({ navigation }) => {
     const context = useContext(DataContext);
-    const congratulationMessage = context.state.congratulationMessage;
+    const congratulationMessage = context.state.scenario.congratulationMessage;
     return (
         <View style={styles.container}>
             <ImageBackground
@@ -18,11 +18,11 @@ const Congratulation = ({ navigation }) => {
                     >
                         <Text style={styles.intro}>{congratulationMessage}</Text>
                     </ScrollView>
-                    <TouchableOpacity
+                    <Pressable
                         style={styles.button}
                         onPress={() => navigation.navigate('Summary')}>
-                        <Text style={styles.buttonText}>Continue</Text>
-                    </TouchableOpacity>
+                        <Text style={styles.buttonText}>{context.state.captions.Continue}</Text>
+                    </Pressable>
                 </View>
             </ImageBackground>
         </View>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { DataContext } from '../api/DataContext';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ImageBackground, Image, ScrollView, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const Scenario = ({ navigation, route }) => {
@@ -46,7 +46,7 @@ const Scenario = ({ navigation, route }) => {
         >
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
-                <Text style={styles.title}>Summary</Text>
+                <Text style={styles.title}>{context.state.captions.Summary}</Text>
                 <Carousel
                     data={scenario.tasks}
                     renderItem={renderItem}
@@ -54,16 +54,18 @@ const Scenario = ({ navigation, route }) => {
                     itemWidth={width - (width / 100 * 30)}
                     loop={true}
                 />
-                <TouchableOpacity
+                <Pressable
                     style={{ ...styles.button, marginTop: -100 }}
+                    android_disableSound={true}
                     onPress={handleScenarioPress}>
-                    <Text style={styles.buttonText}>Try Another Scenario</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
+                    <Text style={styles.buttonText}>{context.state.captions.NextScenario}</Text>
+                </Pressable>
+                <Pressable
                     style={styles.button}
+                    android_disableSound={true}
                     onPress={handleNextPress}>
-                    <Text style={styles.buttonText}>Exit</Text>
-                </TouchableOpacity>
+                    <Text style={styles.buttonText}>{context.state.captions.Exit}</Text>
+                </Pressable>
             </View>
         </ImageBackground>
     );

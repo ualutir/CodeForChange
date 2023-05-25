@@ -1,6 +1,20 @@
 {
     "homepage": {
-        "text": "In this game, you will have to assist the characters in each scenario to unravel the learning on waste management, particularly in handling food waste through Black Soldier Fly technology.  Included in the scenario are options you need to undergo to appreciate the importance and impact of doing the BSF technology. Read carefully the scenarios and options provided to learn more. At the end of the game, you will be given a badge as Captain BiGE!"
+        "text": "Welcome to Change for Green, a game where you can make a difference for the planet while earning income for yourself and your community. Join a community of green entrepreneurs and work together to solve differnt challenges. Build your business and create sustainable solutions. Get ready to make a change for the better and earn while doing it!"
+    },
+    "captions": {
+        "Introduction": "Introduction",
+        "Character": "Select Character",
+        "Scenario": "Select Scenario",
+        "Task": "Task",
+        "Option": "Select the best option below and proceed Next.",
+        "Summary": "Summary",
+        "Feedback": "Feedback",
+        "NextScenario": "Try Another Scenario",
+        "NextTask": "Next Task",
+        "Continue": "Continue",
+        "Next": "Next",
+        "Exit": "Exit"
     },
     "players": [
         {

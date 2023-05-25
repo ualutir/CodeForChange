@@ -41,13 +41,13 @@ const DataContext = createContext();
 const initialState = {
     language: LANGUAGES.EN,
     introduction: '',
+    captions: {},
     characters: [],
     scenarios: [],
     character: null,
     avatar: null,
     scenario: null,
     scenarioImage: null,
-    congratulationMessage: null,
     task: null,
     option: null,
     options: {}
@@ -57,7 +57,8 @@ const setData = (state, data) => {
     const introduction = data?.homepage?.text;
     const characters = data?.players;
     const scenarios = data?.scenarios;
-    return { ...state, introduction, characters, scenarios };
+    const captions = data?.captions;
+    return { ...state, introduction, characters, scenarios, captions };
 }
 
 const loadData = (language, dispatch) => {
@@ -100,7 +101,7 @@ const reducer = (state, action) => {
             let scenario = action.data;
             options = Object.assign({}, state.options);
             options[scenario.id] = {};
-            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options, congratulationMessage: scenario.congratulationMessage };
+            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options  };
         case 'SET_TASK':
             let task = action.data;
             options = Object.assign({}, state.options);
