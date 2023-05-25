@@ -72,10 +72,9 @@ const loadData = (language, dispatch) => {
 const loadGoogleSheetData = (language, dispatch) => {
     if (language == LANGUAGES.EN) {
         loadEnglishGoogleSheetData()
-        .then(data =>
-            console.log(`loadGoogleSheetData: ${JSON.stringify(data)}`)
-            // dispatch({ type: 'SET_DATA', data: data });
-        )
+        .then(data => {
+            dispatch({ type: 'SET_DATA', data: data });
+        })
     } else if (language == LANGUAGES.ID) {
         console.log("Not Implemented")
     }
