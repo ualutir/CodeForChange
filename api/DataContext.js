@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import { LANGUAGES } from '../util/Constants';
+import { loadEnglishGoogleSheetData } from './GoogleSheet';
 
 const scenarioImages = {
     'Scenario-1': require("../assets/scenario-1.gif"),
@@ -69,6 +70,17 @@ const loadData = (language, dispatch) => {
     dispatch({ type: 'SET_DATA', data: data });
 }
 
+const loadGoogleSheetData = (language, dispatch) => {
+    if (language == LANGUAGES.EN) {
+        loadEnglishGoogleSheetData()
+        .then(data => {
+            dispatch({ type: 'SET_DATA', data: data });
+        })
+    } else if (language == LANGUAGES.ID) {
+        console.log("Not Implemented")
+    }
+}
+
 const reducer = (state, action) => {
     let options = null;
     switch (action.type) {
@@ -131,4 +143,11 @@ const DataProvider = ({ children }) => {
 
 
 
-export { DataContext, DataProvider, loadData, scenarioImages, PLAYER_IMAGES };
+export {
+    DataContext,
+    DataProvider,
+    loadData,
+    loadGoogleSheetData,
+    scenarioImages,
+    PLAYER_IMAGES,
+};
