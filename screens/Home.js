@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { DataContext, loadData } from '../api/DataContext';
 import { LANGUAGES } from '../util/Constants';
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { useIsFocused } from '@react-navigation/native';
 
 const Home = ({ navigation, route }) => {
@@ -32,6 +32,7 @@ const Home = ({ navigation, route }) => {
                 style={styles.image}
                 source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
+                    <Image style={styles.logo} source={require('../assets/Logo.png')}/>
                     <Text style={styles.heading}>Welcome</Text>
                     <Text style={styles.subHeading}>Please select a language</Text>
                     <TouchableOpacity
@@ -63,17 +64,23 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover',
     },
+    logo: {
+        width: '100%',
+        height: '30%',
+        background: 'rgba(255, 255, 255, 0.9)',
+        resizeMode: 'contain'
+    },
     overlay: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: '20%',
-        padding: 20,
+        padding: 10,
     },
     heading: {
         fontSize: 25,
         fontWeight: 'bold',
-        color: '#729c00',
+        color: '#0D6129',
         textAlign: 'center',
         marginBottom: 20,
     },
