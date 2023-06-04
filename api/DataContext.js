@@ -3,37 +3,37 @@ import { LANGUAGES } from '../util/Constants';
 import { loadEnglishGoogleSheetData } from './GoogleSheet';
 
 const scenarioImages = {
-    'Scenario-1': require("../assets/scenario-1.gif"),
-    'Scenario-2': require("../assets/scenario-2.gif"),
-    'Scenario-3': require("../assets/scenario-3.gif"),
-    'Scenario-4': require("../assets/scenario-4.gif"),
-    'Scenario-5': require("../assets/scenario-5.gif"),
+    'Scenario-1': require("../assets/scenario_bg/scenario-1.gif"),
+    'Scenario-2': require("../assets/scenario_bg/scenario-2.gif"),
+    'Scenario-3': require("../assets/scenario_bg/scenario-3.gif"),
+    'Scenario-4': require("../assets/scenario_bg/scenario-4.gif"),
+    'Scenario-5': require("../assets/scenario_bg/scenario-5.gif"),
 }
 
 const PLAYER_IMAGES = {
-    'Benjie': require("../assets/Benjie.gif"),
-    'Gelo': require("../assets/Gelo.gif"),
-    'Ethel': require("../assets/Ethel.gif"),
-    'Budi': require("../assets/Budi.gif"),
-    'Kiko': require("../assets/Kiko.gif"),
-    'Asep': require("../assets/Asep.gif"),
-    'Rini': require("../assets/Rini.gif"),
-    'Lina': require("../assets/Lina.gif"),
-    'Dewi': require("../assets/Dewi.gif"),
-    'Abdul': require("../assets/Abdul.gif")
+    'Benjie': require("../assets/characters/Benjie.gif"),
+    'Gelo': require("../assets/characters/Gelo.gif"),
+    'Ethel': require("../assets/characters/Ethel.gif"),
+    'Budi': require("../assets/characters/Budi.gif"),
+    'Kiko': require("../assets/characters/Kiko.gif"),
+    'Asep': require("../assets/characters/Asep.gif"),
+    'Rini': require("../assets/characters/Rini.gif"),
+    'Lina': require("../assets/characters/Lina.gif"),
+    'Dewi': require("../assets/characters/Dewi.gif"),
+    'Abdul': require("../assets/characters/Abdul.gif")
 }
 
 const PLAYER_PROFILES = {
-    'Benjie': require("../assets/Benjie.png"),
-    'Gelo': require("../assets/Gelo.png"),
-    'Ethel': require("../assets/Ethel.png"),
-    'Budi': require("../assets/Budi.png"),
-    'Kiko': require("../assets/Kiko.png"),
-    'Asep': require("../assets/Asep.png"),
-    'Rini': require("../assets/Rini.png"),
-    'Lina': require("../assets/Lina.png"),
-    'Dewi': require("../assets/Dewi.png"),
-    'Abdul': require("../assets/Abdul.png")
+    'Benjie': require("../assets/characters/Benjie_avatar.png"),
+    'Gelo': require("../assets/characters/Gelo_avatar.png"),
+    'Ethel': require("../assets/characters/Ethel_avatar.png"),
+    'Budi': require("../assets/characters/Budi_avatar.png"),
+    'Kiko': require("../assets/characters/Kiko_avatar.png"),
+    'Asep': require("../assets/characters/Asep_avatar.png"),
+    'Rini': require("../assets/characters/Rini_avatar.png"),
+    'Lina': require("../assets/characters/Lina_avatar.png"),
+    'Dewi': require("../assets/characters/Dewi_avatar.png"),
+    'Abdul': require("../assets/characters/Abdul_avatar.png")
 }
 
 const DataContext = createContext();
@@ -64,9 +64,9 @@ const setData = (state, data) => {
 const loadData = (language, dispatch) => {
     let data = {};
     if (language == LANGUAGES.EN) {
-        data = require('../assets/data_en.json');
+        data = require('../assets/data/data_en.json');
     } else if (language == LANGUAGES.ID) {
-        data = require('../assets/data_id.json');
+        data = require('../assets/data/data_id.json');
     }
     dispatch({ type: 'SET_DATA', data: data });
 }
@@ -74,9 +74,9 @@ const loadData = (language, dispatch) => {
 const loadGoogleSheetData = (language, dispatch) => {
     if (language == LANGUAGES.EN) {
         loadEnglishGoogleSheetData()
-        .then(data => {
-            dispatch({ type: 'SET_DATA', data: data });
-        })
+            .then(data => {
+                dispatch({ type: 'SET_DATA', data: data });
+            })
     } else if (language == LANGUAGES.ID) {
         console.log("Not Implemented")
     }
@@ -101,7 +101,7 @@ const reducer = (state, action) => {
             let scenario = action.data;
             options = Object.assign({}, state.options);
             options[scenario.id] = {};
-            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options  };
+            return { ...state, scenario: scenario, scenarioImage: scenarioImages['Scenario-' + scenario.id], task: scenario.tasks[0], option: null, options: options };
         case 'SET_TASK':
             let task = action.data;
             options = Object.assign({}, state.options);
