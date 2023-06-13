@@ -9,6 +9,7 @@ const Scenario = ({ navigation, route }) => {
     const context = useContext(DataContext);
     const scenario = context.state.scenario;
     const scenarioImage = context.state.scenarioImage;
+    const captions = context.state.captions;
     const avatar = context.state.avatar;
 
     const renderItem = ({ item, index }) => {
@@ -21,9 +22,9 @@ const Scenario = ({ navigation, route }) => {
                     nestedScrollEnabled={true}
                     contentContainerStyle={styles.scrollContainer}
                 >
-                    <Text style={styles.scenarioName}>{`Task ${item.id}`}</Text>
+                    <Text style={styles.scenarioName}>{`${captions.Task} ${item.id}`}</Text>
                     <Text style={styles.scenarioDesc}>{item.desc}</Text>
-                    <Text style={styles.ansName}>Your Answer</Text>
+                    <Text style={styles.ansName}>{captions.YourAnswer}</Text>
                     <Text style={styles.ansDesc}>{item.options[context.state.options[scenario.id][item.id] - 1].desc}</Text>
                 </ScrollView>
             </View >
@@ -46,7 +47,7 @@ const Scenario = ({ navigation, route }) => {
         >
             <View style={styles.container}>
                 <Image style={styles.tinyLogo} source={avatar} />
-                <Text style={styles.title}>{context.state.captions.Summary}</Text>
+                <Text style={styles.title}>{captions.Summary}</Text>
                 <Carousel
                     data={scenario.tasks}
                     renderItem={renderItem}
@@ -58,13 +59,13 @@ const Scenario = ({ navigation, route }) => {
                     style={{ ...styles.button, marginTop: -100 }}
                     android_disableSound={true}
                     onPress={handleScenarioPress}>
-                    <Text style={styles.buttonText}>{context.state.captions.NextScenario}</Text>
+                    <Text style={styles.buttonText}>{captions.NextScenario}</Text>
                 </Pressable>
                 <Pressable
                     style={styles.button}
                     android_disableSound={true}
                     onPress={handleNextPress}>
-                    <Text style={styles.buttonText}>{context.state.captions.Exit}</Text>
+                    <Text style={styles.buttonText}>{captions.Exit}</Text>
                 </Pressable>
             </View>
         </ImageBackground>

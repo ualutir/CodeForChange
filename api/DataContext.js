@@ -57,8 +57,9 @@ const setData = (state, data) => {
     const introduction = data?.homepage?.text;
     const characters = data?.players;
     const scenarios = data?.scenarios;
+    const scenario = null;
     const captions = data?.captions;
-    return { ...state, introduction, characters, scenarios, captions };
+    return { ...state, introduction, characters, scenarios, captions, scenario };
 }
 
 const loadData = (language, dispatch) => {

@@ -14,7 +14,8 @@
         "NextTask": "Next Task",
         "Continue": "Continue",
         "Next": "Next",
-        "Exit": "Exit"
+        "Exit": "Exit",
+        "YourAnswer": "Your Answer"
     },
     "players": [
         {

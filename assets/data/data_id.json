@@ -1,6 +1,21 @@
 {
     "homepage": {
-        "text": "In this game, you will have to assist the characters in each scenario to unravel the learning on waste management, particularly in handling food waste through Black Soldier Fly technology.  Included in the scenario are options you need to undergo to appreciate the importance and impact of doing the BSF technology. Read carefully the scenarios and options provided to learn more. At the end of the game, you will be given a badge as Captain BiGE!"
+        "text": "Selamat datang di \"Change for Green\", sebuah game di mana kamu dapat membuat perbedaan untuk planet ini sambil mendapatkan penghasilan untuk diri sendiri dan komunitasmu. Bergabunglah dengan komunitas pengusaha hijau dan bekerja sama untuk menyelesaikan berbagai tantangan. Bangun bisnismu dan ciptakan solusi berkelanjutan. Bersiaplah untuk membuat perubahan menjadi lebih baik dan dapatkan penghasilan saat melakukannya!"
+    },
+    "captions": {
+        "Introduction": "Perkenalan",
+        "Character": "Pilih Karakter",
+        "Scenario": "Pilih Skenario",
+        "Task": "Tugas",
+        "Option": "Pilih opsi terbaik di bawah ini dan lanjutkan Berikutnya.",
+        "Summary": "Ringkasan",
+        "Feedback": "Umpan balik",
+        "NextScenario": "Coba Skenario Lain",
+        "NextTask": "Tugas Selanjutnya",
+        "Continue": "Lanjutkan",
+        "Next": "Berikutnya",
+        "Exit": "Keluar",
+        "YourAnswer": "Jawaban Anda"
     },
     "players": [
         {
@@ -57,99 +72,99 @@
     "scenarios": [
         {
             "id": 1,
-            "name": "Scenario 1",
-            "desc": "Did you know that on average, we produce 300 grams of food waste per day? That's 9,300 tons of food waste accumulated annually by the population, contributing to environmental degradation. In this game, you'll learn how to minimize the harm caused by food waste on our planet. Join us and let's make a positive impact while also exploring the world of sustainable income generation. Let's play!",
+            "name": "Skenario 1",
+            "desc": "Apakah kamu tahu bahwa rata-rata, kami memproduksi 300 gram sisa makanan setiap harinya? Artinya, sampah sisa makanan yang dihasilkan oleh penduduk setiap tahunnya adalah 9,300 ton, dan memberikan kontribusi pada degradasi lingkungan. Dalam game ini, kamu akan belajar bagaimana meminimalisir bahaya atau keurugian yang diakibatkan oleh sampah sisa makanan terhadap planet kita. Bergabunglag bersama kami dan ayo membuat dampak positif sambil menjelajahi dunia generasi dengan pendapatan berkelanjutan. Ayo bermain!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "../assets/scenario-1.gif",
-            "congratulationMessage": "Congratulations! You're making a difference in the world with your green entrepreneurship skills. Keep up the good work and keep playing Change for Green!",
+            "congratulationMessage": "Selamat! Kamu membuat sebuah perbedaan di dunia dengan dengan keterampilan-keterampilan wirausaha hijau atau green entrepreneurship yang kamu miliki. Pertahankanlah kerja yang baik ini dan tetap mainkan \"Change for Green\"!",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Learning from YouTube about food waste management, you have decided to dispose or treat food wastes in your household in the way that is clean and does not produce bad smell. Which activity would you choose to be environmental friendly and earn additional income?",
+                    "desc": "Belajar dari YouTube mengenai pengelolaan sisa makanan, kamu lantas memutuskan untuk membuang atau mengolah sampah siswa makananmu di rumah dengan cara yang bersih dan tidak menghasilkan bau yang tidak sedap. Aktifitas manakah yang akan kamu pilih untuk menjadi lebih ramah lingkungan dan dapat menghasilkan penghasilan tambahan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Doing composting for the Food Waste",
-                            "desc": "Traditional composting of food waste can produce good garden soil when treated properly. Treated garden soil can then be sold.",
-                            "feedback": "Doing composting for food waste is a great way to both mitigate environment degradation and earn additional income. By turning food waste into good garden soil, you are keeping waste out of landfills and creating a valuable product that can be sold. Keep up the good work!"
+                            "title": "Melakukan mengomposan terhadap sampah sisa makanan",
+                            "desc": "Pengomposan tradisional terhadap limbah makanan dapat membuat tanah kebun menjadi subur apabila diolah dengan baik. Hasil olahan tanah kebun kemudian dapat dijual.",
+                            "feedback": "Melakukan pengomposan untuk limbah makanan adalah cara yang bagus untuk mengurangi degradasi lingkungan dan mendapatkan penghasilan tambahan. Dengan mengubah limbah makanan menjadi tanah kebun yang baik, maka kamu menjauhkan limbah dari tempat pembuangan sampah dan menciptakan produk bernilai yang dapat dijual. Teruslah bekerja dengan baik!"
                         },
                         {
                             "id": 2,
-                            "title": "Treating food waste with black soldier fly",
-                            "desc": "Black Soldier Fly (BSF) consumes food waste and convert it to compost faster than the traditional composting method. BSF also can be sold as feeds and its residues can be sold as garden soil.",
-                            "feedback": "Treating food waste with black soldier fly is a  method that can help mitigate environment degradation while also earning additional income. Black soldier fly consume food waste and convert it to compost faster than traditional composting methods. Additionally, the residues can be sold as garden soil and the black soldier fly can be sold as feeds. This is a great way to reduce waste and generate income at the same time."
+                            "title": "Memproses limbah makanan menggunakan Black Soldier Fly atau Lalat Tentara Hitam",
+                            "desc": "Black Soldier Fly (BSF) mengonsumsi limbah makanan dan mengubahnya menjadi kompos dengan lebih cepat jika dibandingkan dengan cara pengomposan tradisional. BSF juga dapat dijual sebagai pakan ternak dan residunya dapat dijual menjadi pupuk kebun.",
+                            "feedback": "Memproses limbah makanan menggunakan Black Soldier Fly (BSF) merupakan metode yang dapat membantu memitigasi degradasi lingkungan yang juga dapat memberikan penghasilan tambahan. Black Soldier Fly (BSF) mengonsumsi limbah makanan dan mengubahnya menjadi kompos lebih cepat daripada metode pengomposan tradisional. Selain itu, residunya dapat dijual sebagai pupuk kebun dan Black Soldier Fly (BSF) sendiri dijual sebagai pakan. Ini adalah cara yang bagus untuk mengurangi limbah dan menghasilkan pendapatan pada saat yang bersamaan."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "You and your friends want to implement efficient and effective waste segregation in their community. you learned that segregating waste can positively impact the environment and generate additional income. What will be your best options?",
+                    "desc": "Kamu dan teman-temanmu ingin menerapkan pemilahan sampah yang efisien dan efektif di komunitas. Kamu belajar bahwa memilah sampah dapat berdampak positif terhadap lingkungan dan menghasilkan pendapatan tambahan. Apa yang akan menjadi pilihan terbaikmu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Collecting segregated solid waste for potential earning",
-                            "desc": "By segregating waste such as plastics, tin cans, and boxes, Benjie, Gelo, and Ethel can potentially earn additional income. \n\nPlastics \u2013 PHP 200 / 2.0 per kilo\nTin Can \u2013 PHP 100 / 1.0 per kilo\nBoxes \u2013 PHP 150 / 1.5 per kilo\nThe challenge is the time spent in the collection period, which will take approximately 2 months to reach 100 kilos. However, this additional income from waste segregation can be a great help to their households.\n",
-                            "feedback": "By segregating waste, you can your friends can potentially earn additional income from selling it to recyclers. However, it may take time to collect a substantial amount of waste. Nevertheless, this is a great way to contribute to environmental sustainability and earn extra income for their households."
+                            "title": "Mengumpulkan limbah padat yang telah terpilah untuk potensi penghasilan",
+                            "desc": "Dengan memilah sampah seperti plastik, kaleng, dan kotak dapat berpotensi mendapatkan penghasilan tambahan. \nPlastik - Rp3,000/Kg \nKaleng - Rp12,000/Kg \nKardus - Rp2,000/Kg \nTantangannya adalah waktu yang dihabiskan dalam masa pengumpulan, yang membutuhkan waktu kurang lebih 2 bulan untuk mencapai 100 kilo. Namun, penghasilan tambahan dari pemilahan sampah ini dapat sangat membantu rumah tangga.",
+                            "feedback": "Dengan memilah sampah, kamu dan temanmu berpotensi mendapatkan penghasilan tambahan dari menjualnya ke pendaur ulang. Namun, mungkin diperlukan waktu untuk mengumpulkan sejumlah besar sampah. Meski demikian, ini adalah cara yang bagus untuk berkontribusi pada kelestarian lingkungan dan mendapatkan penghasilan tambahan untuk rumah tangga."
                         },
                         {
                             "id": 2,
-                            "title": "Generating income from food waste",
-                            "desc": "You and your friends can also generate income from food waste by feeding it to black soldier fly larvae. For instance, 100 kilos of food waste can be consumed by at least 10 kilos of BSF larvae. Reaching 100 kilos of food waste will only take 15 days for 20 households. They can also charge a collection fee of PHP 50 per 15 days from each household. This not only generates additional income but also helps in the efficient handling of food waste in their community.",
-                            "feedback": "Feeding food waste to black soldier fly larvae is a great way to convert waste into a valuable resource, which can be sold as feeds and compost. This is a more efficient and time-saving way to generate additional income compared to waste segregation. Additionally, charging a collection fee from households can further increase their income."
+                            "title": "Menghasilkan pendapatan tambahan dari limbah makanan",
+                            "desc": "Kamu dan temanmu juga dapat menghasilkan pendapatan dari sisa makanan dengan memberi makan larva dari Black Soldier Fly (BSF). Misalnya, 100 kg sisa makanan dapat dikonsumsi oleh setidaknya 10 kg larva BSF. Untuk mencapai 100 kg sampah makanan hanya membutuhkan waktu 15 hari untuk 20 rumah tangga. Kamu dan temanmu juga dapat membebankan biaya penagihan sebesar Rp15,000 per 15 hari dari setiap rumah tangga. Ini tidak hanya menghasilkan pendapatan tambahan tetapi juga membantu penanganan limbah makanan secara efisien di komunitas.",
+                            "feedback": "Memberi makan limbah makanan kepada larva BSF adalah cara yang bagus untuk mengubah limbah menjadi sumber daya yang bernilai, yang dapat dijual sebagai pakan dan kompos. Ini adalah cara yang lebih efisien dan hemat waktu untuk memperoleh pendapatan tambahan dibandingkan dengan pemilahan sampah. Selain itu, membebankan biaya pemungutan dari rumah tangga dapat lebih meningkatkan pendapatan."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "You've recently learned more and more about the efficient handling of food waste using black soldier fly technology. Your family has been raising free-range chicken and backyard catfish at home to help cover daily household expenses. You're also considering joining a youth organization to receive training on the technical procedures of doing Black Soldier Fly (BSF). Can you decide on the best course of action?",
+                    "desc": "Anda baru-baru ini belajar lebih banyak tentang penanganan limbah makanan yang efisien menggunakan teknologi BSF. Keluargamu telah beternak ayam kampung dan ikan lele di rumah untuk membantu menutupi pengeluaran rumah tangga sehari-hari. Anda juga sedang mempertimbangkan untuk bergabung dengan organisasi kepemudaan untuk mendapatkan pelatihan tentang prosedur teknis melakukan Black Soldier Fly (BSF). Bisakah Anda memutuskan tindakan terbaik?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Do BSF first at home",
-                            "desc": "By doing BSF at home, you can immediately address the food waste generated at the household level. Additionally, fresh or dried BSF can be used as feeds for your free-range chicken and catfish, generating savings from your usual expenses brought about by buying commercial feeds.\nIn addition, fresh or dried BSF can be used as feeds to his free-range chicken and catfish. He can thus generate savings from his usual expense brought about by buying commercial feeds.",
-                            "feedback": "By doing BSF at home, you can immediately address the food waste generated at your household level. Not only can you mitigate food waste, but you can also generate savings from your usual expenses brought about by buying commercial feeds for your free-range chicken and catfish. And by using fresh or dried BSF as feeds for your animals, you can provide them with a healthier and more natural diet."
+                            "title": "Mengembangkan BSF dulu di rumah",
+                            "desc": "Dengan mengembangkan BSF di rumah, kamu dapat segera mengatasi limbah makanan yang dihasilkan di tingkat rumah tangga. Selain itu, BSF segar atau kering dapat digunakan sebagai pakan untuk ayam kampung dan lele, dan menghasilkan penghematan dari pengeluaran biasa yang kamu keluarkan dengan membeli pakan komersial. Selain itu, BSF segar atau kering dapat digunakan sebagai pakan ayam kampung dan lele miliknya. Dengan demikian, ia dapat menghasilkan penghematan dari pengeluarannya yang biasa dilakukan dengan membeli pakan komersial.",
+                            "feedback": "Dengan mengembangkan BSF di rumah, kamu dapat segera mengatasi limbah makanan yang dihasilkan di tingkat rumah tangga. Kamu tidak hanya dapat mengurangi pemborosan makanan, tetapi juga dapat menghasilkan penghematan dari pengeluaran biasa yang kamu keluarkan dengan membeli pakan komersial untuk ayam kampung dan ikan lele. Dan dengan menggunakan BSF segar atau kering sebagai pakan untuk hewan, kamu dapat memberi mereka makanan yang lebih sehat dan alami."
                         },
                         {
                             "id": 2,
-                            "title": "Join the youth organization and be a value-added member",
-                            "desc": "Being a member of the youth organization allows you to learn together, sharing experiences and best practices.\nEach member of the youth organization contributes to the volume of the input thus increases the forecast of output which is the volume of BSF and its residues.\nBig volume = big income",
-                            "feedback": "By joining the youth organization and being a value-added member, you can learn more from your peers, share experiences, and best practices. As each member contributes to the volume of the input, the forecast of output, which is the volume of BSF and its residues, can increase. This can result in a bigger income for the organization and its members. However, it may take longer to start generating income than doing BSF at home, but it can also provide you with more opportunities for learning and socializing with other youth in your community."
+                            "title": "Bergabunglah dengan organisasi pemuda dan jadilah anggota yang memiliki nilai tambah.",
+                            "desc": "Menjadi anggota organisasi pemuda memungkinkan kamu untuk belajar bersama, berbagi pengalaman dan melakukan praktik terbaik. Setiap anggota organisasi pemuda berkontribusi terhadap volume input sehingga meningkatkan perkiraan output yang merupakan volume BSF dan residunya. Volume besar = pendapatan besar",
+                            "feedback": "Dengan bergabung dengan organisasi kepemudaan dan menjadi anggota yang bernilai tambah, kamu dapat belajar lebih banyak dari rekan-rekan kamu di sana, berbagi pengalaman, dan melakukan praktik terbaik. Karena setiap anggota berkontribusi terhadap volume input, perkiraan output, yaitu volume BSF dan residunya, dapat meningkat. Hal ini dapat menghasilkan pendapatan yang lebih besar bagi organisasi dan anggotanya. Namun, mungkin perlu waktu lebih lama untuk mulai menghasilkan pendapatan daripada melakukan BSF di rumah, tetapi ini juga dapat memberimu lebih banyak kesempatan untuk belajar dan bersosialisasi dengan remaja lain di komunitas."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "You're passionate about addressing food waste in your community and want to use black soldier fly technology to start a sustainable business. There's a lot of food waste being thrown away from the cafeteria, fresh market, and restaurants. You want to explore how to turn this waste into profit while also promoting environmental sustainability.",
+                    "desc": "Kamu bersemangat menangani limbah makanan di komunitasmu dan ingin menggunakan teknologi BSF untuk memulai bisnis yang berkelanjutan. Ada banyak sisa makanan yang dibuang dari kafetaria, pasar tradisional, dan restoran. Kamu ingin mengeksplorasi bagaimana mengubah limbah ini menjadi keuntungan sekaligus mempromosikan kelestarian lingkungan.",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Selling Larvae and Fertilizer",
-                            "desc": "You can start by breeding black soldier fly larvae using food waste collected from the community. Once you have a good supply of larvae, you can sell them to local poultry farms as a high-protein feed supplement. In addition, the by-products of the larvae breeding process can be used to make organic fertilizer, which can be sold to local farmers. ",
-                            "feedback": "Selling larvae and fertilizer is a great way to turn food waste into profit while promoting sustainability. However, it requires an initial investment and may take some time to establish a stable supply of larvae and fertilizer. Consider whether you have the resources and commitment needed to pursue this option."
+                            "title": "Menjual larva dan pupuk",
+                            "desc": "Kamu bisa memulainya dengan membiakkan larva BSF dengan memanfaatkan sisa makanan yang dikumpulkan dari masyarakat. Setelah kamu memiliki persediaan larva yang baik, kamu dapat menjualnya ke peternakan unggas lokal sebagai suplemen pakan berprotein tinggi. Selain itu, hasil sampingan dari proses pengembangbiakan larva dapat dimanfaatkan untuk membuat pupuk organik yang dapat dijual kepada petani setempat. ",
+                            "feedback": "Menjual larva dan pupuk adalah cara yang bagus untuk mengubah limbah makanan menjadi keuntungan sambil mempromosikan keberlanjutan. Namun, ini membutuhkan investasi awal dan mungkin membutuhkan waktu untuk membangun pasokan larva dan pupuk yang stabil. Pertimbangkan apakah kamu memiliki sumber daya dan komitmen yang diperlukan untuk mengejar opsi ini."
                         },
                         {
                             "id": 2,
-                            "title": "Promoting BSF Growth in the Community",
-                            "desc": "You can promote BSF growth in the community by encouraging people to collect food waste and sell it to local farmers, who can use it to feed their BSF. The farmers can then sell the larvae and fertilizer produced by their BSF to local markets. You can act as a middleman by buying the larvae and fertilizer from the farmers and selling them to customers. ",
-                            "feedback": "Promoting BSF Growth in the Community is a great way to involve the community in reducing food waste and promoting sustainability. However, it requires building relationships with both the community and the farmers, and may take some time to establish a stable supply chain. Consider whether you have the social skills and commitment needed to pursue this option."
+                            "title": "Mendorong pertumbuhan BSF di masyarakat",
+                            "desc": "Kamu dapat mendorong pertumbuhan BSF di masyarakat dengan mendorong masyarakat untuk mengumpulkan sisa makanan dan menjualnya ke petani setempat, yang dapat menggunakannya untuk memberi makan BSF mereka. Para petani kemudian dapat menjual larva dan pupuk yang diproduksi oleh BSF mereka ke pasar lokal. Kamu bisa bertindak sebagai perantara dengan membeli larva dan pupuk dari petani dan menjualnya ke pelanggan.",
+                            "feedback": "Mempromosikan pertumbuhan BSF di masyarakat adalah cara yang bagus untuk melibatkan masyarakat dalam mengurangi limbah makanan dan mempromosikan keberlanjutan. Namun, hal itu membutuhkan pembangunan hubungan baik dengan masyarakat maupun petani, dan mungkin membutuhkan waktu untuk membangun rantai pasok yang stabil. Pertimbangkan apakah kamu memiliki keterampilan sosial dan komitmen yang diperlukan untuk mengejar opsi ini."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "You are creating a presentation to showcase the BSF project to other youth organizations in nearby communities. You want to highlight the potential earnings of BSF. Which earning option would be more exciting to present?",
+                    "desc": "Kamu sedang membuat presentasi untuk memamerkan proyek BSF ke organisasi pemuda lain di komunitas terdekat. Kamu ingin menyoroti potensi pendapatan dari BSF. Opsi penghasilan mana yang lebih menarik untuk disajikan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Selling BSF larvae as feeds",
-                            "desc": "10 kilos of BSF larvae can be sold as feeds for livestock, as they are high in protein and excellent for their health. The price per kilo is usually around PHP 150, which can provide a significant income stream.",
-                            "feedback": "Selling BSF larvae as feeds can be an exciting earning opportunity to highlight, as it can provide a significant income stream. The high protein content of BSF larvae makes them a valuable source of feed for livestock, and their popularity in the market can ensure consistent demand."
+                            "title": "Jual larva BSF sebagai pakan",
+                            "desc": "Larva BSF sebanyak 10 kg dapat dijual sebagai pakan ternak, karena mengandung protein tinggi dan sangat baik untuk kesehatan. Harga per kilo biasanya sekitar Rp40,000, yang mana dapat memberikan aliran pendapatan yang signifikan.",
+                            "feedback": "Menjual larva BSF sebagai pakan dapat menjadi peluang penghasilan yang menarik untuk ditonjolkan, karena dapat memberikan aliran pendapatan yang signifikan. Kandungan protein yang tinggi dari larva BSF menjadikannya sumber pakan ternak yang berharga, dan popularitasnya di pasar dapat memastikan permintaan yang konsisten."
                         },
                         {
                             "id": 2,
-                            "title": "Selling BSF residues ",
-                            "desc": "The compost produced from BSF residues can be sold at PHP 120 per kilo, and 10 kilos can be produced every 15 days. Additionally, the liquid residue from BSF can be sold as fertilizer at PHP 150 per liter. This can provide a consistent and reliable income stream.",
-                            "feedback": "Selling BSF residues can also be an exciting earning opportunity to present. The compost produced from BSF residues can be sold at a competitive price, and the liquid residue can also provide an additional income stream. The reliability and consistency of this income stream can make it an attractive option for those interested in sustainable farming practices."
+                            "title": "Menjual residu (ampas) BSF",
+                            "desc": "Kompos yang dihasilkan dari residu BSF dapat dijual dengan harga Rp32,000 per kilo, dan 10 kg dapat diproduksi setiap 15 hari. Selain itu, residu cair dari BSF dapat dijual sebagai pupuk dengan harga Rp40,000 per liter. Hal ini dapat memberikan aliran pendapatan yang konsisten dan dapat diandalkan.",
+                            "feedback": "Menjual ampas BSF juga bisa menjadi peluang penghasilan yang menarik untuk disajikan. Kompos yang dihasilkan dari ampas BSF dapat dijual dengan harga yang kompetitif, dan ampas cair juga dapat memberikan aliran pendapatan tambahan. Keandalan dan konsistensi aliran pendapatan ini dapat menjadikannya pilihan yang menarik bagi mereka yang tertarik dengan praktik pertanian berkelanjutan."
                         }
                     ]
                 }
@@ -157,99 +172,99 @@
         },
         {
             "id": 2,
-            "name": "Scenario 2",
-            "desc": "Welcome to Sustainable Market! Now you will learn about sustainable business models and how they can help businesses operate in an environmentally and socially responsible manner. You will design and manage your own market, making decisions that affect the market's environmental impact, profits, and overall sustainability. You will gain a deeper understanding of how businesses can prioritize sustainability while still achieving financial success. Let's get started!",
+            "name": "Skenario 2",
+            "desc": "Selamat datang di Pasar Berkelanjutan! Sekarang kamu akan belajar tentang model bisnis yang berkelanjutan dan bagaimana mereka dapat membantu bisnis beroperasi dengan cara yang bertanggung jawab secara lingkungan dan sosial. Kamu akan merancang dan mengelola pasarmu sendiri, membuat keputusan yang berpengaruh pada dampak lingkungan, keuntungan, serta keberlanjutan pasar secara keseluruhan. Kamu akan mendapatkan pemahaman yang lebih dalam tentang bagaimana bisnis dapat memprioritaskan keberlanjutan sambil tetap mencapai kesuksesan finansial. Mari kita mulai!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-2.gif",
-            "congratulationMessage": "Great job! Sustainable business practices can be profitable. Keep exploring new ways to make positive change and help the environment.",
+            "congratulationMessage": "Kerja bagus! Bisnis yang berkelanjutan dapat menguntungkan. Tetap lakukan eksplorasi terhadap cara-cara baru untuk membuat perubahan yang positif dan membantu lingkungan alam kita.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "As the owner of Sustainable Market, you have the option to offer customers a choice between conventional and organic produce. Which option is more sustainable and profitable for your market?",
+                    "desc": "Sebagai pemilik Pasar Berkelanjutan, kamu memiliki pilihan untuk menawarkan kepada pelanggan antara produk konvensional dan organik. Pilihan mana yang lebih berkelanjutan dan menguntungkan untuk pasarmu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Conventional Produce",
-                            "desc": "Offer conventional produce, which is cheaper to source and can be sold at a lower price point, attracting more customers and increasing profits.",
-                            "feedback": "While offering conventional produce may increase profits in the short term, it has a higher environmental impact due to the use of pesticides and fertilizers, and the higher carbon footprint associated with transportation. Additionally, customers who prioritize sustainability may not be interested in purchasing conventional produce, leading to a loss of potential customers and a negative impact on your market's reputation as a sustainable business."
+                            "title": "Produk Konvensional",
+                            "desc": "Menawarkan produk konvensional, yang lebih murah untuk didapatkan dan dapat dijual dengan harga lebih rendah, menarik lebih banyak pelanggan dan meningkatkan keuntungan.",
+                            "feedback": "Sementara menawarkan produk konvensional dapat meningkatkan keuntungan dalam jangka pendek, hal itu memiliki dampak lingkungan yang lebih tinggi karena penggunaan pestisida dan pupuk, serta jejak karbon yang lebih tinggi terkait transportasi. Selain itu, pelanggan yang mengutamakan keberlanjutan mungkin tidak tertarik untuk membeli produk konvensional, sehingga menyebabkan hilangnya pelanggan potensial dan berdampak negatif pada reputasi pasarmu sebagai bisnis yang berkelanjutan."
                         },
                         {
                             "id": 2,
-                            "title": "Organic Produce",
-                            "desc": "Offer organic produce, which is more expensive to source but has a lower environmental impact, appeals to customers who prioritize sustainability, and has a higher profit margin due to its premium pricing.",
-                            "feedback": "Offering organic produce may have a higher upfront cost, but it aligns with the values of customers who prioritize sustainability and is better for the environment. In addition, organic produce has a higher profit margin due to its premium pricing, which can offset the higher sourcing costs. By offering organic produce, your market can set itself apart as a leader in sustainability, attracting more customers and building a positive reputation as a sustainable business."
+                            "title": "Produk Organik",
+                            "desc": "Menawarkan produk organik, yang lebih mahal untuk didapatkan tetapi memiliki dampak lingkungan yang lebih rendah, menarik bagi pelanggan yang memprioritaskan keberlanjutan, dan memiliki margin keuntungan yang lebih tinggi karena harga premiumnya.",
+                            "feedback": "Menawarkan produk organik mungkin memiliki biaya di muka yang lebih tinggi, tetapi sejalan dengan nilai pelanggan yang memprioritaskan keberlanjutan dan lebih baik bagi lingkungan. Selain itu, produk organik memiliki margin keuntungan yang lebih tinggi karena harga premiumnya, yang dapat mengimbangi biaya sumber yang lebih tinggi. Dengan menawarkan produk organik, pasarmu dapat membedakan dirinya sebagai pemimpin dalam keberlanjutan, menarik lebih banyak pelanggan, dan membangun reputasi positif sebagai bisnis berkelanjutan."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "You are considering offering a discount for customers who bring their own reusable bags. Which option is more sustainable and profitable for the market?",
+                    "desc": "Kamu sedang mempertimbangkan untuk menawarkan diskon bagi pelanggan yang membawa tas sendiri yang dapat digunakan kembali. Opsi mana yang lebih berkelanjutan dan menguntungkan bagi pasar?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Offer a discount",
-                            "desc": "Offer a discount for customers who bring their own reusable bags, which may reduce profits in the short term but can lead to increased customer loyalty and a positive impact on the environment.",
-                            "feedback": "Offering a discount for reusable bags can encourage customers to make sustainable choices and build a positive reputation for your market as a sustainable business. While there may be upfront costs associated with the discount, the long-term benefits in terms of customer loyalty and positive environmental impact can lead to increased profits."
+                            "title": "Tawarkan diskon",
+                            "desc": "Tawarkan diskon untuk pelanggan yang membawa tas pakai ulang sendiri, yang dapat mengurangi keuntungan dalam jangka pendek tetapi dapat meningkatkan loyalitas pelanggan dan dampak positif terhadap lingkungan.",
+                            "feedback": "Menawarkan diskon untuk tas yang dapat digunakan kembali dapat mendorong pelanggan untuk membuat pilihan yang berkelanjutan dan membangun reputasi positif untuk pasarmu sebagai bisnis yang berkelanjutan. Meskipun mungkin ada biaya di muka yang terkait dengan diskon, manfaat jangka panjang dalam hal loyalitas pelanggan dan dampak lingkungan yang positif dapat meningkatkan keuntungan."
                         },
                         {
                             "id": 2,
-                            "title": "Do not offer a discount",
-                            "desc": "Do not offer a discount for customers who bring their own bags, as it may not have a significant impact on the market's sustainability or profits.",
-                            "feedback": "While not offering a discount for reusable bags may not have a negative impact on your market, it also does not incentivize customers to make sustainable choices. By offering a discount for reusable bags, you can encourage customers to bring their own bags, reduce waste, and improve your market's reputation as a sustainable business."
+                            "title": "Jangan menawarkan diskon",
+                            "desc": "Jangan menawarkan diskon untuk pelanggan yang membawa tas sendiri, karena mungkin tidak berdampak signifikan pada kelangsungan atau keuntungan pasar.",
+                            "feedback": "Meskipun tidak menawarkan diskon untuk tas yang dapat digunakan kembali mungkin tidak berdampak negatif pada pasarmu, hal itu juga tidak mendorong pelanggan untuk membuat pilihan yang berkelanjutan. Dengan menawarkan diskon untuk tas yang dapat digunakan kembali, kamu dapat mendorong pelanggan untuk membawa tas sendiri, mengurangi limbah, dan meningkatkan reputasi pasarmu sebagai bisnis yang berkelanjutan."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "You have been buying products from faraway suppliers for a while now because their prices are cheaper. However, you're starting to realize that the environmental and social costs associated with transportation and production may not be sustainable. Which option is better for your market?",
+                    "desc": "Kamu telah membeli produk dari pemasok yang jauh untuk sementara waktu karena harganya lebih murah. Namun, kamu mulai menyadari bahwa ada biaya lingkungan dan sosial yang berkaitan dengan transportasi dan produksi, yang mungkin tidak berkelanjutan. Opsi mana yang lebih baik untuk pasar Anda?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Keep buying products from far away suppliers.",
-                            "desc": "Keep buying products from far away suppliers who have cheaper prices. You are running a business not a charity.",
-                            "feedback": "Buying products from far away suppliers means they have to travel a long distance to reach your market. This makes more pollution and contributes to climate change. Choosing local suppliers who use sustainable practices can reduce pollution and support small businesses. This can also help you get more customers who care about the environment."
+                            "title": "Tetap membeli produk dari pemasok yang jauh.",
+                            "desc": "Tetap membeli produk dari pemasok jauh yang memiliki harga lebih murah. Kamu menjalankan bisnis bukan amal.",
+                            "feedback": "Membeli produk dari pemasok yang jauh berarti mereka harus menempuh jarak yang jauh untuk mencapai pasarmu. Ini membuat lebih banyak polusi dan berkontribusi pada perubahan iklim. Memilih pemasok lokal yang menggunakan praktik berkelanjutan dapat mengurangi polusi dan mendukung usaha kecil. Ini juga dapat membantumu mendapatkan lebih banyak pelanggan yang peduli terhadap lingkungan."
                         },
                         {
                             "id": 2,
-                            "title": "Buy products from local suppliers",
-                            "desc": "Buy products from local suppliers who use sustainable practices, even if it costs a little bit more.",
-                            "feedback": "Choosing local suppliers who use sustainable practices is a good way to show your customers that your market cares about the environment. Even if it costs a little bit more, it can help you get more customers and make more money in the long run. Buying from local suppliers also helps support small businesses in your area. Furthermore, sustainable practices can lead to higher quality and more innovative products, which can be a competitive advantage in your market."
+                            "title": "Beli produk dari pemasok lokal",
+                            "desc": "Beli produk dari pemasok lokal yang menggunakan praktik berkelanjutan, meskipun harganya sedikit lebih mahal.",
+                            "feedback": "Memilih pemasok lokal yang menggunakan praktik berkelanjutan adalah cara yang baik untuk menunjukkan kepada pelanggan bahwa pasarmu peduli terhadap lingkungan. Bahkan jika harganya sedikit lebih mahal, ini dapat membantumu mendapatkan lebih banyak pelanggan dan menghasilkan lebih banyak uang dalam jangka panjang. Membeli dari pemasok lokal juga membantu mendukung usaha kecil di daerahmu. Selain itu, praktik berkelanjutan dapat menghasilkan produk yang lebih berkualitas dan lebih inovatif, yang dapat menjadi keunggulan kompetitif di pasarmu."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "What's the best way to power your market?",
+                    "desc": "Apa cara terbaik untuk memperkuat pasarmu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Switch to renewable energy",
-                            "desc": "Switch to renewable energy sources like solar power that cost more upfront but are better for the environment in the long term.",
-                            "feedback": "Switching to renewable energy sources like solar power can lower your market's carbon footprint, save you money on energy costs in the long run, and attract more customers who value sustainable business practices."
+                            "title": "Beralih ke energi terbarukan",
+                            "desc": "Beralihlah ke sumber energi terbarukan seperti tenaga surya yang lebih mahal di muka tetapi lebih baik untuk lingkungan dalam jangka panjang.",
+                            "feedback": "Beralih ke sumber energi terbarukan seperti tenaga surya dapat menurunkan jejak karbon pasarmu, menghemat biaya energi dalam jangka panjang, dan menarik lebih banyak pelanggan yang menghargai praktik bisnis berkelanjutan."
                         },
                         {
                             "id": 2,
-                            "title": "Don't switch to renewable energy",
-                            "desc": "Keep using conventional grid electricity that is cheaper and already installed in your market.",
-                            "feedback": "Using conventional grid electricity can contribute to the carbon footprint and damage your market's reputation as a sustainable business. Additionally, it may not be cheap in the long term as electricity prices may increase."
+                            "title": "Jangan beralih ke energi terbarukan",
+                            "desc": "Tetap menggunakan listrik jaringan konvensional yang lebih murah dan sudah terpasang di pasarmu.",
+                            "feedback": "Menggunakan listrik jaringan konvensional dapat berkontribusi pada jejak karbon dan merusak reputasi pasar sebagai bisnis yang berkelanjutan. Selain itu, ini mungkin tidak murah dalam jangka panjang karena harga listrik dapat meningkat."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "You want to reduce waste from your market. What's the best way to package the products in your market?",
+                    "desc": "Kamu ingin mengurangi limbah dari pasarmu. Apa cara terbaik untuk mengemas produk di pasarmu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Plastic packaging",
-                            "desc": "Use plastic bags and packaging because they are cheaper and more durable.",
-                            "feedback": "Plastic bags are harmful to the environment and take hundreds of years to decompose. They can cause pollution and harm wildlife. Additionally, they can damage your market's reputation as a sustainable business."
+                            "title": "Kemasan plastik",
+                            "desc": "Gunakan kantong dan kemasan plastik karena lebih murah dan lebih tahan lama.",
+                            "feedback": "Kantong plastik berbahaya bagi lingkungan dan membutuhkan waktu ratusan tahun untuk terurai. Mereka dapat menyebabkan polusi dan membahayakan satwa liar. Selain itu, mereka dapat merusak reputasi pasar sebagai bisnis yang berkelanjutan."
                         },
                         {
                             "id": 2,
-                            "title": "Reusable or compostable packaging",
-                            "desc": "Use reusable bags or compostable packaging made from materials like plant-based plastics, even though they may be more expensive upfront.",
-                            "feedback": " Using reusable bags made of sustainable materials like cotton  or compostable packaging made from materials like plant-based plastics can significantly reduce the amount of waste your market produces, promote sustainability, and help you stand out as a green business. Although they may be more expensive upfront, they can save you money in the long run by reducing waste management costs and attracting more customers who value sustainable business practices."
+                            "title": "Kemasan yang dapat digunakan kembali atau kompos",
+                            "desc": "Gunakan tas yang dapat digunakan kembali atau kemasan yang dapat dibuat kompos yang terbuat dari bahan seperti plastik nabati, meskipun harganya mungkin lebih mahal di awal.",
+                            "feedback": "Menggunakan tas yang dapat digunakan kembali yang terbuat dari bahan berkelanjutan seperti kapas atau kemasan yang dapat dibuat kompos yang terbuat dari bahan seperti plastik nabati dapat secara signifikan mengurangi jumlah limbah yang dihasilkan pasar, mempromosikan keberlanjutan, dan membantumu menjadi lebih menonjol sebagai bisnis hijau. Meskipun mungkin lebih mahal di awal, penggunaan tas yang dapat dipakai ulang dapat menghemat uang dalam jangka panjang dengan mengurangi biaya pengelolaan limbah dan menarik lebih banyak pelanggan yang menghargai praktik bisnis berkelanjutan."
                         }
                     ]
                 }
@@ -257,99 +272,99 @@
         },
         {
             "id": 3,
-            "name": "Scenario 3",
-            "desc": "You are starting a business to make products out of recycled materials. You will collect and sort recyclable materials, design and prototype your products, market and sell them to customers, create a circular supply chain, and scale up your business while ensuring it remains sustainable. Are you ready to make a positive impact on the environment? Let's get started!",
+            "name": "Skenario 3",
+            "desc": "Kamu memulai bisnis untuk membuat produk dari bahan daur ulang. Kamu akan mengumpulkan dan menyortir bahan yang dapat didaur ulang, merancang dan membuat prototipe produk, memasarkan hingga menjualnya kepada pelanggan, membuat rantai pasokan melingkar, dan melakukan peningkatan bisnis sambil memastikannya tetap berkelanjutan. Apakah kamu siap untuk membuat dampak positif bagi lingkungan? Mari kita mulai!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-3.gif",
-            "congratulationMessage": "You've successfully shown that green entrepreneurship can create a brighter future for everyone. Continue to use your skills to inspire and lead the way in making a difference.",
+            "congratulationMessage": "Kamu telah dengan sukses menunjukkan bahwa capat menciptakan sebuah masa depan yang cerah bagi setiap orang. Lanjutkan menggunakan keterampilan-keterampilan yang kamu miliki untuk menginspirasi dan menjadi pemimpin dalam membuat perbedaan.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Your business is trying to create a new product out of recycled materials. You've gathered some materials that you can use, but they don't look very appealing. What should you do?",
+                    "desc": "Bisnismu mencoba membuat produk baru dari bahan daur ulang. Kamu telah mengumpulkan beberapa materi yang dapat kamu gunakan, tetapi tidak terlihat menarik. Apa yang harus kamu lakukan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Function only",
-                            "desc": "Use recycled materials to create a product that is functional. It does not need to look good because it's made from waste anyway.",
-                            "feedback": "While using recycled materials is commendable, creating a product that is not aesthetically pleasing may turn off potential customers who prioritize design. Consider finding creative ways to make the recycled materials more attractive, such as by adding colors or patterns."
+                            "title": "Fungsi saja",
+                            "desc": "Gunakan bahan daur ulang untuk membuat produk yang fungsional. Tidak perlu terlihat bagus karena toh terbuat dari limbah.",
+                            "feedback": "Meskipun menggunakan bahan daur ulang patut dipuji, menciptakan produk yang tidak menyenangkan secara estetika dapat mematikan calon pelanggan yang memprioritaskan desain. Pertimbangkan mencari cara kreatif untuk membuat bahan daur ulang lebih menarik, seperti menambahkan warna atau pola."
                         },
                         {
                             "id": 2,
-                            "title": "Looking good is important",
-                            "desc": "Use recycled materials to create a product that is both functional and aesthetically pleasing.",
-                            "feedback": "Using recycled materials to create a product that is both functional and aesthetically pleasing (looking good) helps to demonstrate to potential customers that recycled materials can be used to create products that are just as good as those made from virgin materials."
+                            "title": "Terlihat bagus itu penting",
+                            "desc": "Gunakan bahan daur ulang untuk membuat produk yang fungsional dan estetis.",
+                            "feedback": "Menggunakan bahan daur ulang untuk membuat produk yang fungsional dan menyenangkan secara estetika (terlihat bagus) membantu menunjukkan kepada calon pelanggan bahwa bahan daur ulang dapat digunakan untuk membuat produk yang sama baiknya dengan yang terbuat dari bahan murni."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Your business has created a new product out of recycled materials. You want to start selling it to customers. How should you market it?",
+                    "desc": "Bisnismu telah menciptakan produk baru dari bahan daur ulang. Kamu ingin mulai menjualnya ke pelanggan. Bagaimana seharusnya kamu memasarkannya?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Highlight affordability",
-                            "desc": "Market the recycled products as being cheap and affordable.",
-                            "feedback": "While affordability is an important selling point, marketing the recycled products as being cheap may undermine their value and lead customers to perceive them as low-quality. Consider emphasizing the sustainability benefits and durability of the product instead."
+                            "title": "Soroti keterjangkauan",
+                            "desc": "Memasarkan produk daur ulang sebagai barang murah dan terjangkau.",
+                            "feedback": "Meskipun keterjangkauan merupakan nilai jual yang penting, memasarkan produk daur ulang dengan harga murah dapat merusak nilainya dan membuat pelanggan menganggap produk tersebut berkualitas rendah. Sebagai gantinya, pertimbangkan untuk menekankan manfaat keberlanjutan dan daya tahan produk."
                         },
                         {
                             "id": 2,
-                            "title": "Highlight sustainability",
-                            "desc": "Market the recycled products as being high-quality and sustainable.",
-                            "feedback": "Great choice! Marketing the recycled products as being high-quality and sustainable positions them as premium products that are better for the environment."
+                            "title": "Soroti keberlanjutan",
+                            "desc": "Pasarkan produk daur ulang sebagai produk berkualitas tinggi dan berkelanjutan",
+                            "feedback": "Pilihan bagus! Memasarkan produk daur ulang sebagai produk berkualitas tinggi dan berkelanjutan memposisikannya sebagai produk premium yang lebih baik bagi lingkungan."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Your business is sourcing materials for your product. You have the option to buy recycled materials locally or innovative materials from a supplier abroad. What should you do?",
+                    "desc": "Bisnismu sedang mencari bahan untuk produk. Kamu memiliki opsi untuk membeli bahan daur ulang secara lokal atau bahan inovatif dari pemasok di luar negeri. Apa yang harus kamu lakukan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Buy abroad",
-                            "desc": "Buy high-tech and cheaper recycled materials from a supplier abroad.",
-                            "feedback": "While new materials from a supplier abroad may be cheaper, it is important to consider the environmental impact of importing materials. Shipping materials across long distances contributes to greenhouse gas emissions and increases the carbon footprint of your business. Consider the long-term benefits of supporting local economies and reducing transportation emissions by purchasing locally sourced recycled materials."
+                            "title": "Beli di luar negeri",
+                            "desc": "Beli bahan daur ulang berteknologi tinggi dan lebih murah dari pemasok di luar negeri.",
+                            "feedback": "Sementara bahan baru dari pemasok di luar negeri mungkin lebih murah, penting untuk mempertimbangkan dampak lingkungan dari mengimpor bahan. Pengiriman bahan jarak jauh berkontribusi terhadap emisi gas rumah kaca dan meningkatkan jejak karbon bisnismu. Pertimbangkan manfaat jangka panjang dari mendukung ekonomi lokal dan mengurangi emisi transportasi dengan membeli bahan daur ulang yang bersumber secara lokal."
                         },
                         {
                             "id": 2,
-                            "title": "Buy local",
-                            "desc": "Buy used materials from nearby to support the local economy and help the environment.",
-                            "feedback": "Buying used materials nearby supports the local economy and helps the environment. It may be more expensive, but it's better for the environment and the local community in the long run."
+                            "title": "Beli dari pasar lokal",
+                            "desc": "Beli bahan bekas dari sekitar untuk mendukung ekonomi lokal dan membantu lingkungan.",
+                            "feedback": "Membeli bahan bekas terdekat mendukung ekonomi lokal dan membantu lingkungan. Mungkin lebih mahal, tetapi lebih baik untuk lingkungan dan masyarakat lokal dalam jangka panjang."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Are you considering the end-of-life management of your product? What do you do with your product when it's no longer useful or usable?",
+                    "desc": "Apakah kamu mempertimbangkan manajemen akhir masa pakai produkmu? Apa yang kamu lakukan dengan produkmu ketika tidak lagi berguna atau dapat digunakan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Yes for end of life management",
-                            "desc": "Spend time to plan how to recycle, reuse, or repurpose your product when it's no longer useful.",
-                            "feedback": "Planning how to recycle, reuse, or repurpose your product when it's no longer useful helps minimize waste and make the world a better place. It may be more work, but it's worth it to help the environment."
+                            "title": "Ya untuk manajemen akhir penggunaan",
+                            "desc": "Luangkan waktu untuk merencanakan cara mendaur ulang, menggunakan kembali, atau menggunakan kembali produk saat sudah tidak berguna lagi.",
+                            "feedback": "Merencanakan cara mendaur ulang, menggunakan kembali, atau menggunakan kembali produk saat sudah tidak berguna membantu meminimalkan limbah dan membuat dunia menjadi tempat yang lebih baik. Mungkin lebih banyak pekerjaan, tetapi itu sangat berharga untuk membantu lingkungan."
                         },
                         {
                             "id": 2,
-                            "title": "Throw away expired products",
-                            "desc": "Make sure to throw away the products when they pass the expired date.",
-                            "feedback": "What happens to your product after it's no longer useful is important for the environment. By making sure your product can be recycled, reused, or repurposed, you can help minimize waste and make the world a better place."
+                            "title": "Buang produk kadaluarsa",
+                            "desc": "Pastikan untuk membuang produk saat melewati tanggal kedaluwarsa.",
+                            "feedback": "Apa yang terjadi pada produk setelah tidak berguna lagi penting bagi lingkungan. Dengan memastikan produk dapat didaur ulang, digunakan kembali, atau digunakan kembali, kamu dapat membantu meminimalkan limbah dan membuat dunia menjadi tempat yang lebih baik."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Your business is growing, and you're starting to think about how you can have an even bigger impact on the environment. Do you want to work with other businesses or organizations to help the environment?",
+                    "desc": "Bisnismu berkembang, dan kamu mulai berpikir tentang bagaimana kamu dapat memberikan dampak yang lebih besar terhadap lingkungan. Apakah kamu ingin bekerja dengan bisnis atau organisasi lain untuk membantu lingkungan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Work together",
-                            "desc": "Work with other businesses or organizations to create new ideas and opportunities to help the environment.",
-                            "feedback": "Working with other businesses or organizations can help create new ideas and opportunities to help the environment. It may take more work, but it's worth it to make a bigger impact. By collaborating, you can share resources and knowledge to create something even better for the environment."
+                            "title": "Bekerja sama",
+                            "desc": "Bekerja dengan bisnis atau organisasi lain untuk menciptakan ide dan peluang baru untuk membantu lingkungan.",
+                            "feedback": "Bekerja dengan bisnis atau organisasi lain dapat membantu menciptakan ide dan peluang baru untuk membantu lingkungan. Dengan berkolaborasi, kamu dapat berbagi sumber daya dan pengetahuan untuk menciptakan sesuatu yang lebih baik bagi lingkungan."
                         },
                         {
                             "id": 2,
-                            "title": "Going solo",
-                            "desc": "Work by yourself and don't involve anyone else who are not interested in environmental issues.",
-                            "feedback": "While it's great to be independent, working with other businesses or organizations can help create new ideas and opportunities to help the environment. By working alone, you may miss out on important opportunities."
+                            "title": "Bekerja sendirian",
+                            "desc": "Bekerja sendiri dan tidak melibatkan orang lain yang tidak tertarik dengan masalah lingkungan.",
+                            "feedback": "Meskipun mandiri itu bagus, bekerja dengan bisnis atau organisasi lain dapat membantu menciptakan ide dan peluang baru untuk membantu lingkungan. Dengan bekerja sendiri, kamu dapat kehilangan kesempatan penting."
                         }
                     ]
                 }
@@ -357,99 +372,99 @@
         },
         {
             "id": 4,
-            "name": "Scenario 4",
-            "desc": "You have just successfully opened a small homestay. You will have to hire employees and manage your business operations. You will need to create a sustainable workplace that prioritizes the well-being of your employees and contributes to the community. Your decisions will impact the social benefits of your business . You want to prioritize the triple bottom line and aim to create businesses that benefit people, the planet, and profit.",
+            "name": "Skenario 4",
+            "desc": "Kamu baru saja berhasil membuka homestay atau penginapan kecil. Kamu harus mempekerjakan karyawan dan mengelola operasional bisnismu. Kamu perlu menciptakan tempat kerja berkelanjutan yang memprioritaskan kesejahteraan karyawanmu dan tetap memberikan kontribusi kepada masyarakat. Keputusanmu akan berdampak pada manfaat sosial dari bisnis tersebut. Kamu ingin memprioritaskan triple bottom line dan bertujuan untuk menciptakan bisnis yang bermanfaat bagi manusia, planet, dan keuntungan (profit).",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-4.gif",
-            "congratulationMessage": "Thanks for playing Change for Green! You've not only created a successful business, but also contributed to a cleaner and healthier environment. Keep up the good work!",
+            "congratulationMessage": "Terima kasih telah memainkan \"Change for Green\"! Kamu tidak hanya telah menciptakan sebuah bisnis yang sukses, tetapi juga berkontribusi untuk lingkungan yang lebih bersih dan sehat. Pertahankan kerja yang baik ini!",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "You have two candidates for a front desk position. One has extensive experience but requires a high salary, while the other has less experience but is willing to work for a lower salary. Which candidate would you hire?",
+                    "desc": "Kamu memiliki dua kandidat untuk posisi frong desk. Yang satu memiliki pengalaman yang luas tetapi membutuhkan gaji yang tinggi, sementara yang lain memiliki pengalaman yang lebih sedikit tetapi bersedia bekerja dengan gaji yang lebih rendah. Kandidat mana yang akan kamu rekrut?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Hire the highflyers",
-                            "desc": "Hire highly qualified and experienced candidate who wants a high salary",
-                            "feedback": "Hiring the experienced candidate who wants a high salary might be good for the business, but it can be too expensive for your business because you are just starting. Choosing the less experienced candidate who is willing to work for less can be better for you for now."
+                            "title": "Rekrut yang memiliki kualifikasi tinggi",
+                            "desc": "Rekrut kandidat yang berkualifikasi tinggi dan berpengalaman yang menginginkan gaji tinggi",
+                            "feedback": "Mempekerjakan kandidat berpengalaman yang menginginkan gaji tinggi mungkin baik untuk bisnis, tetapi bisa terlalu mahal untuk bisnis karena kamu baru memulai. Memilih kandidat yang kurang berpengalaman yang bersedia bekerja dengan lebih sedikit bisa lebih baik untukmu untuk saat ini."
                         },
                         {
                             "id": 2,
-                            "title": "Growing with your employee",
-                            "desc": "Hire the less experienced candidate who is willing to work for less and learn with you.",
-                            "feedback": " Choosing the less experienced candidate who is willing to work for less can be better for you for now. Hiring the experienced candidate who wants a high salary might be good for the business, but it can be too expensive for your business because you are just starting."
+                            "title": "Tumbuh bersama karyawanmu",
+                            "desc": "Rekrut kandidat yang kurang berpengalaman yang bersedia bekerja dengan biaya lebih sedikit dan belajar bersamamu.",
+                            "feedback": "Memilih kandidat yang kurang berpengalaman yang bersedia bekerja dengan biaya lebih sedikit mungkin lebih baik untukmu saat ini. Mempekerjakan kandidat berpengalaman yang menginginkan gaji tinggi mungkin bagus untuk bisnis, tetapi bisa terlalu mahal untuk bisnismu karena kamu baru memulai."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "You want to make a break room for your employees. Which option is better?",
+                    "desc": "Kamu ingin membuat ruang istirahat untuk karyawan. Opsi mana yang lebih baik?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Spend money to buy",
-                            "desc": "Buying new furniture and appliances",
-                            "feedback": "Buying new furniture and appliances can be expensive and not good for the environment. Reusing and fixing old furniture and appliances is better for the environment."
+                            "title": "Menghabiskan uang untuk membeli",
+                            "desc": "Membeli furnitur dan peralatan baru",
+                            "feedback": "Membeli furnitur dan peralatan baru bisa jadi mahal dan tidak baik bagi lingkungan. Menggunakan kembali dan memperbaiki furnitur dan peralatan lama lebih baik bagi lingkungan."
                         },
                         {
                             "id": 2,
-                            "title": "Spend time in fixing ",
-                            "desc": "Reusing and fixing old furniture and appliances for the break room.",
-                            "feedback": "By reusing and fixing old furniture and appliances, you can save money and help the environment."
+                            "title": "Luangkan waktu untuk memperbaiki",
+                            "desc": "Menggunakan kembali dan memperbaiki furnitur dan peralatan lama untuk ruang istirahat.",
+                            "feedback": "Dengan menggunakan kembali dan memperbaiki furnitur dan peralatan lama, kamu dapat menghemat uang dan membantu lingkungan."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "One of your employees comes to you and tells you that they need time off to take care of a sick family member. You have to decide whether to let them take time off or make them come to work. What should you do?",
+                    "desc": "Salah satu karyawan mendatangimu dan memberi tahu bahwa mereka perlu cuti untuk merawat anggota keluarga yang sakit. Kamu harus memutuskan apakah membiarkan mereka mengambil cuti atau membuat mereka datang bekerja. Apa yang akan kamu lakukan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "People first",
-                            "desc": "Allow the employee to take time off and offer support.",
-                            "feedback": "By saying yes and offering support, you can make the workplace happier and better for everyone."
+                            "title": "Prioritaskan orang terlebih dahulu",
+                            "desc": "Perbolehkan pegawai untuk mengambil cuti dan tawarkan bantuan.",
+                            "feedback": "Dengan mengatakan ya dan menawarkan dukungan, kamu dapat membuat tempat kerja menjadi terasa lebih membahagiakan dan lebih baik untuk semua orang."
                         },
                         {
                             "id": 2,
-                            "title": "Profit first",
-                            "desc": "Say no and make them come to work. You need to make the best use of your money.",
-                            "feedback": "Saying no can make the employee unhappy and make the workplace a bad place to work. Saying yes and offering support can make the workplace happier and better for everyone."
+                            "title": "Prioritaskan laba atau keuntungan",
+                            "desc": "Katakan tidak dan buat mereka datang bekerja. Kamu harus menggunakan uangmu dengan sebaik-baiknya.",
+                            "feedback": "Mengatakan tidak dapat membuat karyawan tidak bahagia dan menjadikan tempat kerja sebagai tempat kerja yang buruk. Mengatakan ya dan menawarkan dukungan dapat membuat tempat kerja lebih membahagiakan dan lebih baik bagi semua orang."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Your company has been asked to participate in a charity event to support a cause that is important to your community. You want to show your support, but you're not sure how to do it. Which option is better for the environment and your business?",
+                    "desc": "Perusahaanmu telah diminta untuk berpartisipasi dalam acara amal untuk mendukung tujuan yang penting bagi komunitasmu. Kamu ingin menunjukkan dukungan, tetapi kamu tidak yakin bagaimana melakukannya. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Volunteer",
-                            "desc": "Organize a volunteer day where employees can participate in the event.",
-                            "feedback": "By organizing a volunteer day, you can make a real difference in your community and create a positive workplace culture."
+                            "title": "Sukarelawan",
+                            "desc": "Ciptakan \"Volunteer Day\" di mana karyawan dapat berpartisipasi dalam acara tersebut.",
+                            "feedback": "Dengan mengatur atau menginisiasi \"Volenteer Day\", kamu dapat membuat perbedaan nyata di komunitas dan menciptakan budaya tempat kerja yang positif."
                         },
                         {
                             "id": 2,
-                            "title": "Donation.",
-                            "desc": "Donate a large sum of money to the charity. Your employees won't want to volunteer. ",
-                            "feedback": "Donating a large sum of money can be a quick way to show support, but it may not have a lasting impact on your community. Organizing a volunteer day can be better for the environment and your business because it shows your commitment to the cause and encourages teamwork among your employees."
+                            "title": "Sumbangan",
+                            "desc": "Sumbangkan sejumlah besar uang untuk amal. Karyawanmu tidak akan mau menjadi sukarelawan.",
+                            "feedback": "Menyumbangkan uang dalam jumlah besar dapat menjadi cara cepat untuk menunjukkan dukungan, tetapi mungkin tidak berdampak jangka panjang pada komunitasmu. Menyelenggarakan hari sukarela atau \"Volunteer Day\" dapat menjadi lebih baik bagi lingkungan dan bisnis karena menunjukkan komitmenmu terhadap tujuan dan mendorong kerja tim di antara karyawanmu."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "You have the opportunity to expand your business by opening a new location in a different city. Which option is better for the environment and your business?",
+                    "desc": "Kamu memiliki kesempatan untuk memperluas bisnismu dengan membuka lokasi baru di kota yang berbeda. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Build new",
-                            "desc": "Build a new location from scratch so that you get exactly what you want.",
-                            "feedback": "Building a new location from scratch can be expensive and have a negative impact on the environment. Renovating an existing building to make it more eco-friendly can be a better option because it reduces waste and energy usage."
+                            "title": "Membangun yang baru",
+                            "desc": "Bangun lokasi baru dari awal sehingga kamu mendapatkan apa yang kamu inginkan.",
+                            "feedback": "Membangun lokasi baru dari awal bisa mahal dan berdampak negatif pada lingkungan. Merenovasi bangunan yang sudah ada agar lebih ramah lingkungan bisa menjadi pilihan yang lebih baik karena mengurangi limbah dan penggunaan energi."
                         },
                         {
                             "id": 2,
-                            "title": "Renovate",
-                            "desc": "Renovate an existing building to make it more eco-friendly.",
-                            "feedback": "By renovating an existing building to make it more eco-friendly, you can reduce waste and energy usage, which can have a positive impact on the environment and potentially save money in the long-term."
+                            "title": "Merenovasi",
+                            "desc": "Merenovasi bangunan yang ada agar lebih ramah lingkungan. Merenovasi bangunan yang sudah ada agar lebih ramah lingkungan.",
+                            "feedback": "Dengan merenovasi bangunan yang sudah ada menjadi lebih ramah lingkungan, kamu dapat mengurangi penggunaan limbah dan energi, yang dapat berdampak positif bagi lingkungan dan berpotensi menghemat uang dalam jangka panjang."
                         }
                     ]
                 }
@@ -457,99 +472,99 @@
         },
         {
             "id": 5,
-            "name": "Scenario 5",
-            "desc": "You have decided to start a small furniture business. Your products are selling like hotcakes and you need to keep up with the demand. However, you also want your small company to meet the sustainability standards. What do you do? Let's learn about the importance of sustainable supply chain management and how to make the right choices for your business, the environment, and society. Are you ready to make some tough decisions and create a sustainable supply chain? Let's get started!",
+            "name": "Skenario 5",
+            "desc": "Kamu telah memutuskan untuk memulai bisnis furnitur kecil-kecilan. Produkmu laris manis dan kamu harus memenuhi permintaan (pesanan). Namun, kamu juga ingin perusahaan kecilmu memenuhi standar keberlanjutan. Apa yang akan kamu lakukan? Mari belajar tentang pentingnya manajemen rantai pasok (supply chain) yang berkelanjutan dan cara membuat pilihan yang tepat untuk bisnis, lingkungan, dan masyarakat. Apakah kamu siap untuk membuat beberapa keputusan sulit dan menciptakan rantai pasok yang berkelanjutan? Mari kita mulai!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-5.gif",
-            "congratulationMessage": "Your hard work and dedication to green entrepreneurship has paid off! Keep using your skills to make a positive impact on the world and inspire others to follow your lead.",
+            "congratulationMessage": "Kerja keras dan dedikasimu kepada kewirausahaan hijau atau green entrepreneurship telah terbayarkan! Tetap gunakan keahlian-keahlian yang kamu miliki untuk menciptakan dampak positif pada dunia dan menginspirasi orang lain untuk mengikuti jejakmu.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Your current supplier offers the lowest prices, but they have a history of violating environmental regulations. You've found another supplier who follows sustainable practices, but their prices are higher. Which option is better for the environment and your business?",
+                    "desc": "Pemasokmu saat ini menawarkan harga terendah, tetapi mereka pernah melanggar peraturan lingkungan. Kamu telah menemukan pemasok lain yang mengikuti praktik berkelanjutan, tetapi harganya lebih tinggi. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Switch",
-                            "desc": "Switch to the sustainable supplier, even though their prices are higher.",
-                            "feedback": "By switching to the sustainable supplier, you're showing your commitment to sustainability and ethical business practices. Even though their prices are higher, it's worth it for the positive impact on the environment and society."
+                            "title": "Beralih",
+                            "desc": "Beralih ke pemasok berkelanjutan, meskipun harganya lebih tinggi.",
+                            "feedback": "Devgan beralih ke pemasok berkelanjutan, kamu menunjukkan komitmen terhadap keberlanjutan dan praktik bisnis yang etis. Meskipun harganya lebih tinggi, itu sepadan dengan dampak positifnya terhadap lingkungan dan masyarakat."
                         },
                         {
                             "id": 2,
-                            "title": "Stick",
-                            "desc": "Stick with your current supplier and save money.",
-                            "feedback": "By sticking with your current supplier, you may save money in the short-term but risk harming the environment and your reputation in the long-term. By switching to the sustainable supplier, you're investing in a more eco-friendly supply chain and potentially attracting customers who value sustainable practices."
+                            "title": "Tidak beralih",
+                            "desc": "Tetap tidak beralih dari pemasokmu yang saat ini dan menghemat uang.",
+                            "feedback": "Dengan tidak beralih dari pemasokmu saat ini, kamu dapat menghemat uang dalam jangka pendek tetapi berisiko merusak lingkungan dan reputasi dalam jangka panjang. Dengan beralih ke pemasok berkelanjutan, kamu berinvestasi dalam rantai pasokan yang lebih ramah lingkungan dan berpotensi menarik pelanggan yang menghargai praktik berkelanjutan."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "You need to choose a supplier for an important material that your product needs. One supplier gets the material from a nearby community, giving people jobs and money, but their way of making it creates a lot of pollution. The other supplier gets the material from a different place where there are no clear social benefits, but they make it with less pollution. Which choice is best for the environment and society?",
+                    "desc": "Kamu perlu memilih pemasok untuk bahan penting yang dibutuhkan produkmu. Satu pemasok mendapatkan bahan dari komunitas terdekat, memberi orang pekerjaan dan uang, tetapi cara mereka membuatnya menciptakan banyak polusi. Pemasok lain mendapatkan bahan dari tempat berbeda di mana tidak ada manfaat sosial yang jelas, tetapi mereka membuatnya dengan polusi yang lebih sedikit. Pilihan mana yang terbaik untuk lingkungan dan masyarakat?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Prioritize nearby community",
-                            "desc": "Choose the supplier from the nearby community even though they make a lot of pollution",
-                            "feedback": "It's important to help nearby communities, but we also need to take care of the environment. A supplier who makes a lot of pollution can harm the planet and cause problems for people in the long run. We should think of ways to make less pollution, like using different methods or investing in programs to help."
+                            "title": "Utamakan masyarakat sekitar",
+                            "desc": "Pilih pemasok dari komunitas terdekat meskipun mereka membuat banyak polusi",
+                            "feedback": "Penting untuk membantu komunitas terdekat, tetapi kita juga perlu menjaga lingkungan. Pemasok yang membuat banyak polusi dapat merusak planet dan menimbulkan masalah bagi manusia dalam jangka panjang. Kita harus memikirkan cara untuk mengurangi polusi, seperti menggunakan metode yang berbeda atau berinvestasi dalam program untuk membantu."
                         },
                         {
                             "id": 2,
-                            "title": "Prioritize less pollution",
-                            "desc": "Choose the supplier with less pollution even though they don't help a community",
-                            "feedback": "Making less pollution is a good thing, but we also need to think about people. Working with a supplier who helps a community can be good for society, like giving people jobs and money. We can work with the supplier to find ways to make less pollution, like using different sources of energy or investing in programs to help."
+                            "title": "Prioritaskan pengurangan polusi",
+                            "desc": "Pilih pemasok dengan lebih sedikit polusi meskipun mereka tidak membantu komunitas",
+                            "feedback": "Mengurangi polusi adalah hal yang baik, tetapi kita juga perlu memikirkan orang. Bekerja dengan pemasok yang membantu komunitas bisa bermanfaat bagi masyarakat, seperti memberi orang pekerjaan dan uang. Kita dapat bekerja sama dengan pemasok untuk menemukan cara mengurangi polusi, seperti menggunakan berbagai sumber energi atau berinvestasi dalam program untuk membantu."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "You have two suppliers for a key material, one of which uses a lot of water in their production process while the other uses significantly less. However, the supplier using less water is located further away and requires longer transportation times. Which option is the most sustainable choice?",
+                    "desc": "Kamu memiliki dua pemasok untuk bahan utama, salah satunya menggunakan banyak air dalam proses produksinya sementara yang lain menggunakan lebih sedikit air. Namun, pemasok yang menggunakan lebih sedikit air terletak lebih jauh dan membutuhkan waktu transportasi yang lebih lama. Opsi mana yang merupakan pilihan yang paling berkelanjutan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Prioritize less water use",
-                            "desc": "Choose the supplier using less water, even if it means longer transportation times.",
-                            "feedback": "Choosing a supplier that uses less water is important for sustainability, but it's important to also consider the carbon emissions from transportation. You can work with the supplier to find ways to reduce transportation emissions, such as optimizing delivery routes or using more efficient transportation methods."
+                            "title": "Prioritaskan penggunaan air yang lebih sedikit",
+                            "desc": "Pilih pemasok yang menggunakan lebih sedikit air, bahkan jika itu berarti waktu transportasi lebih lama.",
+                            "feedback": "Memilih pemasok yang menggunakan lebih sedikit air penting untuk keberlanjutan, tetapi juga penting untuk mempertimbangkan emisi karbon dari transportasi. Kamu dapat bekerja sama dengan pemasok untuk mencari cara mengurangi emisi transportasi, seperti mengoptimalkan rute pengiriman atau menggunakan metode transportasi yang lebih efisien."
                         },
                         {
                             "id": 2,
-                            "title": "Prioritize less emission",
-                            "desc": "Choose the supplier using more water to minimize transportation emissions.",
-                            "feedback": "While choosing a supplier that minimizes transportation emissions is important, it's also important to consider the impact of excessive water usage on the environment. You can work with the supplier to find ways to reduce water usage, such as implementing more efficient production methods or investing in technologies that reduce water usage."
+                            "title": "Prioritaskan pengurangan emisi",
+                            "desc": "Pilih pemasok yang menggunakan lebih banyak air untuk meminimalkan emisi transportasi.",
+                            "feedback": "Meskipun memilih pemasok yang meminimalkan emisi transportasi itu penting, penting juga untuk mempertimbangkan dampak penggunaan air yang berlebihan terhadap lingkungan. Kamu dapat bekerja dengan pemasok untuk menemukan cara mengurangi air penggunaan, seperti menerapkan metode produksi yang lebih efisien atau berinvestasi dalam teknologi yang mengurangi penggunaan air."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "As a sustainable business owner, you want to reduce the environmental impact of your supply chain. You have the option to source materials from a local supplier that uses eco-friendly packaging but charges a higher price. What should you do?",
+                    "desc": "Sebagai pemilik bisnis yang berkelanjutan, kamu ingin mengurangi dampak lingkungan dari rantai pasokmu. Kamu memiliki opsi untuk mendapatkan bahan dari pemasok lokal yang menggunakan kemasan ramah lingkungan tetapi membebankan harga lebih tinggi. Apa yang akan kamu lakukan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Expensive",
-                            "desc": "Choose the local supplier and raise prices to compensate for the increased cost.",
-                            "feedback": "By choosing the local supplier, you are supporting your local community and reducing the carbon emissions associated with shipping materials from overseas. To offset the higher cost, you can raise your prices slightly to maintain your profits while still offering eco-friendly products."
+                            "title": "Mahal",
+                            "desc": "Pilih pemasok lokal dan naikkan harga untuk mengkompensasi kenaikan biaya.",
+                            "feedback": "Dengan memilih pemasok lokal, kamu mendukung komunitas lokal dan mengurangi emisi karbon yang terkait dengan pengiriman bahan dari luar negeri. Untuk mengimbangi biaya yang lebih tinggi, kamu dapat menaikkan harga sedikit untuk mempertahankan keuntungan sambil tetap menawarkan produk ramah lingkungan."
                         },
                         {
                             "id": 2,
-                            "title": "Cheap",
-                            "desc": "Choose a cheaper supplier with less eco-friendly packaging to keep costs low.",
-                            "feedback": "While it may seem tempting to choose the cheaper supplier to keep costs low, it's important to consider the environmental impact of less eco-friendly packaging. By choosing the local supplier with eco-friendly packaging, you can reduce the carbon emissions associated with transportation and support your local community. You can also offset the higher cost by finding ways to reduce other expenses or by adjusting your marketing strategies to attract customers who value sustainability."
+                            "title": "Murah",
+                            "desc": "Pilih pemasok yang lebih murah dengan kemasan yang kurang ramah lingkungan agar biaya tetap rendah.",
+                            "feedback": "Meskipun mungkin tergoda untuk memilih pemasok yang lebih murah agar biaya tetap rendah, penting untuk mempertimbangkan dampak lingkungan dari kemasan yang kurang ramah lingkungan. Dengan memilih pemasok lokal dengan kemasan ramah lingkungan, kamu dapat mengurangi emisi karbon yang terkait dengan transportasi dan mendukung komunitas lokal. Kamu juga dapat mengimbangi biaya yang lebih tinggi dengan mencari cara untuk mengurangi pengeluaran lain atau dengan menyesuaikan strategi pemasaran untuk menarik pelanggan yang menghargai keberlanjutan."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "You went to a seminar about \"circular economy\" and got inspired to do more reduce and reuse in your business. What actions can you take to adopt a circular economy model?",
+                    "desc": "Kamu menghadiri seminar tentang \"ekonomi sirkular\" dan terinspirasi untuk melakukan lebih banyak pengurangan dan penggunaan kembali dalam bisnismu. Tindakan apa yang dapat kamu ambil untuk mengadopsi model ekonomi sirkular?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Reduce Material Use",
-                            "desc": "Implement a system to reuse and refurbish materials, such as reusing metal scraps in your production processes or refurbishing old products for resale.",
-                            "feedback": "Implementing a system to reuse and refurbish materials, such as reusing metal scraps in your production processes or refurbishing old products for resale, is a key action to take when adopting a circular economy model."
+                            "title": "Kurangi Penggunaan Bahan",
+                            "desc": "Terapkan sistem untuk menggunakan kembali dan membarui bahan, seperti menggunakan kembali sisa logam dalam proses produksi atau membarui produk lama untuk dijual kembali.",
+                            "feedback": " Menerapkan sistem untuk menggunakan kembali dan memperbarui bahan, seperti menggunakan kembali sisa logam dalam proses produksi atau memperbarui produk lama untuk dijual kembali, adalah tindakan utama yang harus diambil saat mengadopsi model ekonomi sirkular."
                         },
                         {
                             "id": 2,
-                            "title": "Reduce Cost",
-                            "desc": "Purchase new, cheap materials  to reduce cost. If more waste is created you can always recycle the waste materials.",
-                            "feedback": "Adopting a circular economy model involves reducing waste and reusing materials. Purchasing new, cheap materials  may reduce costs in the short term, but it can lead to creating more waste and harm the environment in the long run. It's important to prioritize the sustainability of your business practices."
+                            "title": "Kurangi Biaya",
+                            "desc": "Beli bahan baru yang murah untuk mengurangi biaya. Jika lebih banyak limbah dihasilkan, kamu selalu dapat mendaur ulang bahan limbah.",
+                            "feedback": "Mengadopsi model ekonomi sirkular berarti mengurangi limbah dan menggunakan kembali bahan. Membeli bahan baru yang murah dapat mengurangi biaya dalam jangka pendek, tetapi dapat menyebabkan lebih banyak limbah dan merusak lingkungan. Sangat penting untuk memprioritaskan keberlanjutan dari praktik bisnis."
                         }
                     ]
                 }
