@@ -15,7 +15,8 @@
         "Continue": "Continue",
         "Next": "Next",
         "Exit": "Exit",
-        "YourAnswer": "Your Answer"
+        "YourAnswer": "Your Answer",
+        "Congratulation": "Congratulations!"
     },
     "players": [
         {

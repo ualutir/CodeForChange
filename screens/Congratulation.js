@@ -5,13 +5,16 @@ import { StyleSheet, Text, View, Pressable, ImageBackground, ScrollView } from '
 
 const Congratulation = ({ navigation }) => {
     const context = useContext(DataContext);
+    const scenarioImage = context.state.scenarioImage;
     const congratulationMessage = context.state.scenario.congratulationMessage;
+    const captions = context.state.captions;
     return (
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={require('../assets/Congratulations.gif')}>
+                source={scenarioImage}>
                 <View style={styles.overlay}>
+                    <Text style={styles.heading}>{captions.Congratulation}</Text>
                     <ScrollView
                         nestedScrollEnabled={true}
                         contentContainerStyle={styles.scrollContainer}
@@ -21,7 +24,7 @@ const Congratulation = ({ navigation }) => {
                     <Pressable
                         style={styles.button}
                         onPress={() => navigation.navigate('Summary')}>
-                        <Text style={styles.buttonText}>{context.state.captions.Continue}</Text>
+                        <Text style={styles.buttonText}>{captions.Continue}</Text>
                     </Pressable>
                 </View>
             </ImageBackground>
@@ -44,13 +47,13 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     overlay: {
-        marginVertical: '70%',
+        marginVertical: '50%',
         marginHorizontal: 50,
         alignItems: 'center',
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         borderRadius: 10,
-        height: '30%'
+        height: '40%'
     },
     heading: {
         fontSize: 25,
