@@ -68,6 +68,8 @@ const loadData = (language, dispatch) => {
         data = require('../assets/data/data_en.json');
     } else if (language == LANGUAGES.ID) {
         data = require('../assets/data/data_id.json');
+    } else if (language == LANGUAGES.FLI) {
+        data = require('../assets/data/data_fli.json');
     }
     dispatch({ type: 'SET_DATA', data: data });
 }

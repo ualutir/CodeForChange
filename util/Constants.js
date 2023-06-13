@@ -1,6 +1,7 @@
 export const LANGUAGES = {
     EN: 'English',
-    ID: 'Indonesian'
+    ID: 'Indonesian',
+    FLI: 'Filipino'
 }
 
 export const DATA_TYPE = {

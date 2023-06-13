@@ -32,7 +32,7 @@ const Home = ({ navigation, route }) => {
                 style={styles.image}
                 source={require('../assets/home_background.gif')}>
                 <View style={styles.overlay}>
-                    <Image style={styles.logo} source={require('../assets/Logo.png')}/>
+                    <Image style={styles.logo} source={require('../assets/Logo.png')} />
                     <Text style={styles.heading}>Welcome</Text>
                     <Text style={styles.subHeading}>Please select a language</Text>
                     <TouchableOpacity
@@ -44,6 +44,11 @@ const Home = ({ navigation, route }) => {
                         style={styles.button}
                         onPress={() => handleLanguageSelect(LANGUAGES.ID)}>
                         <Text style={styles.buttonText}>Bahasa Indonesia</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.button}
+                        onPress={() => handleLanguageSelect(LANGUAGES.FLI)}>
+                        <Text style={styles.buttonText}>Filipino</Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
@@ -65,8 +70,8 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     logo: {
-        width: '100%',
-        height: '30%',
+        width: '30%',
+        height: '15%',
         background: 'rgba(255, 255, 255, 0.9)',
         resizeMode: 'contain'
     },
