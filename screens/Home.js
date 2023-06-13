@@ -70,8 +70,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     logo: {
-        width: '30%',
-        height: '15%',
+        width: 200,
         background: 'rgba(255, 255, 255, 0.9)',
         resizeMode: 'contain'
     },
