@@ -22,13 +22,13 @@ const Tasks = ({ navigation, route }) => {
         }
     }, [isFocused]);
 
-    async function handleNext(item){
+    async function handleNext(item) {
         await playNextSound();
         context.dispatch({ type: 'SET_OPTION', data: selectedOption });
         navigation.navigate('Feedback');
     }
 
-    async function handleSnapToItem(index){
+    async function handleSnapToItem(index) {
         await playAnswerSound();
         setSelectedOption(task.options[index]);
     };
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         color: 'black',
+        textAlign: 'center'
     },
     optionHeader2: {
         fontSize: 16,
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
         fontWeight: 'normal',
         color: '#333',
         paddingTop: 10,
-        textAlign: 'justify'
+        textAlign: 'center'
     },
     button: {
         backgroundColor: '#00a8ff',

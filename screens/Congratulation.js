@@ -12,9 +12,8 @@ const Congratulation = ({ navigation }) => {
         <View style={styles.container}>
             <ImageBackground
                 style={styles.image}
-                source={scenarioImage}>
+                source={require('../assets/Congratulations.gif')}>
                 <View style={styles.overlay}>
-                    <Text style={styles.heading}>{captions.Congratulation}</Text>
                     <ScrollView
                         nestedScrollEnabled={true}
                         contentContainerStyle={styles.scrollContainer}
@@ -47,13 +46,13 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     overlay: {
-        marginVertical: '50%',
+        marginVertical: '70%',
         marginHorizontal: 50,
         alignItems: 'center',
         padding: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         borderRadius: 10,
-        height: '40%'
+        height: '45%'
     },
     heading: {
         fontSize: 25,

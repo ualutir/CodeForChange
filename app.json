@@ -23,7 +23,7 @@
                 "foregroundImage": "./assets/adaptive-icon.png",
                 "backgroundColor": "#ffffff"
             },
-            "package": "com.edc"
+            "package": "org.edc.change_for_green"
         },
         "web": {
             "favicon": "./assets/favicon.png"

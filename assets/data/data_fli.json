@@ -1,22 +1,22 @@
 {
     "homepage": {
-        "text": "Selamat datang di \"Change for Green\", sebuah game di mana kamu dapat membuat perbedaan untuk planet ini sambil mendapatkan penghasilan untuk diri sendiri dan komunitasmu. Bergabunglah dengan komunitas pengusaha hijau dan bekerja sama untuk menyelesaikan berbagai tantangan. Bangun bisnismu dan ciptakan solusi berkelanjutan. Bersiaplah untuk membuat perubahan menjadi lebih baik dan dapatkan penghasilan saat melakukannya!"
+        "text": "Welcome sa Change for Green, isang laro kung saan makakagawa ka ng pagbabago para sa planeta habang kumikita para sa iyong sarili at sa iyong komunidad. Sumali sa isang komunidad ng mga Green entreprenuers at magtulungan upang malutas ang iba't ibang mga hamon. Buuin ang iyong negosyo at lumikha ng mga pangmatagalang solusyon. Maghanda upang gumawa ng pagbabago nang mahusay at kumita habang ginagawa ito!"
     },
     "captions": {
-        "Introduction": "Perkenalan",
-        "Character": "Pilih Karakter",
-        "Scenario": "Pilih Skenario",
-        "Task": "Tugas",
-        "Option": "Pilih opsi terbaik di bawah ini dan lanjutkan Berikutnya.",
-        "Summary": "Ringkasan",
+        "Introduction": "Panimula",
+        "Character": "Piliin ang Character",
+        "Scenario": "Piliin ang Scenario",
+        "Task": "Gawain",
+        "Option": "Piliin ang pinakamagandang opsyon sa ibaba at magpatuloy sa Susunod.",
+        "Summary": "Buod",
         "Feedback": "Umpan balik",
-        "NextScenario": "Coba Skenario Lain",
-        "NextTask": "Tugas Selanjutnya",
-        "Continue": "Lanjutkan",
-        "Next": "Berikutnya",
-        "Exit": "Keluar",
-        "YourAnswer": "Jawaban Anda",
-        "Congratulation": "Congratulations!"
+        "NextScenario": "Subukan ang Ibang Scenario",
+        "NextTask": "Susunod na Gawain",
+        "Continue": "Ipagpatuloy",
+        "Next": "Susunod",
+        "Exit": "Lumabas",
+        "YourAnswer": "Ang iyong sagot",
+        "Congratulation": "Binabati kita!"
     },
     "players": [
         {
@@ -74,98 +74,98 @@
         {
             "id": 1,
             "name": "Skenario 1",
-            "desc": "Apakah kamu tahu bahwa rata-rata, kami memproduksi 300 gram sisa makanan setiap harinya? Artinya, sampah sisa makanan yang dihasilkan oleh penduduk setiap tahunnya adalah 9,300 ton, dan memberikan kontribusi pada degradasi lingkungan. Dalam game ini, kamu akan belajar bagaimana meminimalisir bahaya atau keurugian yang diakibatkan oleh sampah sisa makanan terhadap planet kita. Bergabunglag bersama kami dan ayo membuat dampak positif sambil menjelajahi dunia generasi dengan pendapatan berkelanjutan. Ayo bermain!",
+            "desc": "Alam mo ba na sa karaniwan, gumagawa tayo ng 300 gramo ng food waste kada araw? Iyan ay 9,300 tonelada ng food waste na naipon taun-taon ng populasyon, na nag-aambag sa pagkasira ng kapaligiran. Sa larong ito, matututunan mo kung paano mabawasan ang pinsalang dulot ng food waste sa ating planeta. Sumali sa amin at gumawa tayo ng positibong epekto habang ginalugad din ang mundo ng sustainable income generation. Maglaro tayo!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "../assets/scenario-1.gif",
-            "congratulationMessage": "Selamat! Kamu membuat sebuah perbedaan di dunia dengan dengan keterampilan-keterampilan wirausaha hijau atau green entrepreneurship yang kamu miliki. Pertahankanlah kerja yang baik ini dan tetap mainkan \"Change for Green\"!",
+            "congratulationMessage": "Binabati kita! Gumagawa ka ng pagbabago sa mundo gamit ang iyong mga kasanayan sa Green Entreprenuership. Ipagpatuloy ang mabuting gawain at patuloy na maglaro ng Change for Green!",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Belajar dari YouTube mengenai pengelolaan sisa makanan, kamu lantas memutuskan untuk membuang atau mengolah sampah siswa makananmu di rumah dengan cara yang bersih dan tidak menghasilkan bau yang tidak sedap. Aktifitas manakah yang akan kamu pilih untuk menjadi lebih ramah lingkungan dan dapat menghasilkan penghasilan tambahan?",
+                    "desc": "Natutunan mula sa YouTube ang tungkol sa pamamahala ng food waste, nagpasya kang itapon o gamitin ang mga food waste sa iyong sambahayan sa paraang malinis at hindi nagdudulot ng masamang amoy. Aling aktibidad ang pipiliin mong maging environment friendly at kumita ng karagdagang kita?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Melakukan mengomposan terhadap sampah sisa makanan",
-                            "desc": "Pengomposan tradisional terhadap limbah makanan dapat membuat tanah kebun menjadi subur apabila diolah dengan baik. Hasil olahan tanah kebun kemudian dapat dijual.",
-                            "feedback": "Melakukan pengomposan untuk limbah makanan adalah cara yang bagus untuk mengurangi degradasi lingkungan dan mendapatkan penghasilan tambahan. Dengan mengubah limbah makanan menjadi tanah kebun yang baik, maka kamu menjauhkan limbah dari tempat pembuangan sampah dan menciptakan produk bernilai yang dapat dijual. Teruslah bekerja dengan baik!"
+                            "title": "Paggawa ng composting para sa food waste",
+                            "desc": "Ang tradisyunal na pag-compost ng food waste ay nakapagdudulot nang magandang epekto sa lupa, dahil ito ay nag bibigay nang organic matter. Nagiging mataba ang lupa, itong matabang lupa na ito, tinatawag natin na garden soil, ay maaring ma benta din, lalo na sa mga plantito at mga plantita.",
+                            "feedback": "Ang paggawa ng composting para sa food waste ay isang mahusay na paraan upang mabawasan ang pagkasira ng kapaligiran at makakuha ng karagdagang kita. Sa pamamagitan ng pagcompost ng food waste upang maging bahagi nang isang matabang garden soil, ikaw ay nakatulong na sa pag dagdag nang basura sa landfull at maari ka pang kumita nang karagdagang kita dahil ito ay nabebenta. Ipagpatuloy ang mabuting gawain!"
                         },
                         {
                             "id": 2,
-                            "title": "Memproses limbah makanan menggunakan Black Soldier Fly atau Lalat Tentara Hitam",
-                            "desc": "Black Soldier Fly (BSF) mengonsumsi limbah makanan dan mengubahnya menjadi kompos dengan lebih cepat jika dibandingkan dengan cara pengomposan tradisional. BSF juga dapat dijual sebagai pakan ternak dan residunya dapat dijual menjadi pupuk kebun.",
-                            "feedback": "Memproses limbah makanan menggunakan Black Soldier Fly (BSF) merupakan metode yang dapat membantu memitigasi degradasi lingkungan yang juga dapat memberikan penghasilan tambahan. Black Soldier Fly (BSF) mengonsumsi limbah makanan dan mengubahnya menjadi kompos lebih cepat daripada metode pengomposan tradisional. Selain itu, residunya dapat dijual sebagai pupuk kebun dan Black Soldier Fly (BSF) sendiri dijual sebagai pakan. Ini adalah cara yang bagus untuk mengurangi limbah dan menghasilkan pendapatan pada saat yang bersamaan."
+                            "title": "Pagcompost ng food waste gamit ang black soldier fly",
+                            "desc": "Ang Black Soldier Fly (BSF) ay kumakain ng food waste at ginagawa itong compost nang mas mabilis kaysa sa tradisyonal na paraan ng pag-compost. Ang BSF ay maaari ding ibenta bilang mga feed at ang mga dumi nito ay maaring ibenta bilang pampapataba para sa garden soil.",
+                            "feedback": "Ang pagcompost ng food waste gamit ang black soldier fly ay isang paraan na makakatulong na mabawasan ang pagkasira ng kapaligiran habang kumikita din ng karagdagang kita. Ang black soldier fly ay kumakain ng food waste at ginagawa itong compost nang mas mabilis kaysa sa tradisyonal na mga paraan ng pag-compost. Bukod pa rito, ang mga dumi ay maaaring ibenta bilang pamtaba nang lupa at ang black soldier fly ay maaaring ibenta bilang mga feed. Ito ay isang mahusay na paraan upang mabawasan ang basura habang bumubuo nang kita."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Kamu dan teman-temanmu ingin menerapkan pemilahan sampah yang efisien dan efektif di komunitas. Kamu belajar bahwa memilah sampah dapat berdampak positif terhadap lingkungan dan menghasilkan pendapatan tambahan. Apa yang akan menjadi pilihan terbaikmu?",
+                    "desc": "Gusto mo at ng iyong mga kaibigan na ipatupad ang mahusay at epektibong paghihiwalay ng basura sa kanilang komunidad. natutunan mo na ang paghihiwalay ng basura ay maaaring magkaroon ng positibong epekto sa kapaligiran at magkaroon ng karagdagang kita. Ano ang iyong magiging pinakamahusay na gagawin?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Mengumpulkan limbah padat yang telah terpilah untuk potensi penghasilan",
-                            "desc": "Dengan memilah sampah seperti plastik, kaleng, dan kotak dapat berpotensi mendapatkan penghasilan tambahan. \nPlastik - Rp3,000/Kg \nKaleng - Rp12,000/Kg \nKardus - Rp2,000/Kg \nTantangannya adalah waktu yang dihabiskan dalam masa pengumpulan, yang membutuhkan waktu kurang lebih 2 bulan untuk mencapai 100 kilo. Namun, penghasilan tambahan dari pemilahan sampah ini dapat sangat membantu rumah tangga.",
-                            "feedback": "Dengan memilah sampah, kamu dan temanmu berpotensi mendapatkan penghasilan tambahan dari menjualnya ke pendaur ulang. Namun, mungkin diperlukan waktu untuk mengumpulkan sejumlah besar sampah. Meski demikian, ini adalah cara yang bagus untuk berkontribusi pada kelestarian lingkungan dan mendapatkan penghasilan tambahan untuk rumah tangga."
+                            "title": "Pagkolekta ng pinaghiwalay na solid waste para sa potensyal na kita",
+                            "desc": "Sa pamamagitan ng paghihiwalay ng mga basura tulad ng mga plastik, lata, at mga kahon, maaaring magkaroon ng karagdagang kita sina Benjie, Gelo, at Ethel. \n Mga plastik - PHP 200 / 2.0 kada kilo \n Latang Lata - PHP 100 / 1.0 kada kilo \n Mga Kahon - PHP 150 / 1.5 kada kilo \n Ang hamon ay ang oras na ginugol sa panahon ng pagkolekta, na aabutin ng humigit-kumulang 2 buwan upang umabot sa 100 kilo. Gayunpaman, ang karagdagang kita mula sa paghihiwalay ng basura ay maaaring maging malaking tulong sa kuminidad",
+                            "feedback": "Sa pamamagitan ng paghihiwalay ng basura, ito ay isang potensyal na paraan para kumita ng karagdagang kita galing sa pagbebenta nito sa mga recycler. Subalit maaaring abutin nang matagal na panahon upang makakolekta ng malaking halaga. Gayunpaman, ito ay isang mahusay na paraan upang mag-ambag sa pagpapanatili ng kapaligiran at makakuha ng karagdagang kita para sa kuminidad."
                         },
                         {
                             "id": 2,
-                            "title": "Menghasilkan pendapatan tambahan dari limbah makanan",
-                            "desc": "Kamu dan temanmu juga dapat menghasilkan pendapatan dari sisa makanan dengan memberi makan larva dari Black Soldier Fly (BSF). Misalnya, 100 kg sisa makanan dapat dikonsumsi oleh setidaknya 10 kg larva BSF. Untuk mencapai 100 kg sampah makanan hanya membutuhkan waktu 15 hari untuk 20 rumah tangga. Kamu dan temanmu juga dapat membebankan biaya penagihan sebesar Rp15,000 per 15 hari dari setiap rumah tangga. Ini tidak hanya menghasilkan pendapatan tambahan tetapi juga membantu penanganan limbah makanan secara efisien di komunitas.",
-                            "feedback": "Memberi makan limbah makanan kepada larva BSF adalah cara yang bagus untuk mengubah limbah menjadi sumber daya yang bernilai, yang dapat dijual sebagai pakan dan kompos. Ini adalah cara yang lebih efisien dan hemat waktu untuk memperoleh pendapatan tambahan dibandingkan dengan pemilahan sampah. Selain itu, membebankan biaya pemungutan dari rumah tangga dapat lebih meningkatkan pendapatan."
+                            "title": "Pagbuo ng kita mula sa food waste",
+                            "desc": "Ikaw at ang iyong mga kaibigan ay maaari ring kumita mula sa food waste sa pamamagitan ng pagpapakain nito sa mga black soldier fly larvae. Halimbawa, ang 100 kilo ng food waste ay maaaring kainin ng hindi bababa sa 10 kilo ng BSF larvae. Ang pag-abot sa 100 kilo ng food waste ay tatagal lamang ng 15 araw para sa 20 kabahayan isama na natin ang mga canteen at carenderia na nasa malapit. Maaari din silang maningil ng bayad sa koleksyon na PHP 50 bawat 15 araw mula sa bawat sambahayan. Hindi lamang ito nagdudulot ng karagdagang kita ngunit ito ay nakakatulong din dahil ito sa mahusay na pag-handle ng food waste sa kanilang komunidad.",
+                            "feedback": "Ang pagpapakain ng food waste sa black soldier fly larvae ay isang mahusay na paraan upang i-handle ang food waste at ito rin at may potensyal na mapaggagalingan nang karagdagang kita, dahil ito ay maaaring ibenta bilang mga feed at compost. Ito ay mas mabilis sa panahon o nakakatipid sa oras na paraan upang makabuo ng karagdagang kita kumpara sa paghihiwalay ng basura. Bukod pa rito, ang paniningil ng bayad sa pagkolekta mula sa mga sambahayan ay maaaring makadagadag sa kanilang kita."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Anda baru-baru ini belajar lebih banyak tentang penanganan limbah makanan yang efisien menggunakan teknologi BSF. Keluargamu telah beternak ayam kampung dan ikan lele di rumah untuk membantu menutupi pengeluaran rumah tangga sehari-hari. Anda juga sedang mempertimbangkan untuk bergabung dengan organisasi kepemudaan untuk mendapatkan pelatihan tentang prosedur teknis melakukan Black Soldier Fly (BSF). Bisakah Anda memutuskan tindakan terbaik?",
+                    "desc": "Natutunan mo kumakailan lang ang magandang paraan sa pag-handle sa food waste, at ito ay sa paraan nang teknolohiyang black soldier fly. Samantala ang iyong pamilya naman ay nakaugalian nang mag alaga nang free-range chickens at hito upang maka tulong sa pang-araw araw na gastusin sa bahay. Napag-isipan mo rin ang pagsali sa youth organization sa inyong barangay upang maka-attend nang mga technical training tungkol sa Black Soldier Fly technology. Ano ang pinaka magandang gawin?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Mengembangkan BSF dulu di rumah",
-                            "desc": "Dengan mengembangkan BSF di rumah, kamu dapat segera mengatasi limbah makanan yang dihasilkan di tingkat rumah tangga. Selain itu, BSF segar atau kering dapat digunakan sebagai pakan untuk ayam kampung dan lele, dan menghasilkan penghematan dari pengeluaran biasa yang kamu keluarkan dengan membeli pakan komersial. Selain itu, BSF segar atau kering dapat digunakan sebagai pakan ayam kampung dan lele miliknya. Dengan demikian, ia dapat menghasilkan penghematan dari pengeluarannya yang biasa dilakukan dengan membeli pakan komersial.",
-                            "feedback": "Dengan mengembangkan BSF di rumah, kamu dapat segera mengatasi limbah makanan yang dihasilkan di tingkat rumah tangga. Kamu tidak hanya dapat mengurangi pemborosan makanan, tetapi juga dapat menghasilkan penghematan dari pengeluaran biasa yang kamu keluarkan dengan membeli pakan komersial untuk ayam kampung dan ikan lele. Dan dengan menggunakan BSF segar atau kering sebagai pakan untuk hewan, kamu dapat memberi mereka makanan yang lebih sehat dan alami."
+                            "title": "Mag BSF muna sa bahay",
+                            "desc": "Sa pamamagitan ng paggawa ng BSF sa bahay, maaari mong agad na matugunan ang mga food waste na galing sa iyong malapit na kuminidad. Ang sariwa o pinatuyong BSF ay maaaring gamitin bilang mga feed para sa iyong free-range na manok at hito, na nakakatipid mula sa iyong karaniwang mga gastos na dulot ng pagbili ng mga komersyal na feed.",
+                            "feedback": "Sa pamamagitan ng paggawa ng BSF sa bahay, maaari mong agad na matugunan ang food waste na nabuo galing sa iyong malapit na kumunidad. Hindi mo lang mababawasan ang pag-aaksaya ng pagkain, kundi  maari ka ring makatipid mula sa iyong karaniwang mga gastos na dulot ng pagbili ng mga komersyal na feed para sa iyong free-range na manok at hito. At sa pamamagitan ng paggamit ng sariwa o pinatuyong BSF bilang mga feed para sa iyong mga hayop, maaari mong bigyan sila ng mas malusog at mas natural na diyeta."
                         },
                         {
                             "id": 2,
-                            "title": "Bergabunglah dengan organisasi pemuda dan jadilah anggota yang memiliki nilai tambah.",
-                            "desc": "Menjadi anggota organisasi pemuda memungkinkan kamu untuk belajar bersama, berbagi pengalaman dan melakukan praktik terbaik. Setiap anggota organisasi pemuda berkontribusi terhadap volume input sehingga meningkatkan perkiraan output yang merupakan volume BSF dan residunya. Volume besar = pendapatan besar",
-                            "feedback": "Dengan bergabung dengan organisasi kepemudaan dan menjadi anggota yang bernilai tambah, kamu dapat belajar lebih banyak dari rekan-rekan kamu di sana, berbagi pengalaman, dan melakukan praktik terbaik. Karena setiap anggota berkontribusi terhadap volume input, perkiraan output, yaitu volume BSF dan residunya, dapat meningkat. Hal ini dapat menghasilkan pendapatan yang lebih besar bagi organisasi dan anggotanya. Namun, mungkin perlu waktu lebih lama untuk mulai menghasilkan pendapatan daripada melakukan BSF di rumah, tetapi ini juga dapat memberimu lebih banyak kesempatan untuk belajar dan bersosialisasi dengan remaja lain di komunitas."
+                            "title": "Sumali sa organisasyon ng kabataan at maging isang miyembro at matuto",
+                            "desc": "Ang pagiging miyembro ng organisasyon ng kabataan ay nagbibigay-daan upang matuto nang sama-sama, magbahagi ng mga karanasan at magtagumpay. Ang bawat miyembro ng organisasyon ng kabataan ay nag-aambag sa dami ng input kaya tumataas ang forecast ng output na siyang dami ng BSF at mga dumi nito. Malaking volume = malaking kita",
+                            "feedback": "Sa pamamagitan ng pagsali sa organisasyon ng kabataan at pagiging isang miyembro nito ay maaari kang matuto nang higit, makakabahagi ng mga karanasan, at pinakamahusay at matuto nang sama-sama. Habang ang bawat miyembro ay nag-aambag sa dami ng input, ang pagtataya ng output, na ang dami ng BSF at ang mga dumi nito, ay maaaring tumaas. Maaari itong magresulta sa mas malaking kita para sa organisasyon at sa mga miyembro nito. Gayunpaman, maaaring mas matagal bago magsimulang kumita kaysa sa paggawa ng BSF sa sariling tahanan, ngunit maaari rin itong magbigay sa iyo ng mas maraming pagkakataon para sa pag-aaral at pakikisalamuha sa ibang mga kabataan sa iyong komunidad."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Kamu bersemangat menangani limbah makanan di komunitasmu dan ingin menggunakan teknologi BSF untuk memulai bisnis yang berkelanjutan. Ada banyak sisa makanan yang dibuang dari kafetaria, pasar tradisional, dan restoran. Kamu ingin mengeksplorasi bagaimana mengubah limbah ini menjadi keuntungan sekaligus mempromosikan kelestarian lingkungan.",
+                    "desc": "Masigasig ka tungkol sa pagtugon sa food waste sa iyong komunidad at gusto mong gumamit ng teknolohiya ng black soldier fly upang magsimula ng isang napapanatiling negosyo. Maraming food waste ang itinatapon mula sa kantina, sariwang palengke, at mga restawran. Gusto mong tuklasin kung paano gawing pagkakakitaan ang basurang ito habang isinusulong din ang pagpapanatili ng kapaligiran.",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Menjual larva dan pupuk",
-                            "desc": "Kamu bisa memulainya dengan membiakkan larva BSF dengan memanfaatkan sisa makanan yang dikumpulkan dari masyarakat. Setelah kamu memiliki persediaan larva yang baik, kamu dapat menjualnya ke peternakan unggas lokal sebagai suplemen pakan berprotein tinggi. Selain itu, hasil sampingan dari proses pengembangbiakan larva dapat dimanfaatkan untuk membuat pupuk organik yang dapat dijual kepada petani setempat. ",
-                            "feedback": "Menjual larva dan pupuk adalah cara yang bagus untuk mengubah limbah makanan menjadi keuntungan sambil mempromosikan keberlanjutan. Namun, ini membutuhkan investasi awal dan mungkin membutuhkan waktu untuk membangun pasokan larva dan pupuk yang stabil. Pertimbangkan apakah kamu memiliki sumber daya dan komitmen yang diperlukan untuk mengejar opsi ini."
+                            "title": "Pagbebenta ng Larvae at Fertilizer",
+                            "desc": "Maaari kang magsimula sa pamamagitan ng pagpaparami ng black soldier fly larvae gamit ang mga tirang pagkain na nakolekta mula sa komunidad. Kapag mayroon kang magandang supply ng larvae, maaari mong ibenta ang mga ito sa mga lokal na poultry farm bilang suplemento ng high-protein feed. Bilang karagdagan, ang mga by-product ng proseso ng pag-aanak ng larvae ay maaaring gamitin upang gumawa ng organikong pataba, na maaaring ibenta sa mga lokal na magsasaka.",
+                            "feedback": "Ang pagbebenta ng larvae at fertilizer ay isang mahusay na paraan upang gawing tubo ang food waste habang nagpo-promote ng sustainability. Gayunpaman, nangangailangan ito ng paunang pamumuhunan at maaaring tumagal ng ilang oras o araw upang makapagtatag ng isang matatag na supply ng larvae at pataba. Dapat isaalang-alang kung mayroon kang mga mapagkukunan at palaging makapagbibigay na kailangan upang ituloy ang opsyong ito."
                         },
                         {
                             "id": 2,
-                            "title": "Mendorong pertumbuhan BSF di masyarakat",
-                            "desc": "Kamu dapat mendorong pertumbuhan BSF di masyarakat dengan mendorong masyarakat untuk mengumpulkan sisa makanan dan menjualnya ke petani setempat, yang dapat menggunakannya untuk memberi makan BSF mereka. Para petani kemudian dapat menjual larva dan pupuk yang diproduksi oleh BSF mereka ke pasar lokal. Kamu bisa bertindak sebagai perantara dengan membeli larva dan pupuk dari petani dan menjualnya ke pelanggan.",
-                            "feedback": "Mempromosikan pertumbuhan BSF di masyarakat adalah cara yang bagus untuk melibatkan masyarakat dalam mengurangi limbah makanan dan mempromosikan keberlanjutan. Namun, hal itu membutuhkan pembangunan hubungan baik dengan masyarakat maupun petani, dan mungkin membutuhkan waktu untuk membangun rantai pasok yang stabil. Pertimbangkan apakah kamu memiliki keterampilan sosial dan komitmen yang diperlukan untuk mengejar opsi ini."
+                            "title": "Pagsusulong ng Paglago ng BSF sa Komunidad",
+                            "desc": "Maaari mong isulong ang paglago ng BSF sa komunidad sa pamamagitan ng paghikayat sa mga tao na mangolekta ng food waste at ibenta ito sa mga lokal na magsasaka, na magagamit ito upang pakainin ang kanilang BSF. Ang mga magsasaka ay maaaring magbenta ng larvae at pataba na ginawa ng kanilang BSF sa mga lokal na pamilihan. Maaari kang kumilos bilang isang middleman sa pamamagitan ng pagbili ng mga uod at pataba mula sa mga magsasaka at ibenta ang mga ito sa mga customer.",
+                            "feedback": "Ang pagtataguyod ng Paglago ng BSF sa Komunidad ay isang mahusay na paraan upang maisama ang komunidad sa pagbabawas ng food waste at pagtataguyod ng sustainability. Gayunpaman, nangangailangan ito ng pagbuo ng mga ugnayan sa kapwa komunidad at sa mga magsasaka, at maaaring gumugol ng panahon upang makapagtatag ng isang matatag na supply chain. Isaalang-alang din natin kung mayroon kang mga kasanayang panlipunan at palaging makapagbibigay na kailangan upang ituloy ang opsyong ito."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Kamu sedang membuat presentasi untuk memamerkan proyek BSF ke organisasi pemuda lain di komunitas terdekat. Kamu ingin menyoroti potensi pendapatan dari BSF. Opsi penghasilan mana yang lebih menarik untuk disajikan?",
+                    "desc": "Gumagawa ka ng isang pagtatanghal upang ipakita ang proyekto ng BSF sa iba pang mga organisasyon ng kabataan sa mga kalapit na komunidad. Gusto mong i-highlight ang mga potensyal na kita ng BSF. Aling opsyon ng pagkakakitaan ang mas kapana-panabik na ipakita?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Jual larva BSF sebagai pakan",
-                            "desc": "Larva BSF sebanyak 10 kg dapat dijual sebagai pakan ternak, karena mengandung protein tinggi dan sangat baik untuk kesehatan. Harga per kilo biasanya sekitar Rp40,000, yang mana dapat memberikan aliran pendapatan yang signifikan.",
-                            "feedback": "Menjual larva BSF sebagai pakan dapat menjadi peluang penghasilan yang menarik untuk ditonjolkan, karena dapat memberikan aliran pendapatan yang signifikan. Kandungan protein yang tinggi dari larva BSF menjadikannya sumber pakan ternak yang berharga, dan popularitasnya di pasar dapat memastikan permintaan yang konsisten."
+                            "title": "Pagbebenta ng BSF larvae bilang mga feed",
+                            "desc": "Ang 10 kilo ng BSF larvae ay maaaring ibenta bilang mga feed para sa mga hayop, dahil mataas ang mga ito sa protina at mahusay para sa kanilang kalusugan. Ang presyo kada kilo ay karaniwang nasa PHP 150, na maaaring magbigay ng malaking kita.",
+                            "feedback": "Ang pagbebenta ng BSF larvae bilang mga feed ay maaaring maging isang kapana-panabik na pagkakataong kumita upang i-highlight, dahil maaari itong magbigay ng malaking kita. Ang mataas na nilalaman ng protina ng BSF larvae ay ginagawa silang isang mahalagang mapagkukunan ng feed para sa mga hayop, at ang kanilang katanyagan sa merkado ay maaaring matiyak ang pare-parehong demand."
                         },
                         {
                             "id": 2,
-                            "title": "Menjual residu (ampas) BSF",
-                            "desc": "Kompos yang dihasilkan dari residu BSF dapat dijual dengan harga Rp32,000 per kilo, dan 10 kg dapat diproduksi setiap 15 hari. Selain itu, residu cair dari BSF dapat dijual sebagai pupuk dengan harga Rp40,000 per liter. Hal ini dapat memberikan aliran pendapatan yang konsisten dan dapat diandalkan.",
-                            "feedback": "Menjual ampas BSF juga bisa menjadi peluang penghasilan yang menarik untuk disajikan. Kompos yang dihasilkan dari ampas BSF dapat dijual dengan harga yang kompetitif, dan ampas cair juga dapat memberikan aliran pendapatan tambahan. Keandalan dan konsistensi aliran pendapatan ini dapat menjadikannya pilihan yang menarik bagi mereka yang tertarik dengan praktik pertanian berkelanjutan."
+                            "title": "Nagbebenta ng mga dumi sa BSF",
+                            "desc": "Ang compost na ginawa mula sa BSF residues ay maaring ibenta sa halagang PHP 120 kada kilo, at 10 kilo ang maaaring gawin kada 15 araw. Bukod dito, ang likidong residue mula sa BSF ay maaring ibenta bilang pataba sa halagang PHP 150 kada litro. Maaari itong magbigay ng pare-pareho at maaasahang daloy ng kita.",
+                            "feedback": "Ang pagbebenta ng mga dumi sa BSF ay maaari ding maging isang kapana-panabik na pagkakataong kumita. Ang compost na ginawa mula sa BSF residues ay maaaring ibenta sa isang mapagkumpitensyang presyo, at ang liquid residue ay maaari ding magbigay ng karagdagang kita. Ang pagiging maaasahan at pagkakapare-pareho ng daloy ng kita na ito ay maaaring gawin bilang isang kaakit-akit na opsyon para sa mga interesado sa napapanatiling mga kasanayan sa pagsasaka."
                         }
                     ]
                 }
@@ -174,98 +174,98 @@
         {
             "id": 2,
             "name": "Skenario 2",
-            "desc": "Selamat datang di Pasar Berkelanjutan! Sekarang kamu akan belajar tentang model bisnis yang berkelanjutan dan bagaimana mereka dapat membantu bisnis beroperasi dengan cara yang bertanggung jawab secara lingkungan dan sosial. Kamu akan merancang dan mengelola pasarmu sendiri, membuat keputusan yang berpengaruh pada dampak lingkungan, keuntungan, serta keberlanjutan pasar secara keseluruhan. Kamu akan mendapatkan pemahaman yang lebih dalam tentang bagaimana bisnis dapat memprioritaskan keberlanjutan sambil tetap mencapai kesuksesan finansial. Mari kita mulai!",
+            "desc": "Maligayang pagdating sa Sustainable Market! Ngayon ay matututunan mo ang tungkol sa mga natutustusan na modelo ng negosyo at kung paano sila makakatulong sa mga negosyo na gumana sa paraang responsable sa kapaligiran at panlipunan. Ikaw ang magdidisenyo at mamamahala ng sarili mong market, na gagawa ng mga desisyon na makakaapekto sa epekto sa kapaligiran, mga kita, at pangkalahatang pagpapanatili ng merkado. Magkakaroon ka ng mas malalim na pag-unawa sa kung paano gawing prayoridad ng mga napapanatiling negosyo habang nakakamit pa rin ang tagumpay sa pananalapi. Magsimula na tayo!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-2.gif",
-            "congratulationMessage": "Kerja bagus! Bisnis yang berkelanjutan dapat menguntungkan. Tetap lakukan eksplorasi terhadap cara-cara baru untuk membuat perubahan yang positif dan membantu lingkungan alam kita.",
+            "congratulationMessage": "Mahusay na trabaho! Maaaring kumikita ang mga sustainable na negosyo. Patuloy na tuklasin ang mga bagong paraan upang gumawa ng positibong pagbabago at tulungan ang kapaligiran.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Sebagai pemilik Pasar Berkelanjutan, kamu memiliki pilihan untuk menawarkan kepada pelanggan antara produk konvensional dan organik. Pilihan mana yang lebih berkelanjutan dan menguntungkan untuk pasarmu?",
+                    "desc": "Bilang may-ari ng Sustainable Market, mayroon kang pagpipilian na mag-alok sa mga customer ng pagpipilian sa pagitan ng conventional at organic na ani. Aling opsyon ang mas napapanatili at kumikita para sa iyong market?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Produk Konvensional",
-                            "desc": "Menawarkan produk konvensional, yang lebih murah untuk didapatkan dan dapat dijual dengan harga lebih rendah, menarik lebih banyak pelanggan dan meningkatkan keuntungan.",
-                            "feedback": "Sementara menawarkan produk konvensional dapat meningkatkan keuntungan dalam jangka pendek, hal itu memiliki dampak lingkungan yang lebih tinggi karena penggunaan pestisida dan pupuk, serta jejak karbon yang lebih tinggi terkait transportasi. Selain itu, pelanggan yang mengutamakan keberlanjutan mungkin tidak tertarik untuk membeli produk konvensional, sehingga menyebabkan hilangnya pelanggan potensial dan berdampak negatif pada reputasi pasarmu sebagai bisnis yang berkelanjutan."
+                            "title": "Kondisyonal na Produkto",
+                            "desc": "Mag-alok ng kumbensyonal na ani, na mas mura sa pagkukunan at maaaring ibenta sa mas mababang presyo, na nakakaakit ng mas maraming customer at nagpapataas ng kita.",
+                            "feedback": "Bagama't ang pag-aalok ng kumbensyonal na ani ay maaaring tumaas ang kita sa maikling panahon, ito ay may mas mataas na epekto sa kapaligiran dahil sa paggamit ng mga pestisidyo at pataba, at ang mas mataas na carbon footprint na kaakibat sa transportasyon. Bukod pa rito, ang mga customer na nagbibigay-priyoridad sa pagpapanatili ay maaaring hindi interesado sa pagbili ng kumbensyonal na produkto, na humahantong sa pagkawala ng mga potensyal na customer at negatibong epekto sa reputasyon ng iyong merkado bilang isang napapanatiling negosyo."
                         },
                         {
                             "id": 2,
-                            "title": "Produk Organik",
-                            "desc": "Menawarkan produk organik, yang lebih mahal untuk didapatkan tetapi memiliki dampak lingkungan yang lebih rendah, menarik bagi pelanggan yang memprioritaskan keberlanjutan, dan memiliki margin keuntungan yang lebih tinggi karena harga premiumnya.",
-                            "feedback": "Menawarkan produk organik mungkin memiliki biaya di muka yang lebih tinggi, tetapi sejalan dengan nilai pelanggan yang memprioritaskan keberlanjutan dan lebih baik bagi lingkungan. Selain itu, produk organik memiliki margin keuntungan yang lebih tinggi karena harga premiumnya, yang dapat mengimbangi biaya sumber yang lebih tinggi. Dengan menawarkan produk organik, pasarmu dapat membedakan dirinya sebagai pemimpin dalam keberlanjutan, menarik lebih banyak pelanggan, dan membangun reputasi positif sebagai bisnis berkelanjutan."
+                            "title": "Organikong Produkto",
+                            "desc": "Mag-alok ng mga organikong ani, na mas mahal sa pagkukunan ngunit may mas mababang epekto sa kapaligiran, na umaakit sa mga customer na priyoridad ang pagpapanatili, at may mas mataas na margin ng kita dahil sa premium na pagpepresyo nito.",
+                            "feedback": "Ang pag-aalok ng mga organikong ani ay maaaring magkaroon ng mas mataas na halaga, ngunit ito ay naaayon sa mga halaga ng mga customer na nagbibigay-priyoridad sa sustainability at mas may malasakit para sa kapaligiran. Bilang karagdagan, ang mga organikong ani ay may mas mataas na margin ng kita dahil sa premium na pagpepresyo nito, na maaaring mabawi ang mas mataas na gastos sa pagkuha. Sa pamamagitan ng pag-aalok ng mga organikong ani, maibubukod ng iyong merkado ang sarili nito bilang isang nangunguna sa pagpapanatili, nakakaakit ng higit pang mga customer at bumuo ng isang positibong reputasyon bilang isang napapanatiling negosyo."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Kamu sedang mempertimbangkan untuk menawarkan diskon bagi pelanggan yang membawa tas sendiri yang dapat digunakan kembali. Opsi mana yang lebih berkelanjutan dan menguntungkan bagi pasar?",
+                    "desc": "Isinasaalang-alang mong mag-alok ng diskwento para sa mga customer na nagdadala ng sarili nilang mga reusable na bag. Aling pagpipilian ang mas napapanatiling at kumikita para sa merkado?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Tawarkan diskon",
-                            "desc": "Tawarkan diskon untuk pelanggan yang membawa tas pakai ulang sendiri, yang dapat mengurangi keuntungan dalam jangka pendek tetapi dapat meningkatkan loyalitas pelanggan dan dampak positif terhadap lingkungan.",
-                            "feedback": "Menawarkan diskon untuk tas yang dapat digunakan kembali dapat mendorong pelanggan untuk membuat pilihan yang berkelanjutan dan membangun reputasi positif untuk pasarmu sebagai bisnis yang berkelanjutan. Meskipun mungkin ada biaya di muka yang terkait dengan diskon, manfaat jangka panjang dalam hal loyalitas pelanggan dan dampak lingkungan yang positif dapat meningkatkan keuntungan."
+                            "title": "Mag-alok ng diskwento",
+                            "desc": "Mag-alok ng diskwento para sa mga customer na nagdadala ng sarili nilang mga reusable na bag, na maaaring mabawasan ang mga kita sa maikling panahon ngunit maaaring humantong sa pagtaas ng katapatan ng customer sa iyong negosyo at may positibong epekto pa sa kapaligiran.",
+                            "feedback": "Ang pag-aalok ng diskwento para sa mga reusable na bag ay maaaring manghikayat sa mga customer na gumawa ng mga napapanatiling pagpipilian at bumuo ng isang positibong reputasyon para sa iyong merkado bilang isang napapanatiling negosyo. Bagama't maaaring may mga paunang gastos na nauugnay sa diskwento, ang mga pangmatagalang benepisyo sa mga tuntunin ng katapatan ng customer at positibong epekto sa kapaligiran ay maaaring mag resulta sa pagtaas ng kita."
                         },
                         {
                             "id": 2,
-                            "title": "Jangan menawarkan diskon",
-                            "desc": "Jangan menawarkan diskon untuk pelanggan yang membawa tas sendiri, karena mungkin tidak berdampak signifikan pada kelangsungan atau keuntungan pasar.",
-                            "feedback": "Meskipun tidak menawarkan diskon untuk tas yang dapat digunakan kembali mungkin tidak berdampak negatif pada pasarmu, hal itu juga tidak mendorong pelanggan untuk membuat pilihan yang berkelanjutan. Dengan menawarkan diskon untuk tas yang dapat digunakan kembali, kamu dapat mendorong pelanggan untuk membawa tas sendiri, mengurangi limbah, dan meningkatkan reputasi pasarmu sebagai bisnis yang berkelanjutan."
+                            "title": "Huwag mag-alok ng diskwento",
+                            "desc": "Huwag mag-alok ng diskwento para sa mga customer na nagdadala ng sarili nilang mga bag, dahil maaaring wala itong malaking epekto sa pagpapanatili o kita ng merkado.",
+                            "feedback": "Bagama't ang hindi pag-aalok ng diskwento para sa mga reusable na bag ay maaaring walang negatibong epekto sa iyong market, hindi rin nito binibigyang-insentibo ang mga customer na gumawa ng mga napapanatiling pagpipilian. Sa pamamagitan ng pag-aalok ng diskwento para sa mga reusable na bag, maaari mong hikayatin ang mga customer na magdala ng sarili nilang mga bag, bawasan ang basura, at pagbutihin ang reputasyon ng iyong market bilang isang napapanatiling negosyo."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Kamu telah membeli produk dari pemasok yang jauh untuk sementara waktu karena harganya lebih murah. Namun, kamu mulai menyadari bahwa ada biaya lingkungan dan sosial yang berkaitan dengan transportasi dan produksi, yang mungkin tidak berkelanjutan. Opsi mana yang lebih baik untuk pasar Anda?",
+                    "desc": "Kanina ka pa bumibili ng mga produkto sa malalayong supplier dahil mas mura ang mga presyo nito. Gayunpaman, napagtanto mo na ang pangkapaligiran at panlipunan na kabayaran kaakibat sa transportasyon at produksyon ay maaaring hindi nakakapagpanatili. Aling opsyon ang mas mahusay para sa iyong market?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Tetap membeli produk dari pemasok yang jauh.",
-                            "desc": "Tetap membeli produk dari pemasok jauh yang memiliki harga lebih murah. Kamu menjalankan bisnis bukan amal.",
-                            "feedback": "Membeli produk dari pemasok yang jauh berarti mereka harus menempuh jarak yang jauh untuk mencapai pasarmu. Ini membuat lebih banyak polusi dan berkontribusi pada perubahan iklim. Memilih pemasok lokal yang menggunakan praktik berkelanjutan dapat mengurangi polusi dan mendukung usaha kecil. Ini juga dapat membantumu mendapatkan lebih banyak pelanggan yang peduli terhadap lingkungan."
+                            "title": "Patuloy na bumili ng mga produkto mula sa malayong mga supplier.",
+                            "desc": "Patuloy na bumili ng mga produkto mula sa malayong mga supplier na may mas murang presyo. Nagpapatakbo ka ng isang negosyo hindi isang kawanggawa.",
+                            "feedback": "Ang pagbili ng mga produkto mula sa malayong mga supplier ay nangangahulugan na kailangan nilang maglakbay ng malayo upang maabot ang iyong merkado. Gumagawa ito ng mas maraming polusyon at nag-aambag sa pagbabago ng klima. Ang pagpili ng mga lokal na supplier na gumagamit ng mga napapanatiling kasanayan ay maaaring mabawasan ang polusyon at suportahan ang maliliit na negosyo. Makakatulong din ito upang makakuha ng mas maraming customer na nagmamalasakit sa kapaligiran."
                         },
                         {
                             "id": 2,
-                            "title": "Beli produk dari pemasok lokal",
-                            "desc": "Beli produk dari pemasok lokal yang menggunakan praktik berkelanjutan, meskipun harganya sedikit lebih mahal.",
-                            "feedback": "Memilih pemasok lokal yang menggunakan praktik berkelanjutan adalah cara yang baik untuk menunjukkan kepada pelanggan bahwa pasarmu peduli terhadap lingkungan. Bahkan jika harganya sedikit lebih mahal, ini dapat membantumu mendapatkan lebih banyak pelanggan dan menghasilkan lebih banyak uang dalam jangka panjang. Membeli dari pemasok lokal juga membantu mendukung usaha kecil di daerahmu. Selain itu, praktik berkelanjutan dapat menghasilkan produk yang lebih berkualitas dan lebih inovatif, yang dapat menjadi keunggulan kompetitif di pasarmu."
+                            "title": "Bumili ng mga produkto mula sa mga lokal na supplier",
+                            "desc": "Bumili ng mga produkto mula sa mga lokal na supplier na gumagamit ng mga napapanatiling kasanayan, kahit na mas mataas pa ang presyo  nito ng kaunti.",
+                            "feedback": "Ang pagpili ng mga lokal na supplier na gumagamit ng mga napapanatiling kasanayan ay isang magandang paraan upang ipakita sa iyong mga customer na ang iyong merkado ay nagmamalasakit sa kapaligiran. Kahit na mas malaki ang halaga nito, makakatulong ito upang makakuha ng mas maraming customer at kumita ng mas maraming pera sa katagalan. Ang pagbili mula sa mga lokal na supplier ay tumutulong din sa pagsuporta sa maliliit na negosyo sa iyong lugar. Higit pa rito, ang mga napapanatiling kasanayan ay maaaring humantong sa mas mataas na kalidad at mas makabagong mga produkto, na maaaring maging mapagkumpitensya o mas lumamang sa iyong merkado."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Apa cara terbaik untuk memperkuat pasarmu?",
+                    "desc": "Ano ang pinakamahusay na paraan upang palakasin ang iyong market?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Beralih ke energi terbarukan",
-                            "desc": "Beralihlah ke sumber energi terbarukan seperti tenaga surya yang lebih mahal di muka tetapi lebih baik untuk lingkungan dalam jangka panjang.",
-                            "feedback": "Beralih ke sumber energi terbarukan seperti tenaga surya dapat menurunkan jejak karbon pasarmu, menghemat biaya energi dalam jangka panjang, dan menarik lebih banyak pelanggan yang menghargai praktik bisnis berkelanjutan."
+                            "title": "Lumipat sa renewable energy",
+                            "desc": "Lumipat sa mga pinagmumulan ng renewable energy tulad ng solar power na mas mahal ngunit mas maganda para sa kapaligiran sa mahabang panahon.",
+                            "feedback": "Ang paglipat sa mga renewable na mapagkukunan ng enerhiya tulad ng solar power ay maaaring magpababa sa carbon footprint ng iyong merkado, makatipid kayo ng pera sa mga gastos sa enerhiya sa katagalan, at makaka akit ng mas maraming customer na nagpapahalaga sa mga napapanatiling kasanayan sa negosyo."
                         },
                         {
                             "id": 2,
-                            "title": "Jangan beralih ke energi terbarukan",
-                            "desc": "Tetap menggunakan listrik jaringan konvensional yang lebih murah dan sudah terpasang di pasarmu.",
-                            "feedback": "Menggunakan listrik jaringan konvensional dapat berkontribusi pada jejak karbon dan merusak reputasi pasar sebagai bisnis yang berkelanjutan. Selain itu, ini mungkin tidak murah dalam jangka panjang karena harga listrik dapat meningkat."
+                            "title": "Huwag lumipat sa renewable energy",
+                            "desc": "Patuloy na gumamit ng conventional grid electricity na mas mura at naka-install na sa iyong market.",
+                            "feedback": "Ang paggamit ng conventional grid electricity ay maaaring mag-ambag sa carbon footprint at makasira sa reputasyon ng iyong market bilang isang napapanatiling negosyo. Bukod pa rito, maaaring hindi ito mura sa mahabang panahon dahil maaaring tumaas ang presyo ng kuryente."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Kamu ingin mengurangi limbah dari pasarmu. Apa cara terbaik untuk mengemas produk di pasarmu?",
+                    "desc": "Gusto mong bawasan ang basura mula sa iyong merkado. Ano ang pinakamahusay na paraan upang i-package ang mga produkto sa iyong merkado?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Kemasan plastik",
-                            "desc": "Gunakan kantong dan kemasan plastik karena lebih murah dan lebih tahan lama.",
-                            "feedback": "Kantong plastik berbahaya bagi lingkungan dan membutuhkan waktu ratusan tahun untuk terurai. Mereka dapat menyebabkan polusi dan membahayakan satwa liar. Selain itu, mereka dapat merusak reputasi pasar sebagai bisnis yang berkelanjutan."
+                            "title": "Plastic packaging",
+                            "desc": "Gumamit ng mga plastic bag at packaging dahil mas mura at mas matibay.",
+                            "feedback": "Ang mga plastic bag ay nakakapinsala sa kapaligiran at tumatagal ng daan-daang taon bago mabulok. Maaari silang magdulot ng polusyon at makapinsala sa kalikasan. Bukod pa rito, maaari nilang masira ang reputasyon ng iyong market bilang isang napapanatiling negosyo."
                         },
                         {
                             "id": 2,
-                            "title": "Kemasan yang dapat digunakan kembali atau kompos",
-                            "desc": "Gunakan tas yang dapat digunakan kembali atau kemasan yang dapat dibuat kompos yang terbuat dari bahan seperti plastik nabati, meskipun harganya mungkin lebih mahal di awal.",
-                            "feedback": "Menggunakan tas yang dapat digunakan kembali yang terbuat dari bahan berkelanjutan seperti kapas atau kemasan yang dapat dibuat kompos yang terbuat dari bahan seperti plastik nabati dapat secara signifikan mengurangi jumlah limbah yang dihasilkan pasar, mempromosikan keberlanjutan, dan membantumu menjadi lebih menonjol sebagai bisnis hijau. Meskipun mungkin lebih mahal di awal, penggunaan tas yang dapat dipakai ulang dapat menghemat uang dalam jangka panjang dengan mengurangi biaya pengelolaan limbah dan menarik lebih banyak pelanggan yang menghargai praktik bisnis berkelanjutan."
+                            "title": "Reusable o compostable na packaging",
+                            "desc": "Gumamit ng mga reusable na bag o compostable packaging na gawa sa mga materyales tulad ng plant-based na plastik, kahit na mas mahal ang mga ito.",
+                            "feedback": "Ang paggamit ng mga reusable na bag na gawa sa mga sustainable na materyales tulad ng cotton o compostable na packaging na gawa sa mga materyales tulad ng plant-based na plastic ay maaaring makabuluhang makabawas ng dami ng basurang nagagawa ng iyong market, i-promote ang sustainability, at tulungan kang tumayo bilang isang berdeng negosyo. Bagama't maaaring mas mahal ito, maaari silang makatipid sa iyo ng pera sa katagalan sa pamamagitan ng pagbabawas ng mga gastos sa pamamahala ng basura at pag-akit ng mas maraming customer na nagpapahalaga sa mga napapanatiling kasanayan sa negosyo."
                         }
                     ]
                 }
@@ -274,98 +274,98 @@
         {
             "id": 3,
             "name": "Skenario 3",
-            "desc": "Kamu memulai bisnis untuk membuat produk dari bahan daur ulang. Kamu akan mengumpulkan dan menyortir bahan yang dapat didaur ulang, merancang dan membuat prototipe produk, memasarkan hingga menjualnya kepada pelanggan, membuat rantai pasokan melingkar, dan melakukan peningkatan bisnis sambil memastikannya tetap berkelanjutan. Apakah kamu siap untuk membuat dampak positif bagi lingkungan? Mari kita mulai!",
+            "desc": "Nagsisimula ka ng isang negosyo upang gumawa ng mga produkto mula sa mga recycled na materyales. Kokolektahin at pag-uuri-uriin mo ang mga recyclable na materyales, ididisenyo at gagawing modelo ang iyong mga produkto, ibebenta at ibebenta ang mga ito sa mga customer, gagawa ng circular supply chain, at palakihin ang iyong negosyo habang tinitiyak na ito ay nananatiling natutustusan. Handa ka na bang gumawa ng positibong epekto sa kapaligiran? Magsimula na tayo!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-3.gif",
-            "congratulationMessage": "Kamu telah dengan sukses menunjukkan bahwa capat menciptakan sebuah masa depan yang cerah bagi setiap orang. Lanjutkan menggunakan keterampilan-keterampilan yang kamu miliki untuk menginspirasi dan menjadi pemimpin dalam membuat perbedaan.",
+            "congratulationMessage": "Matagumpay mong naipakita na ang green entrepreneurship ay maaaring lumikha ng isang mas magandang kinabukasan para sa lahat. Patuloy na gamitin ang iyong mga kakayahan upang magbigay ng inspirasyon at manguna sa paggawa ng pagbabago.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Bisnismu mencoba membuat produk baru dari bahan daur ulang. Kamu telah mengumpulkan beberapa materi yang dapat kamu gunakan, tetapi tidak terlihat menarik. Apa yang harus kamu lakukan?",
+                    "desc": "Sinusubukan ng iyong negosyo na lumikha ng bagong produkto mula sa mga recycled na materyales. Nakakuha ka ng ilang mga materyales na magagamit mo, ngunit hindi sila mukhang kaakit-akit. Ano ang dapat mong gawin?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Fungsi saja",
-                            "desc": "Gunakan bahan daur ulang untuk membuat produk yang fungsional. Tidak perlu terlihat bagus karena toh terbuat dari limbah.",
-                            "feedback": "Meskipun menggunakan bahan daur ulang patut dipuji, menciptakan produk yang tidak menyenangkan secara estetika dapat mematikan calon pelanggan yang memprioritaskan desain. Pertimbangkan mencari cara kreatif untuk membuat bahan daur ulang lebih menarik, seperti menambahkan warna atau pola."
+                            "title": "Function lang",
+                            "desc": "Gumamit ng mga recycled na materyales upang lumikha ng isang produkto na gumagana. Hindi na kailangang magmukhang maganda dahil gawa pa rin ito sa basura.",
+                            "feedback": "Bagama't kapuri-puri ang paggamit ng mga recycled na materyales, ang paggawa ng isang produkto na hindi kaaya-aya sa mata ay maaaring makawala ng mga potensyal na customer na inuuna ang disenyo. Isaalang-alang ang paghahanap ng mga malikhaing paraan upang gawing mas kaakit-akit ang mga ni-recycle na materyales, tulad ng pagdaragdag ng mga kulay o pattern."
                         },
                         {
                             "id": 2,
-                            "title": "Terlihat bagus itu penting",
-                            "desc": "Gunakan bahan daur ulang untuk membuat produk yang fungsional dan estetis.",
-                            "feedback": "Menggunakan bahan daur ulang untuk membuat produk yang fungsional dan menyenangkan secara estetika (terlihat bagus) membantu menunjukkan kepada calon pelanggan bahwa bahan daur ulang dapat digunakan untuk membuat produk yang sama baiknya dengan yang terbuat dari bahan murni."
+                            "title": "Ang hitsura ay mahalaga",
+                            "desc": "Gumamit ng mga recycled na materyales upang lumikha ng isang produkto na parehong gumagana at kasiya-siyang tingnan.",
+                            "feedback": "Ang paggamit ng mga recycled na materyales upang lumikha ng isang produkto na parehong gumagana at kasiya-siyang tingnan (looking good) ay nakakatulong upang ipakita sa mga potensyal na customer na ang mga recycled na materyales ay maaaring gamitin upang lumikha ng mga produkto na kasing ganda ng mga ginawa mula sa mga virgin na materyales."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Bisnismu telah menciptakan produk baru dari bahan daur ulang. Kamu ingin mulai menjualnya ke pelanggan. Bagaimana seharusnya kamu memasarkannya?",
+                    "desc": "Gumawa ang iyong negosyo ng bagong produkto mula sa mga recycled na materyales. Gusto mong simulan ang pagbebenta nito sa mga customer. Paano mo ito dapat i-market?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Soroti keterjangkauan",
-                            "desc": "Memasarkan produk daur ulang sebagai barang murah dan terjangkau.",
-                            "feedback": "Meskipun keterjangkauan merupakan nilai jual yang penting, memasarkan produk daur ulang dengan harga murah dapat merusak nilainya dan membuat pelanggan menganggap produk tersebut berkualitas rendah. Sebagai gantinya, pertimbangkan untuk menekankan manfaat keberlanjutan dan daya tahan produk."
+                            "title": "I-highlight ang pagiging mas abot kaya ng bulsa.",
+                            "desc": "I-market ang mga recycled na produkto bilang mura at abot-kaya.",
+                            "feedback": "Bagama't ang pagiging abot-kaya ay isang mahalagang punto ng pagbebenta, ang pagbebenta ng mga recycle na produkto bilang mura ay maaaring makasira ng kanilang halaga at humantong sa mga customer na isipin ang mga ito bilang may mababang kalidad. Pag-isipan at bigyang-diin ang mga benepisyo sa pagpapanatili at tibay ng produkto."
                         },
                         {
                             "id": 2,
-                            "title": "Soroti keberlanjutan",
-                            "desc": "Pasarkan produk daur ulang sebagai produk berkualitas tinggi dan berkelanjutan",
-                            "feedback": "Pilihan bagus! Memasarkan produk daur ulang sebagai produk berkualitas tinggi dan berkelanjutan memposisikannya sebagai produk premium yang lebih baik bagi lingkungan."
+                            "title": "I-highlight ang pagpapanatili",
+                            "desc": "I-market ang mga recycled na produkto bilang mataas ang kalidad at napapanatili.",
+                            "feedback": "Mahusay na pagpipilian! Ang pagbebenta ng mga recycled na produkto bilang mataas na kalidad at napapanatiling posisyon bilang mga premium na produkto na mas mahusay para sa kapaligiran."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Bisnismu sedang mencari bahan untuk produk. Kamu memiliki opsi untuk membeli bahan daur ulang secara lokal atau bahan inovatif dari pemasok di luar negeri. Apa yang harus kamu lakukan?",
+                    "desc": "Ang iyong negosyo ay kumukuha ng mga materyales para sa iyong produkto. May opsyon kang bumili ng mga recycled na materyales sa lokal o mga makabagong materyales mula sa isang supplier sa ibang bansa. Ano ang dapat mong gawin?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Beli di luar negeri",
-                            "desc": "Beli bahan daur ulang berteknologi tinggi dan lebih murah dari pemasok di luar negeri.",
-                            "feedback": "Sementara bahan baru dari pemasok di luar negeri mungkin lebih murah, penting untuk mempertimbangkan dampak lingkungan dari mengimpor bahan. Pengiriman bahan jarak jauh berkontribusi terhadap emisi gas rumah kaca dan meningkatkan jejak karbon bisnismu. Pertimbangkan manfaat jangka panjang dari mendukung ekonomi lokal dan mengurangi emisi transportasi dengan membeli bahan daur ulang yang bersumber secara lokal."
+                            "title": "Bumili sa ibang bansa",
+                            "desc": "Bumili ng high-tech at mas murang mga recycled na materyales mula sa isang supplier sa ibang bansa.",
+                            "feedback": "Bagama't maaaring mas mura ang mga bagong materyales mula sa isang supplier sa ibang bansa, mahalagang isaalang-alang ang epekto sa kapaligiran ng pag-import ng mga materyales. Ang pagpapadala ng mga materyales sa malalayong distansya ay nakakatulong sa mga greenhouse gas emissions at nagpapataas ng carbon footprint ng iyong negosyo. Isaalang-alang ang mga pangmatagalang benepisyo ng pagsuporta sa mga lokal na ekonomiya at pagbabawas ng mga emisyon sa transportasyon sa pamamagitan ng pagbili ng mga lokal na pinagkukunang recycled na materyales."
                         },
                         {
                             "id": 2,
-                            "title": "Beli dari pasar lokal",
-                            "desc": "Beli bahan bekas dari sekitar untuk mendukung ekonomi lokal dan membantu lingkungan.",
-                            "feedback": "Membeli bahan bekas terdekat mendukung ekonomi lokal dan membantu lingkungan. Mungkin lebih mahal, tetapi lebih baik untuk lingkungan dan masyarakat lokal dalam jangka panjang."
+                            "title": "Bumili ng lokal",
+                            "desc": "Bumili ng mga ginamit na materyales mula sa malapit upang suportahan ang lokal na ekonomiya at tulungan ang kapaligiran.",
+                            "feedback": "Ang pagbili ng mga ginamit na materyales sa malapit ay sumusuporta sa lokal na ekonomiya at nakakatulong sa kapaligiran. Maaaring mas mahal ito, ngunit mas mabuti ito para sa kapaligiran at lokal na komunidad sa katagalan."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Apakah kamu mempertimbangkan manajemen akhir masa pakai produkmu? Apa yang kamu lakukan dengan produkmu ketika tidak lagi berguna atau dapat digunakan?",
+                    "desc": "Isinasaalang-alang mo ba ang end-of-life management ng iyong produkto? Ano ang ginagawa mo sa iyong produkto kapag hindi na ito kapaki-pakinabang o magagamit?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Ya untuk manajemen akhir penggunaan",
-                            "desc": "Luangkan waktu untuk merencanakan cara mendaur ulang, menggunakan kembali, atau menggunakan kembali produk saat sudah tidak berguna lagi.",
-                            "feedback": "Merencanakan cara mendaur ulang, menggunakan kembali, atau menggunakan kembali produk saat sudah tidak berguna membantu meminimalkan limbah dan membuat dunia menjadi tempat yang lebih baik. Mungkin lebih banyak pekerjaan, tetapi itu sangat berharga untuk membantu lingkungan."
+                            "title": "Oo para sa pamamahala ng mga produktong hindi na kapaki pakinabang.",
+                            "desc": "Gumugol ng oras upang magplano kung paano i-recycle, muling gamitin, o gamiting muli ang iyong produkto kapag hindi na ito kapaki-pakinabang.",
+                            "feedback": "Ang pagpaplano kung paano i-recycle, muling gamitin, o gamiting muli ang iyong produkto kapag hindi na ito kapaki-pakinabang ay nakakatulong na mabawasan ang basura at gawing mas magandang lugar ang mundo. Maaaring ito ay dagdag na trabaho, ngunit sulit ang pagtulong sa kapaligiran."
                         },
                         {
                             "id": 2,
-                            "title": "Buang produk kadaluarsa",
-                            "desc": "Pastikan untuk membuang produk saat melewati tanggal kedaluwarsa.",
-                            "feedback": "Apa yang terjadi pada produk setelah tidak berguna lagi penting bagi lingkungan. Dengan memastikan produk dapat didaur ulang, digunakan kembali, atau digunakan kembali, kamu dapat membantu meminimalkan limbah dan membuat dunia menjadi tempat yang lebih baik."
+                            "title": "Itapon ang mga expired na produkto",
+                            "desc": "Siguraduhing itapon ang mga produkto kapag lumampas ang mga ito sa expired date.",
+                            "feedback": "Ano ang mangyayari sa iyong produkto pagkatapos na hindi na ito kapaki-pakinabang sa kapaligiran. Sa pamamagitan ng pagtiyak na ang iyong produkto ay maaaring ma-recycle, magamit muli, o muling gamitin, maaari kang makatulong na mabawasan ang basura at gawing mas magandang lugar ang mundo."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Bisnismu berkembang, dan kamu mulai berpikir tentang bagaimana kamu dapat memberikan dampak yang lebih besar terhadap lingkungan. Apakah kamu ingin bekerja dengan bisnis atau organisasi lain untuk membantu lingkungan?",
+                    "desc": "Lumalago ang iyong negosyo, at nagsisimula kang mag-isip tungkol sa kung paano ka magkakaroon ng mas malaking epekto sa kapaligiran. Gusto mo bang makipagtulungan sa ibang mga negosyo o organisasyon upang makatulong sa kapaligiran?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Bekerja sama",
-                            "desc": "Bekerja dengan bisnis atau organisasi lain untuk menciptakan ide dan peluang baru untuk membantu lingkungan.",
-                            "feedback": "Bekerja dengan bisnis atau organisasi lain dapat membantu menciptakan ide dan peluang baru untuk membantu lingkungan. Dengan berkolaborasi, kamu dapat berbagi sumber daya dan pengetahuan untuk menciptakan sesuatu yang lebih baik bagi lingkungan."
+                            "title": "Magtrabaho nang sama sama",
+                            "desc": "Makipagtulungan sa iba pang mga negosyo o organisasyon upang lumikha ng mga bagong ideya at pagkakataon upang matulungan ang kapaligiran.",
+                            "feedback": "Ang pakikipagtulungan sa iba pang mga negosyo o organisasyon ay maaaring makatulong sa paglikha ng mga bagong ideya at pagkakataon upang matulungan ang kapaligiran. Maaaring kailanganin ng mas maraming trabaho, ngunit sulit ito upang makagawa ng mas malaking epekto. Sa pamamagitan ng pakikipagtulungan, maaari kang magbahagi ng mga mapagkukunan at kaalaman upang lumikha ng isang bagay na mas mahusay para sa kapaligiran."
                         },
                         {
                             "id": 2,
-                            "title": "Bekerja sendirian",
-                            "desc": "Bekerja sendiri dan tidak melibatkan orang lain yang tidak tertarik dengan masalah lingkungan.",
-                            "feedback": "Meskipun mandiri itu bagus, bekerja dengan bisnis atau organisasi lain dapat membantu menciptakan ide dan peluang baru untuk membantu lingkungan. Dengan bekerja sendiri, kamu dapat kehilangan kesempatan penting."
+                            "title": "Mag-iisa",
+                            "desc": "Magtrabaho nang mag-isa at huwag isangkot ang sinumang hindi interesado sa mga isyu sa kapaligiran.",
+                            "feedback": "Bagama't magandang maging independyente, makakatulong ang pakikipagtulungan sa ibang mga negosyo o organisasyon na lumikha ng mga bagong ideya at pagkakataon para matulungan ang kapaligiran. Sa pagtatrabaho nang mag-isa, maaaring mawalan ka ng mahahalagang pagkakataon."
                         }
                     ]
                 }
@@ -374,98 +374,98 @@
         {
             "id": 4,
             "name": "Skenario 4",
-            "desc": "Kamu baru saja berhasil membuka homestay atau penginapan kecil. Kamu harus mempekerjakan karyawan dan mengelola operasional bisnismu. Kamu perlu menciptakan tempat kerja berkelanjutan yang memprioritaskan kesejahteraan karyawanmu dan tetap memberikan kontribusi kepada masyarakat. Keputusanmu akan berdampak pada manfaat sosial dari bisnis tersebut. Kamu ingin memprioritaskan triple bottom line dan bertujuan untuk menciptakan bisnis yang bermanfaat bagi manusia, planet, dan keuntungan (profit).",
+            "desc": "Matagumpay mong nabuksan ang isang maliit na homestay. Kakailanganin mong kumuha ng mga empleyado at pamahalaan ang iyong mga operasyon sa negosyo. Kakailanganin mong lumikha ng isang trabahong nagpapanatili at nagbibigay-priyoridad sa kapakanan ng iyong mga empleyado at nag-aambag sa komunidad. Ang iyong mga desisyon ay makakaapekto sa panlipunang mga benepisyo ng iyong negosyo. Gusto mong unahin ang triple bottom line at layuning lumikha ng mga negosyong nakikinabang sa mga tao, planeta, at kita.",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-4.gif",
-            "congratulationMessage": "Terima kasih telah memainkan \"Change for Green\"! Kamu tidak hanya telah menciptakan sebuah bisnis yang sukses, tetapi juga berkontribusi untuk lingkungan yang lebih bersih dan sehat. Pertahankan kerja yang baik ini!",
+            "congratulationMessage": "Salamat sa paglalaro ng Change for Green! Hindi ka lang nakagawa ng matagumpay na negosyo, ngunit nag-ambag ka rin sa isang mas malinis at malusog na kapaligiran. Ipagpatuloy ang mabuting gawain!",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Kamu memiliki dua kandidat untuk posisi frong desk. Yang satu memiliki pengalaman yang luas tetapi membutuhkan gaji yang tinggi, sementara yang lain memiliki pengalaman yang lebih sedikit tetapi bersedia bekerja dengan gaji yang lebih rendah. Kandidat mana yang akan kamu rekrut?",
+                    "desc": "Mayroon kang dalawang kandidato para sa posisyon sa front desk. Ang isa ay may malawak na karanasan ngunit nangangailangan ng mataas na suweldo, habang ang isa ay may mas kaunting karanasan ngunit handang magtrabaho para sa mas mababang suweldo. Sinong kandidato ang kukunin mo?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Rekrut yang memiliki kualifikasi tinggi",
-                            "desc": "Rekrut kandidat yang berkualifikasi tinggi dan berpengalaman yang menginginkan gaji tinggi",
-                            "feedback": "Mempekerjakan kandidat berpengalaman yang menginginkan gaji tinggi mungkin baik untuk bisnis, tetapi bisa terlalu mahal untuk bisnis karena kamu baru memulai. Memilih kandidat yang kurang berpengalaman yang bersedia bekerja dengan lebih sedikit bisa lebih baik untukmu untuk saat ini."
+                            "title": "Mag-hire ng mga highflyer",
+                            "desc": "Mag-hire ng highly qualified at experience na kandidato na gusto ng mataas na suweldo",
+                            "feedback": "Ang pagkuha ng makaranasang kandidato na nagnanais ng mataas na suweldo ay maaaring mabuti para sa negosyo, ngunit maaari itong maging masyadong mahal para sa iyong negosyo dahil nagsisimula ka pa lamang. Ang pagpili ng hindi gaanong karanasan na kandidato na handang magtrabaho sa mas mura ay maaaring maging mas mabuti para sa iyo sa ngayon."
                         },
                         {
                             "id": 2,
-                            "title": "Tumbuh bersama karyawanmu",
-                            "desc": "Rekrut kandidat yang kurang berpengalaman yang bersedia bekerja dengan biaya lebih sedikit dan belajar bersamamu.",
-                            "feedback": "Memilih kandidat yang kurang berpengalaman yang bersedia bekerja dengan biaya lebih sedikit mungkin lebih baik untukmu saat ini. Mempekerjakan kandidat berpengalaman yang menginginkan gaji tinggi mungkin bagus untuk bisnis, tetapi bisa terlalu mahal untuk bisnismu karena kamu baru memulai."
+                            "title": "Lumalago kasama ng iyong empleyado",
+                            "desc": "Mag-hire ng kaunti lang ang karanasan na kandidato na handang magtrabaho sa mura at matuto kasama mo.",
+                            "feedback": "Ang pagpili ng kaunting karanasan na kandidato na handang magtrabaho sa mas mura ay maaaring maging mas mabuti para sa iyo sa ngayon. Ang pagkuha ng makaranasang kandidato na nagnanais ng mataas na suweldo ay maaaring mabuti para sa negosyo, ngunit maaari itong maging masyadong mahal para sa iyong negosyo dahil nagsisimula ka pa lamang."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Kamu ingin membuat ruang istirahat untuk karyawan. Opsi mana yang lebih baik?",
+                    "desc": "Gusto mong gumawa ng break room para sa iyong mga empleyado. Aling pagpipilian ang mas mahusay?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Menghabiskan uang untuk membeli",
-                            "desc": "Membeli furnitur dan peralatan baru",
-                            "feedback": "Membeli furnitur dan peralatan baru bisa jadi mahal dan tidak baik bagi lingkungan. Menggunakan kembali dan memperbaiki furnitur dan peralatan lama lebih baik bagi lingkungan."
+                            "title": "Gumastos ng pera pambili",
+                            "desc": "Pagbili ng mga bagong kasangkapan at appliances",
+                            "feedback": "Ang pagbili ng mga bagong kasangkapan at appliances ay maaaring magastos at hindi maganda sa kapaligiran. Ang muling paggamit at pag-aayos ng mga lumang kasangkapan at appliances ay mas mabuti para sa kapaligiran."
                         },
                         {
                             "id": 2,
-                            "title": "Luangkan waktu untuk memperbaiki",
-                            "desc": "Menggunakan kembali dan memperbaiki furnitur dan peralatan lama untuk ruang istirahat.",
-                            "feedback": "Dengan menggunakan kembali dan memperbaiki furnitur dan peralatan lama, kamu dapat menghemat uang dan membantu lingkungan."
+                            "title": "Gumugol ng oras sa pag-aayos",
+                            "desc": "Muling paggamit at pag-aayos ng mga lumang kasangkapan at appliances para sa break room.",
+                            "feedback": "Sa pamamagitan ng muling paggamit at pag-aayos ng mga lumang kasangkapan at appliances, makakatipid ka ng pera at makakatulong sa kapaligiran."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Salah satu karyawan mendatangimu dan memberi tahu bahwa mereka perlu cuti untuk merawat anggota keluarga yang sakit. Kamu harus memutuskan apakah membiarkan mereka mengambil cuti atau membuat mereka datang bekerja. Apa yang akan kamu lakukan?",
+                    "desc": "Lumapit sa iyo ang isa sa iyong mga empleyado at sasabihin sa iyo na kailangan nila ng pahinga para alagaan ang isang miyembro ng pamilya na may sakit. Kailangan mong magpasya kung hahayaan mo silang magpahinga o papasok sila sa trabaho. Ano ang dapat mong gawin?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Prioritaskan orang terlebih dahulu",
-                            "desc": "Perbolehkan pegawai untuk mengambil cuti dan tawarkan bantuan.",
-                            "feedback": "Dengan mengatakan ya dan menawarkan dukungan, kamu dapat membuat tempat kerja menjadi terasa lebih membahagiakan dan lebih baik untuk semua orang."
+                            "title": "Mga tao muna",
+                            "desc": "Payagan ang empleyado na magpahinga at mag-alok ng suporta.",
+                            "feedback": "Sa pamamagitan ng pagsasabi ng oo at pag-aalok ng suporta, maaari mong gawing mas masaya at mas mahusay ang lugar ng trabaho para sa lahat."
                         },
                         {
                             "id": 2,
-                            "title": "Prioritaskan laba atau keuntungan",
-                            "desc": "Katakan tidak dan buat mereka datang bekerja. Kamu harus menggunakan uangmu dengan sebaik-baiknya.",
-                            "feedback": "Mengatakan tidak dapat membuat karyawan tidak bahagia dan menjadikan tempat kerja sebagai tempat kerja yang buruk. Mengatakan ya dan menawarkan dukungan dapat membuat tempat kerja lebih membahagiakan dan lebih baik bagi semua orang."
+                            "title": "Kumita muna",
+                            "desc": "Sabihin ang hindi at dapat silang magtrabaho. Kailangan mong gamitin nang husto ang iyong pera.",
+                            "feedback": "Ang pagsasabi ng hindi ay maaaring maging sanhi ng kalungkutan sa empleyado at gawin ang lugar ng trabaho na isang masamang lugar upang magtrabaho. Ang pagsasabi ng oo at pag-aalok ng suporta ay maaaring gawing mas masaya at mas mahusay ang lugar ng trabaho para sa lahat."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Perusahaanmu telah diminta untuk berpartisipasi dalam acara amal untuk mendukung tujuan yang penting bagi komunitasmu. Kamu ingin menunjukkan dukungan, tetapi kamu tidak yakin bagaimana melakukannya. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
+                    "desc": "Ang iyong kumpanya ay hiniling na lumahok sa isang kaganapan sa kawanggawa upang suportahan ang isang layunin na mahalaga sa iyong komunidad. Gusto mong ipakita ang iyong suporta, ngunit hindi ka sigurado kung paano ito gagawin. Aling opsyon ang mas mahusay para sa kapaligiran at sa iyong negosyo?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Sukarelawan",
-                            "desc": "Ciptakan \"Volunteer Day\" di mana karyawan dapat berpartisipasi dalam acara tersebut.",
-                            "feedback": "Dengan mengatur atau menginisiasi \"Volenteer Day\", kamu dapat membuat perbedaan nyata di komunitas dan menciptakan budaya tempat kerja yang positif."
+                            "title": "Magboluntaryo",
+                            "desc": "Maglaan ng isang araw ng pagboboluntaryo kung saan maaaring lumahok ang mga empleyado sa kaganapan.",
+                            "feedback": "Sa pamamagitan ng pag-aayos ng isang araw ng boluntaryo, maaari kang gumawa ng isang tunay na pagkakaiba sa iyong komunidad at lumikha ng isang positibong kultura sa lugar ng trabaho."
                         },
                         {
                             "id": 2,
-                            "title": "Sumbangan",
-                            "desc": "Sumbangkan sejumlah besar uang untuk amal. Karyawanmu tidak akan mau menjadi sukarelawan.",
-                            "feedback": "Menyumbangkan uang dalam jumlah besar dapat menjadi cara cepat untuk menunjukkan dukungan, tetapi mungkin tidak berdampak jangka panjang pada komunitasmu. Menyelenggarakan hari sukarela atau \"Volunteer Day\" dapat menjadi lebih baik bagi lingkungan dan bisnis karena menunjukkan komitmenmu terhadap tujuan dan mendorong kerja tim di antara karyawanmu."
+                            "title": "Donasyon",
+                            "desc": "Mag-donate ng malaking halaga ng pera sa kawanggawa at hindi na magboluntaryo.",
+                            "feedback": "Ang pagbibigay ng malaking halaga ng pera ay maaaring isang mabilis na paraan upang magpakita ng suporta, ngunit maaaring hindi ito magkaroon ng pangmatagalang epekto sa iyong komunidad. Ang pag-aayos ng isang araw ng boluntaryo ay maaaring maging mas mahusay para sa kapaligiran at sa iyong negosyo dahil ipinapakita nito ang iyong pangako sa layunin at hinihikayat ang pagtutulungan ng magkakasama sa iyong mga empleyado."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Kamu memiliki kesempatan untuk memperluas bisnismu dengan membuka lokasi baru di kota yang berbeda. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
+                    "desc": "May pagkakataon kang palawakin ang iyong negosyo sa pamamagitan ng pagbubukas ng bagong lokasyon sa ibang lungsod. Aling opsyon ang mas mahusay para sa kapaligiran at sa iyong negosyo?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Membangun yang baru",
-                            "desc": "Bangun lokasi baru dari awal sehingga kamu mendapatkan apa yang kamu inginkan.",
-                            "feedback": "Membangun lokasi baru dari awal bisa mahal dan berdampak negatif pada lingkungan. Merenovasi bangunan yang sudah ada agar lebih ramah lingkungan bisa menjadi pilihan yang lebih baik karena mengurangi limbah dan penggunaan energi."
+                            "title": "Bumuo ng bago",
+                            "desc": "Bumuo ng bagong lokasyon mula sa simula upang makuha mo ang eksaktong gusto mo.",
+                            "feedback": "Ang pagtatayo ng bagong lokasyon mula sa simula ay maaaring magastos at magkaroon ng negatibong epekto sa kapaligiran. Ang pagsasaayos ng isang kasalukuyang gusali upang gawin itong mas eco-friendly ay maaaring maging isang mas mahusay na opsyon dahil binabawasan nito ang basura at paggamit ng enerhiya."
                         },
                         {
                             "id": 2,
-                            "title": "Merenovasi",
-                            "desc": "Merenovasi bangunan yang ada agar lebih ramah lingkungan. Merenovasi bangunan yang sudah ada agar lebih ramah lingkungan.",
-                            "feedback": "Dengan merenovasi bangunan yang sudah ada menjadi lebih ramah lingkungan, kamu dapat mengurangi penggunaan limbah dan energi, yang dapat berdampak positif bagi lingkungan dan berpotensi menghemat uang dalam jangka panjang."
+                            "title": "I-renovate",
+                            "desc": "I-renovate ang isang kasalukuyang gusali para gawin itong mas eco-friendly.",
+                            "feedback": "Sa pamamagitan ng pagsasaayos ng isang kasalukuyang gusali upang gawin itong mas eco-friendly, maaari mong bawasan ang basura at paggamit ng enerhiya, na maaaring magkaroon ng positibong epekto sa kapaligiran at potensyal na makatipid ng pera sa pangmatagalan."
                         }
                     ]
                 }
@@ -474,98 +474,98 @@
         {
             "id": 5,
             "name": "Skenario 5",
-            "desc": "Kamu telah memutuskan untuk memulai bisnis furnitur kecil-kecilan. Produkmu laris manis dan kamu harus memenuhi permintaan (pesanan). Namun, kamu juga ingin perusahaan kecilmu memenuhi standar keberlanjutan. Apa yang akan kamu lakukan? Mari belajar tentang pentingnya manajemen rantai pasok (supply chain) yang berkelanjutan dan cara membuat pilihan yang tepat untuk bisnis, lingkungan, dan masyarakat. Apakah kamu siap untuk membuat beberapa keputusan sulit dan menciptakan rantai pasok yang berkelanjutan? Mari kita mulai!",
+            "desc": "Nagpasya kang magsimula ng isang maliit na negosyo sa muwebles. Ang iyong mga produkto ay nagbebenta tulad ng mga hotcake at kailangan mong makasabay sa demand. Gayunpaman, gusto mo ring matugunan ng iyong maliit na kumpanya ang mga pamantayan sa pagpapanatili. Ano ang gagawin mo? Alamin natin ang kahalagahan ng napapanatili ang pamamahala ng supply chain at kung paano gumawa ng mga tamang pagpipilian para sa iyong negosyo, kapaligiran, at lipunan. Handa ka na bang gumawa ng ilang mahihirap na desisyon at lumikha ng isang napapanatiling supply chain? Magsimula na tayo!",
             "backgroundColor": "rgba(0, 255, 150, 0.2)",
             "backgroundImage": "/assets/scenario-5.gif",
-            "congratulationMessage": "Kerja keras dan dedikasimu kepada kewirausahaan hijau atau green entrepreneurship telah terbayarkan! Tetap gunakan keahlian-keahlian yang kamu miliki untuk menciptakan dampak positif pada dunia dan menginspirasi orang lain untuk mengikuti jejakmu.",
+            "congratulationMessage": "Nagbunga ang iyong pagsusumikap at dedikasyon sa green entrepreneurship! Patuloy na gamitin ang iyong mga kasanayan upang magkaroon ng positibong epekto sa mundo at magbigay ng inspirasyon sa iba na gawin ang iyong mga ginagawa.",
             "tasks": [
                 {
                     "id": 1,
-                    "desc": "Pemasokmu saat ini menawarkan harga terendah, tetapi mereka pernah melanggar peraturan lingkungan. Kamu telah menemukan pemasok lain yang mengikuti praktik berkelanjutan, tetapi harganya lebih tinggi. Opsi mana yang lebih baik untuk lingkungan dan bisnismu?",
+                    "desc": "Ang iyong kasalukuyang supplier ay nag-aalok ng pinakamababang presyo, ngunit mayroon silang kasaysayan ng paglabag sa mga regulasyon sa kapaligiran. Nakahanap ka ng isa pang supplier na sumusunod sa mga napapanatiling kasanayan, ngunit mas mataas ang kanilang mga presyo. Aling opsyon ang mas mahusay para sa kapaligiran at sa iyong negosyo?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Beralih",
-                            "desc": "Beralih ke pemasok berkelanjutan, meskipun harganya lebih tinggi.",
-                            "feedback": "Devgan beralih ke pemasok berkelanjutan, kamu menunjukkan komitmen terhadap keberlanjutan dan praktik bisnis yang etis. Meskipun harganya lebih tinggi, itu sepadan dengan dampak positifnya terhadap lingkungan dan masyarakat."
+                            "title": "Lumipat",
+                            "desc": "Lumipat sa napapanatiling supplier, kahit na mas mataas ang kanilang mga presyo.",
+                            "feedback": "Sa pamamagitan ng paglipat sa napapanatiling supplier, ipinapakita mo ang iyong pangako sa pagpapanatili at etikal na mga kasanayan sa negosyo. Kahit na mas mataas ang kanilang mga presyo, sulit ito para sa positibong epekto sa kapaligiran at lipunan."
                         },
                         {
                             "id": 2,
-                            "title": "Tidak beralih",
-                            "desc": "Tetap tidak beralih dari pemasokmu yang saat ini dan menghemat uang.",
-                            "feedback": "Dengan tidak beralih dari pemasokmu saat ini, kamu dapat menghemat uang dalam jangka pendek tetapi berisiko merusak lingkungan dan reputasi dalam jangka panjang. Dengan beralih ke pemasok berkelanjutan, kamu berinvestasi dalam rantai pasokan yang lebih ramah lingkungan dan berpotensi menarik pelanggan yang menghargai praktik berkelanjutan."
+                            "title": "Stick",
+                            "desc": "Manatili sa iyong kasalukuyang supplier at makatipid ng pera.",
+                            "feedback": "Sa pamamagitan ng pananatili sa iyong kasalukuyang tagapagtustos, maaari kang makatipid ng pera sa panandalian ngunit nanganganib na mapinsala ang kapaligiran at ang iyong reputasyon sa pangmatagalan. Sa pamamagitan ng paglipat sa napapanatiling supplier, namumuhunan ka sa isang mas eco-friendly na supply chain at potensyal na nakakaakit ng mga customer na nagpapahalaga sa mga napapanatiling kasanayan."
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "desc": "Kamu perlu memilih pemasok untuk bahan penting yang dibutuhkan produkmu. Satu pemasok mendapatkan bahan dari komunitas terdekat, memberi orang pekerjaan dan uang, tetapi cara mereka membuatnya menciptakan banyak polusi. Pemasok lain mendapatkan bahan dari tempat berbeda di mana tidak ada manfaat sosial yang jelas, tetapi mereka membuatnya dengan polusi yang lebih sedikit. Pilihan mana yang terbaik untuk lingkungan dan masyarakat?",
+                    "desc": "Kailangan mong pumili ng supplier para sa isang mahalagang materyal na kailangan ng iyong produkto. Nakukuha ng isang supplier ang materyal mula sa isang kalapit na komunidad, na nagbibigay sa mga tao ng trabaho at pera, ngunit ang kanilang paraan ng paggawa nito ay lumilikha ng maraming polusyon. Nakukuha ng ibang supplier ang materyal mula sa ibang lugar kung saan walang malinaw na mga benepisyong panlipunan, ngunit ginagawa nila ito nang may kaunting polusyon. Aling pagpipilian ang pinakamainam para sa kapaligiran at lipunan?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Utamakan masyarakat sekitar",
-                            "desc": "Pilih pemasok dari komunitas terdekat meskipun mereka membuat banyak polusi",
-                            "feedback": "Penting untuk membantu komunitas terdekat, tetapi kita juga perlu menjaga lingkungan. Pemasok yang membuat banyak polusi dapat merusak planet dan menimbulkan masalah bagi manusia dalam jangka panjang. Kita harus memikirkan cara untuk mengurangi polusi, seperti menggunakan metode yang berbeda atau berinvestasi dalam program untuk membantu."
+                            "title": "Unahin ang kalapit na komunidad",
+                            "desc": "Piliin ang supplier mula sa kalapit na komunidad kahit na gumagawa sila ng maraming polusyon",
+                            "feedback": "Mahalagang tumulong sa mga kalapit na komunidad, ngunit kailangan din nating pangalagaan ang kapaligiran. Ang isang supplier na gumagawa ng maraming polusyon ay maaaring makapinsala sa planeta at magdulot ng mga problema para sa mga tao sa katagalan. Dapat tayong mag-isip ng mga paraan upang mabawasan ang polusyon, tulad ng paggamit ng iba't ibang pamamaraan o pamumuhunan sa mga programa upang makatulong."
                         },
                         {
                             "id": 2,
-                            "title": "Prioritaskan pengurangan polusi",
-                            "desc": "Pilih pemasok dengan lebih sedikit polusi meskipun mereka tidak membantu komunitas",
-                            "feedback": "Mengurangi polusi adalah hal yang baik, tetapi kita juga perlu memikirkan orang. Bekerja dengan pemasok yang membantu komunitas bisa bermanfaat bagi masyarakat, seperti memberi orang pekerjaan dan uang. Kita dapat bekerja sama dengan pemasok untuk menemukan cara mengurangi polusi, seperti menggunakan berbagai sumber energi atau berinvestasi dalam program untuk membantu."
+                            "title": "Unahin ang mas kaunting polusyon",
+                            "desc": "Piliin ang supplier na may kaunting polusyon kahit na hindi sila nakakatulong sa isang komunidad",
+                            "feedback": "Ang pagbabawas ng polusyon ay isang magandang bagay, ngunit kailangan din nating isipin ang mga tao. Ang pakikipagtulungan sa isang supplier na tumutulong sa isang komunidad ay maaaring maging mabuti para sa lipunan, tulad ng pagbibigay sa mga tao ng trabaho at pera. Maaari kaming makipagtulungan sa supplier upang maghanap ng mga paraan upang mabawasan ang polusyon, tulad ng paggamit ng iba't ibang mapagkukunan ng enerhiya o pamumuhunan sa mga programa upang makatulong."
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "desc": "Kamu memiliki dua pemasok untuk bahan utama, salah satunya menggunakan banyak air dalam proses produksinya sementara yang lain menggunakan lebih sedikit air. Namun, pemasok yang menggunakan lebih sedikit air terletak lebih jauh dan membutuhkan waktu transportasi yang lebih lama. Opsi mana yang merupakan pilihan yang paling berkelanjutan?",
+                    "desc": "Mayroon kang dalawang supplier para sa isang pangunahing materyal, ang isa ay gumagamit ng maraming tubig sa kanilang proseso ng produksyon habang ang isa ay gumagamit ng mas kaunti. Gayunpaman, ang supplier na gumagamit ng mas kaunting tubig ay matatagpuan sa malayo at nangangailangan ng mas mahabang oras ng transportasyon. Aling opsyon ang pinakanapapanatiling pagpipilian?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Prioritaskan penggunaan air yang lebih sedikit",
-                            "desc": "Pilih pemasok yang menggunakan lebih sedikit air, bahkan jika itu berarti waktu transportasi lebih lama.",
-                            "feedback": "Memilih pemasok yang menggunakan lebih sedikit air penting untuk keberlanjutan, tetapi juga penting untuk mempertimbangkan emisi karbon dari transportasi. Kamu dapat bekerja sama dengan pemasok untuk mencari cara mengurangi emisi transportasi, seperti mengoptimalkan rute pengiriman atau menggunakan metode transportasi yang lebih efisien."
+                            "title": "Unahin ang mas kaunting paggamit ng tubig",
+                            "desc": "Piliin ang supplier gamit ang mas kaunting tubig, kahit na nangangahulugan ito ng mas mahabang oras ng transportasyon.",
+                            "feedback": "Ang pagpili ng supplier na gumagamit ng mas kaunting tubig ay mahalaga para sa pagpapanatili, ngunit mahalagang isaalang-alang din ang mga carbon emissions mula sa transportasyon. Maaari kang makipagtulungan sa supplier upang maghanap ng mga paraan upang mabawasan ang mga emisyon sa transportasyon, tulad ng pag-optimize ng mga ruta ng paghahatid o paggamit ng mas mahusay na mga paraan ng transportasyon."
                         },
                         {
                             "id": 2,
-                            "title": "Prioritaskan pengurangan emisi",
-                            "desc": "Pilih pemasok yang menggunakan lebih banyak air untuk meminimalkan emisi transportasi.",
-                            "feedback": "Meskipun memilih pemasok yang meminimalkan emisi transportasi itu penting, penting juga untuk mempertimbangkan dampak penggunaan air yang berlebihan terhadap lingkungan. Kamu dapat bekerja dengan pemasok untuk menemukan cara mengurangi air penggunaan, seperti menerapkan metode produksi yang lebih efisien atau berinvestasi dalam teknologi yang mengurangi penggunaan air."
+                            "title": "Unahin ang mas kaunting emisyon",
+                            "desc": "Piliin ang supplier na gumagamit ng mas maraming tubig para mabawasan ang mga emisyon sa transportasyon.",
+                            "feedback": "Bagama't mahalaga ang pagpili ng supplier na nagpapaliit ng mga emisyon sa transportasyon, mahalaga din na isaalang-alang ang epekto ng labis na paggamit ng tubig sa kapaligiran. Maaari kang makipagtulungan sa supplier upang maghanap ng mga paraan upang bawasan ang paggamit ng tubig, tulad ng pagpapatupad ng mas mahusay na mga paraan ng produksyon o pamumuhunan sa mga teknolohiyang nagpapababa sa paggamit ng tubig."
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "desc": "Sebagai pemilik bisnis yang berkelanjutan, kamu ingin mengurangi dampak lingkungan dari rantai pasokmu. Kamu memiliki opsi untuk mendapatkan bahan dari pemasok lokal yang menggunakan kemasan ramah lingkungan tetapi membebankan harga lebih tinggi. Apa yang akan kamu lakukan?",
+                    "desc": "Bilang isang napapanatiling may-ari ng negosyo, gusto mong bawasan ang epekto sa kapaligiran ng iyong supply chain. May opsyon kang kumuha ng mga materyales mula sa isang lokal na supplier na gumagamit ng eco-friendly na packaging ngunit naniningil ng mas mataas na presyo. Ano ang dapat mong gawin?",
                     "options": [
                         {
                             "id": 1,
                             "title": "Mahal",
-                            "desc": "Pilih pemasok lokal dan naikkan harga untuk mengkompensasi kenaikan biaya.",
-                            "feedback": "Dengan memilih pemasok lokal, kamu mendukung komunitas lokal dan mengurangi emisi karbon yang terkait dengan pengiriman bahan dari luar negeri. Untuk mengimbangi biaya yang lebih tinggi, kamu dapat menaikkan harga sedikit untuk mempertahankan keuntungan sambil tetap menawarkan produk ramah lingkungan."
+                            "desc": "Piliin ang lokal na supplier at itaas ang mga presyo upang mabayaran ang tumaas na gastos.",
+                            "feedback": "Sa pamamagitan ng pagpili ng lokal na supplier, sinusuportahan mo ang iyong lokal na komunidad at binabawasan ang mga carbon emission na nauugnay sa mga materyales sa pagpapadala mula sa ibang bansa. Upang mabawi ang mas mataas na gastos, maaari mong bahagyang itaas ang iyong mga presyo upang mapanatili ang iyong mga kita habang nag-aalok pa rin ng mga produktong eco-friendly."
                         },
                         {
                             "id": 2,
-                            "title": "Murah",
-                            "desc": "Pilih pemasok yang lebih murah dengan kemasan yang kurang ramah lingkungan agar biaya tetap rendah.",
-                            "feedback": "Meskipun mungkin tergoda untuk memilih pemasok yang lebih murah agar biaya tetap rendah, penting untuk mempertimbangkan dampak lingkungan dari kemasan yang kurang ramah lingkungan. Dengan memilih pemasok lokal dengan kemasan ramah lingkungan, kamu dapat mengurangi emisi karbon yang terkait dengan transportasi dan mendukung komunitas lokal. Kamu juga dapat mengimbangi biaya yang lebih tinggi dengan mencari cara untuk mengurangi pengeluaran lain atau dengan menyesuaikan strategi pemasaran untuk menarik pelanggan yang menghargai keberlanjutan."
+                            "title": "Mura",
+                            "desc": "Pumili ng mas murang supplier na may mas kaunting eco-friendly na packaging para mapanatiling mababa ang gastos.",
+                            "feedback": "Bagama't mukhang nakakaakit na pumili ng mas murang supplier para mapanatiling mababa ang mga gastos, mahalagang isaalang-alang ang epekto sa kapaligiran ng hindi gaanong eco-friendly na packaging. Sa pamamagitan ng pagpili sa lokal na supplier na may eco-friendly na packaging, maaari mong bawasan ang mga carbon emissions na nauugnay sa transportasyon at suportahan ang iyong lokal na komunidad. Maaari mo ring i-offset ang mas mataas na gastos sa pamamagitan ng paghahanap ng mga paraan upang mabawasan ang iba pang mga gastos o sa pamamagitan ng pagsasaayos ng iyong mga diskarte sa marketing upang maakit ang mga customer na nagpapahalaga sa pagpapanatili."
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "desc": "Kamu menghadiri seminar tentang \"ekonomi sirkular\" dan terinspirasi untuk melakukan lebih banyak pengurangan dan penggunaan kembali dalam bisnismu. Tindakan apa yang dapat kamu ambil untuk mengadopsi model ekonomi sirkular?",
+                    "desc": "Nagpunta ka sa isang seminar tungkol sa \"circular economy\" at na-inspire na gumawa ng higit pang pagbabawas at paggamit muli sa iyong negosyo. Anong mga aksyon ang maaari mong gawin upang magpatibay ng isang pabilog na modelo ng ekonomiya?",
                     "options": [
                         {
                             "id": 1,
-                            "title": "Kurangi Penggunaan Bahan",
-                            "desc": "Terapkan sistem untuk menggunakan kembali dan membarui bahan, seperti menggunakan kembali sisa logam dalam proses produksi atau membarui produk lama untuk dijual kembali.",
-                            "feedback": " Menerapkan sistem untuk menggunakan kembali dan memperbarui bahan, seperti menggunakan kembali sisa logam dalam proses produksi atau memperbarui produk lama untuk dijual kembali, adalah tindakan utama yang harus diambil saat mengadopsi model ekonomi sirkular."
+                            "title": "Bawasan ang Paggamit ng Materyal",
+                            "desc": "Magpatupad ng sistema para muling gamitin at i-refurbish ang mga materyales, gaya ng muling paggamit ng mga metal scrap sa iyong mga proseso ng produksyon o pag-refurbish ng mga lumang produkto para muling ibenta.",
+                            "feedback": "Ang pagpapatupad ng isang sistema para muling gamitin at i-refurbish ang mga materyales, gaya ng muling paggamit ng mga metal scrap sa iyong mga proseso ng produksyon o pag-refurbish ng mga lumang produkto para muling ibenta, ay isang mahalagang aksyon na dapat gawin kapag gumagamit ng isang pabilog na modelo ng ekonomiya."
                         },
                         {
                             "id": 2,
-                            "title": "Kurangi Biaya",
-                            "desc": "Beli bahan baru yang murah untuk mengurangi biaya. Jika lebih banyak limbah dihasilkan, kamu selalu dapat mendaur ulang bahan limbah.",
-                            "feedback": "Mengadopsi model ekonomi sirkular berarti mengurangi limbah dan menggunakan kembali bahan. Membeli bahan baru yang murah dapat mengurangi biaya dalam jangka pendek, tetapi dapat menyebabkan lebih banyak limbah dan merusak lingkungan. Sangat penting untuk memprioritaskan keberlanjutan dari praktik bisnis."
+                            "title": "Bawasan ang Gastos",
+                            "desc": "Bumili ng bago, murang materyales para mabawasan ang gastos. Kung mas maraming basura ang nalilikha, palagiang i-recycle ang mga basurang materyales",
+                            "feedback": "Ang pagpapatibay ng isang pabilog na modelo ng ekonomiya ay naglalayong bawasan ng basura at muling gamitin ng mga materyales. Ang pagbili ng bago, murang mga materyales ay maaaring makabawas ng gastos sa maikling panahon, ngunit maaari itong humantong sa paglikha ng mas maraming basura at makapinsala sa kapaligiran sa katagalan. Mahalagang bigyang-priyoridad ang pagpapanatili ng iyong mga kasanayan sa negosyo."
                         }
                     ]
                 }
