@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Image, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -11,6 +11,7 @@ import Task from './screens/Task';
 import Feedback from './screens/Feedback';
 import Summary from './screens/Summary';
 import Congratulation from './screens/Congratulation';
+import { playBackgroundMusic } from './api/Api';
 
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs();//Ignore all log notifications
@@ -18,6 +19,15 @@ LogBox.ignoreAllLogs();//Ignore all log notifications
 const Stack = createStackNavigator();
 
 export default function App() {
+    useEffect(() => {
+        playAppBgMusic();
+    }, []);
+
+
+    const playAppBgMusic = async () => {
+        await playBackgroundMusic();
+    }
+
     return (
         <DataProvider>
             <NavigationContainer>

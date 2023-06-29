@@ -26,9 +26,14 @@ async function playClapsSound() {
     await playSound(require('../assets/sounds/claps.mp3'));
 }
 
+async function playBackgroundMusic() {
+    await playSound(require('../assets/sounds/background.mp3'));
+}
+
 export {
     playSelectionSound,
     playAnswerSound,
     playNextSound,
-    playClapsSound
+    playClapsSound,
+    playBackgroundMusic
 }
