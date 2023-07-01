@@ -2,7 +2,7 @@
     "expo": {
         "name": "CodeForChange",
         "slug": "CodeForChange",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",
@@ -23,7 +23,10 @@
                 "foregroundImage": "./assets/adaptive-icon.png",
                 "backgroundColor": "#ffffff"
             },
-            "package": "org.edc.change_for_green"
+            "package": "com.edc",
+            "blockedPermissions": [
+                "android.permission.RECORD_AUDIO"
+            ]
         },
         "web": {
             "favicon": "./assets/favicon.png"
