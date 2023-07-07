@@ -2,7 +2,7 @@
     "expo": {
         "name": "CodeForChange",
         "slug": "CodeForChange",
-        "version": "1.1.0",
+        "version": "2.0.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",
@@ -16,17 +16,18 @@
         ],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.edc"
+            "bundleIdentifier": "corg.edc.change_for_green"
         },
         "android": {
             "adaptiveIcon": {
                 "foregroundImage": "./assets/adaptive-icon.png",
                 "backgroundColor": "#ffffff"
             },
-            "package": "com.edc",
+            "package": "org.edc.change_for_green",
             "blockedPermissions": [
                 "android.permission.RECORD_AUDIO"
-            ]
+            ],
+            "versionCode": 2
         },
         "web": {
             "favicon": "./assets/favicon.png"
